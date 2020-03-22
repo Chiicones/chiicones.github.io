@@ -1,72 +1,86 @@
-#-------------------------------
-# General Site Settings
+# Site/SEO settings
+email: okay@samesies.io
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+google_analytics: 
 
-title: Galada Theme | Theme for Jekyll
-description: Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog. # this means to ignore newlines until "baseurl:"
-baseurl: "/galada" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+name: Thomas Vaeth
+title: The Barber Theme
+description: >
+  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
+url: http://barber.samesies.io
+twitter_username: thomasvaeth
+default_img: /assets/images/seo.jpg
+social:
+  - name: twitter
+    url: https://twitter.com/thomasvaeth
+  - name: instagram
+    url: https://www.instagram.com/thomas.vaeth/
+  - name: linkedin
+    url: https://www.linkedin.com/in/thomasvaeth/
+  - name: github
+    url: https://github.com/samesies
+  - name: codepen
+    url: https://codepen.io/thomasvaeth/
 
+# Contact settings
+contact_img: /assets/images/placeholder-28.jpg
+formcarry: https://formcarry.com/s/HkIo0nMb7
 
-#-------------------------------
-# About Section
-author-name:   Natali Anderson
-author-avatar: 09.jpg
+# Disqus settings
+disqus: test-apkdzgmqhj
 
+# MailChimp settings
+mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
+mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
 
-#-------------------------------
-# Contact links
-facebook:  https://facebook.com/ # Add your Facebook handle
-twitter:   https://twitter.com/ # Add your Facebook handle
-instagram: https://www.instagram.com/ # Add your Facebook handle
-pinterest: https://www.pinterest.com/ # Add your Facebook handle
+# Author settings
+author:
+  - name: Thomas Vaeth
+    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
+    url: http://thomasvaeth.com
 
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts: 
+      - 'tag.html'
+    title: 'The Barber Theme'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
 
-#-------------------------------
-# Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
-
-
-#-------------------------------
-# Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
-
-
-#-------------------------------
-# Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
-
-
-#-------------------------------
-# Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-
-#-------------------------------
 # Build settings
 markdown: kramdown
-permalink: ':title/'
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
-
-paginate: 7
-paginate_path: "/page/:num"
-
-include:
-  - _pages
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-
-#-------------------------------
-# Exclude from processing.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - node_modules
+  - .DS_Store
+  - barber.jpg
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - README.md
+  - vendor

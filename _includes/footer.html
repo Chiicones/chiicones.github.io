@@ -1,38 +1,30 @@
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="footer-top">
-          <h2 class="logo-title">
-            <a href="{{site.baseurl}}/" class="logo-text">Galada</a>
-          </h2>
-          <div class="top"><i class="ion ion-ios-arrow-up"></i></div>
-        </div>
-        <div class="footer-bottom">
-          <div class="copyright">
-            <p>&copy; {{site.time | date: '%Y'}} Crafted & Designed by <a href="https://github.com/artemsheludko">Artem Sheludko</a></p>
-          </div>
-          <div class="footer-social">
-            <ul class="list-reset">
-              {% if site.facebook %}
-              <li><a href="{{ site.facebook }}">Facebook</a></li>
-              {% else %} {% endif %}
-
-              {% if site.twitter %}
-              <li><a href="{{ site.twitter }}">Twitter</a></li>
-              {% else %} {% endif %}
-
-              {% if site.instagram %}
-              <li><a href="{{ site.instagram }}">Instagram</a></li>
-              {% else %} {% endif %}
-
-              {% if site.pinterest %}
-              <li><a href="{{ site.pinterest }}">Pinterest</a></li>
-              {% else %} {% endif %}
-            </ul>
-          </div>
-        </div>
+<!-- The footer at the very bottom of the screen -->
+<footer class="footer section-padding">
+  <div class="grid">
+    <div class="subscribe" id="subscribe">
+      <div class="subscribe__container">
+        <span class="subscribe__title">Subscribe</span>
+        <p class="subscribe__text">Get a weekly email of posts I’ve added to the site.</p>
+        {% include subscribe-form.html %}
       </div>
     </div>
+
+    <hr class="sep--white"/>
+
+    <div class="footer__container">
+      {% tags_list :threshold => 1, :sort_by => count, :order_by => desc, :limit => 5 %}
+
+      {% include social.html %}
+    </div>
   </div>
-</footer> <!-- /.footer -->
+</footer>
+
+{% include contact.html %}
+
+{% if paginator.next_page %}
+  <script>
+    var maxPages = parseInt('{{ paginator.total_pages }}');
+  </script>
+{% endif %}
+
+<script src="{{ '/assets/js/app.min.js' | prepend: site.baseurl }}"></script>

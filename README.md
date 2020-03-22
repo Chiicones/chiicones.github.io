@@ -1,171 +1,231 @@
-Galada - Easy & Simple Theme for Personal Blog
-======
-Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog.
+# Barber
+Barber is a minimal blog theme built for Jekyll. The blog theme features a masonry grid, endless scrolling, and page transitions. 💈 Barber is also available for [Ghost](https://github.com/samesies/barber-ghost).
 
-* * *
+![Barber](https://raw.githubusercontent.com/samesies/barber-jekyll/master/barber.jpg "Barber")
 
-Table of Contents
------------------
-*   [Features](#features)
-*   [Demo](#demo)
-*   [Deployment](#deployment)
-*   [Posts](#posts)
-*   [Disqus Comments](#DisqusComments)
-*   [Instagram](#instagram)
-*   [Google Analytics](#GoogleAnalytics)
-*   [Update favicon](#UpdateFavicon)
-*   [Credits](#Credits)
-*   [Support](#Support)
+## Initial Setup
+* [Installation](#installation)
+* [Update Settings](#update-settings)
+* [Create Posts](#create-posts)
+* [Create Pages](#create-pages)
+* [Create Navigation](#create-navigation)
 
-* * *
+## Customization
+* [Contact Form](#contact-form)
+* [Social Media Links](#social-media-links)
+* [Disqus Comments](#disqus-comments)
 
-### Features
+## Additional Development
+* [Deployment](#deployment)
+* [Source Code](#source-code)
+* [Donations](#donations)
+* [Support](#support)
 
-* 100% responsive and clean theme
+### Installation
+Jekyll requires all dependencies to be saved in the ````Gemfile````. Run ````bundle install```` (Install [Bundler](http://bundler.io/) if it is not already) on your command line after downloading or cloning the theme. You can then run ````bundle exec jekyll serve```` or ````npm start```` to see your development site. Run ````bundle exec jekyll build```` or ````npm run build```` to build a production ready site for deployment.
 
-* Optimized for mobile devices
+### Update Settings
+Almost everything to personalize your site is in the ````_config.yml````. 
 
-* Minimal design
+```
+# Site/SEO settings
+email: okay@samesies.io
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+google_analytics: 
 
-* Valid HTML5 code
+name: Thomas Vaeth
+title: The Barber Theme
+description: >
+  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
+url: http://barber.samesies.io
+twitter_username: thomasvaeth
+default_img: /assets/images/seo.jpg
+social:
+  - name: twitter
+    url: https://twitter.com/thomasvaeth
+  - name: instagram
+    url: https://www.instagram.com/thomas.vaeth/
+  - name: linkedin
+    url: https://www.linkedin.com/in/thomasvaeth/
+  - name: github
+    url: https://github.com/samesies
+  - name: codepen
+    url: https://codepen.io/thomasvaeth/
 
-* Post sharing
+# Contact settings
+contact_img: /assets/images/placeholder-28.jpg
+formcarry: https://formcarry.com/s/HkIo0nMb7
 
-* Subscription form
+# Disqus settings
+disqus: test-apkdzgmqhj
 
-* Supports Disqus Comments
+# MailChimp settings
+mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
+mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
 
-* Instagram Feed
+# Author settings
+author:
+  - name: Thomas Vaeth
+    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
+    url: http://thomasvaeth.com
 
-* Ionicons Icons
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts: 
+      - 'tag.html'
+    title: 'The Barber Theme'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
+```
 
-* Google Fonts
+You can change the URL the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, grow your website with additional authors, and much more.
 
+### Create Posts
+All posts go upder the ````_posts```` directory. You can also have a ````_drafts```` directory with posts that will on your development page, but not in production.
 
-* * *
+```
+---
+layout: post
+title: "Brunch Swag"
+date: 2017-02-18
+description: 
+image: /assets/images/placeholder-15.jpg
+author: Thomas Vaeth
+tags: 
+  - XOXO
+  - La Croix
+---
+```
 
-### Demo
+The front matter has to have a layout of page. All the other fields are completely optional. If you have an ````author```` variable, then it must match an author's name in ````_config.yml```` (see [Update Settings](#update-settings)). The ````tag```` variable will add a related section to the post and popular tags to the footer.
 
-Check the theme in action [Demo](https://artemsheludko.github.io/galada/)
+### Create Pages
+Creating a static page is the same as creating a post. The only difference is a page is in the root of the directory rather than the ````_posts```` directory.
 
-![Main page preview](https://github.com/artemsheludko/galada/blob/master/img/galada-main-page.jpg?raw=true)
+```
+---
+layout: page
+title: Style Guide
+image: /assets/images/placeholder-18.jpg
+---
+```
 
-The post page would look like this:
+You just have to make sure the front matter has a layout of page instead of post. If there is no title or image, then the page will default to the site configuration.
 
-![Post page preview](https://github.com/artemsheludko/galada/blob/master/img/galada-post.jpg?raw=true)
+### Create Navigation
+You can create a navigation in ````_includes/navigation.html````. Visitors can be linked directly to pages right on the top of your website.
 
-* * *
+***
 
-### Deployment
+### Contact Form
+The form uses [Formcarry](https://formcarry.com/) to send submitted messages straight to your inbox. The image on the popup is the the ````contact_img```` variable and the URL the forms sends to is the ````formcarry```` variable in ````_config.yml```` (see [Update Settings](#update-settings)).
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+![Contact Form](http://samesies.io/assets/images/barber/doc/framed-contact-form.jpg "Contact Form")
 
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+This file can be found in ````_includes/formscarry.html````. You can change the labels of the form here. After everything is set you will need to submit a message to yourself to confirm everything is correct.
 
-* * *
-
-### Posts
-
-To create a new post, you can create a new markdown file inside the \_posts directory by following the [recommended file structure](https://jekyllrb.com/docs/posts/#creating-post-files).
-
-      ---
-      layout: post
-      title: Premiere on Broadway
-      date: 2018-08-23 16:04:00 +0300
-      image: 03.jpg
-      tags: [Rest]
-      ---
-          
-
-You can set the tags and the post image.
-
-Add post images to **/img/** directory.
-
-For tags, try to not add space between two words, for example, `Ruby on Rails`, could be something like (`ruby-on-rails`, `Ruby_on_Rails`, or `Ruby-on-Rails`).
-
-* * *
+### Social Media Links
+[Font Awesome](http://fontawesome.io/) is used for the social media icons. The icons in the theme can be found in ````_includes/share.html```` and ````_includes/social.html````. The icons in ````_includes/share.html```` do not need to be edited unless you want to remove a certain website; however, the ones in ````_includes/social.html```` do have to be changed. You can follow the example that has been provided in ````_config.yml```` for you to link to all of your social media accounts  (see [Update Settings](#update-settings)). The naming convention has not changed from the instructions provided on Font Awesome.
 
 ### Disqus Comments
+Comments can be enabled on every blog post in a few steps steps. The first step is to register your website with [Disqus](https://disqus.com/). Disqus will provide you with a shortname that you need for the next step. Once you have that the second step is to replace the ````disqus```` variable in ````_config.yml```` (see [Update Settings](#update-settings)). The third step is to open ````_includes/disqus.html```` and remove all the instructions. The final step is to visit a blog post and verify that your comments are there.
 
-Galada Theme comes with Disqus comments enabled.
+***
 
-Open `_config.yml` file, and change the `mr-brown` value on line 26 with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
+### Deployment
+GitHub Pages [does not support]((https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/)) custom plugins. The tag list and tag pagination are built using custom plugins. There are several options to avoid any errors while deploying to production.
+* Run ````bundle exec jekyll build```` or ````npm run build```` and manually add the contents of the ```_site``` folder to the ```gh-pages``` branch.
+* Link the repository to [Netlify](https://www.netlify.com/). Netlify will then rebuild the theme every time a commit is pushed to the repo.
+* Finish setting up the [s3-website](https://github.com/klaemo/s3-website) package that is already included in the theme. This would deploy the theme to AWS S3 when ```npm run deploy``` is run.
 
-      Comment Section (Disqus)
-      disqus-identifier: mr-brown \# Add your shortname for Disqus Comment. For example mr-brown
-          
+### Source Code
+The source code is broken down to make finding what you need as easy as possible. Almost everything runs through ````gulpfile.js````, so you will need to run ````npm install```` on your command line before doing any additional development. You can then run ````gulp```` or ````npm run gulp```` to compile everything.
 
-That’s all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have [registered your website with Disqus (Step 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide).
+```
+.
+├── _assets
+|   ├── js
+|       ├── components
+|       ├── vendor
+|       ├── _inits.js
+|       └── app.js
+|   └── scss
+|       ├── base
+|       ├── components
+|       ├── fonts
+|       ├── regions
+|       ├── tools
+|       ├── utils
+|       ├── vendor
+|       └── app.scss
+├── _includes
+|   ├── contact.html
+|   ├── disqus.html
+|   ├── footer.html
+|   ├── formcarry.html
+|   ├── head.html
+|   ├── header.html
+|   ├── navigation.html
+|   ├── pagination.html
+|   ├── post-card.html
+|   ├── share.html
+|   ├── social.html
+|   └── subscribe_form.html
+├── _layouts
+|   ├── compress.html
+|   ├── default.html
+|   ├── page.html
+|   ├── post.html
+|   └── tag.html
+├── _plugins
+├── _posts
+├── _site
+├── assets
+|   ├── css
+|   ├── images
+|   ├── js
+├── .eslintrc
+├── .gitignore
+├── .stylelintrc
+├── 404.html
+├── _config.yml
+├── Gemfile
+├── Gemfile.lock
+├── gulpfile.js
+├── index.html
+├── package.json
+├── README.md
+├── style-guidle.html
+└── subscribe.html
+```
 
-And also check [Disqus troubleshooting guide](https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22) if you still have issues.
+The CSS is written in Sass. The JavaScript is written in ES6, so your code is up to date with the newest standards.
 
-* * *
+### Donations
+Barber has been released for free. Similar themes cost around $29 on [ThemeForest](https://themeforest.net/category/static-site-generators/jekyll). Any donations would be greatly appreciated after the work that went into releasing Barber.
 
-### Instagram
-
-The Instagram feed is working using [Instafeed.js](http://instafeedjs.com/) to show the photos.
-
-First, you will need to get your account `userId` and `accessToken` from the following URLs:
-
-*   userId: [smashballoon.com/instagram-feed/find-instagram-user-id](https://smashballoon.com/instagram-feed/find-instagram-user-id/)
-*   accessToken: [instagram.pixelunion.net](http://instagram.pixelunion.net/)
-
-Second, open the `js/common.js` file and replace the `userId` and `accessToken` values.
-
-            var instagramFeed = new Instafeed({
-              get: 'user',
-              limit: 6,
-              resolution: 'standard_resolution',
-              userId: '8987997106',
-              accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
-              template: ''
-            });
-          
-
-Third, open the `_config.yml` file and replace the `instafeed: false` on `instafeed: true` value.
-
-            \# Instagram Feed
-            instafeed: false \# To enable the instafeed, use the value true. To turn off use the value false.
-          
-
-* * *
-
-### Google Analytics
-
-To integrate Google Analytics, open `_config.yml`, and add your Google Analytics identifier.
-
-    \# Google Analytics
-    google-analytics: \# Add your identifier. For example UA-99631805-1
-          
-
-* * *
-
-### Update favicon
-
-You can find the current favicon (favicon.ico) inside the theme root directory, just replace it with your new favicon.
-
-* * *
-
-### Credits
-
-I have used the following scripts, fonts or other files as listed.
-
-*   [Google Fonts](https://fonts.google.com/specimen/Nunito) (Nunito, Sans Serif).
-*   [Ionicons Icons](https://ionicons.com/)
-*   [FitVids.js](http://fitvidsjs.com/)
-*   [Instafeed.js](http://instafeedjs.com/)
-*   [jQuery.com](https://jquery.com/)
-*   [Wait For Images](https://github.com/alexanderdickson/waitForImages)
-*   Preview Images form [unsplash.com](https://unsplash.com/), [pexels.com](https://www.pexels.com/)
-
-* * *
-### License
-
-Mit License
-
-* * *
+* PayPal – <https://www.paypal.me/samesies>
+* Bitcoin – 1PSzNmcfAFJY1PtBK5u9R5bTGfF7KAuLcq
+* Ethereum – 0x392F7116e4171F1D740397B6000EadD2e4bb9670
+* Litecoin – LSH9AnjcUTV5T7PUxXQuxPqb9W5aSR9GEP
 
 ### Support
-
-<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
-<p align="center"><b>Thank you for your support ❤️</b></p>
+Email <okay@samesies.io> if you need any additional support with Barber.
