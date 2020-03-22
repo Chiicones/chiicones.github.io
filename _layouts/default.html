@@ -1,8 +1,24 @@
 ---
-layout: base
+layout: compress
 ---
-<body>
-    {% include header.html %}
-    <div class="mui-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% include head.html %}
+
+</head>
+<body id="{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}" class="{{ page.layout | downcase }}-layout">
+  
+  {% include header.html %}
+
+  <main class="💈">
+
     {{ content }}
-    </div>
+    
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>
