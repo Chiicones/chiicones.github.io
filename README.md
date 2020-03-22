@@ -1,71 +1,126 @@
-# Update 07/09/2018
+# BlackDoc
 
-I'm planning to refactor Leonids theme!!!
+![Jekyll version](https://img.shields.io/badge/Jekyll-3.x-brightgreen.svg?style=flat-square)
 
-The goal is really simple: make documentation more intuitive and deployment simpler!!!
+BlackDoc is a two-column [Jekyll](http://jekyllrb.com) theme that's ideal for websites that require a master-detail layout for viewing of content. It's based on [Poole](http://getpoole.com), the Jekyll butler, and the [Hyde](http://hyde.getpoole.com) theme.
 
-Here is the plan:
+![BlackDoc screenshot](https://raw.githubusercontent.com/karloespiritu/blackdoc/master/public/images/blackdoc-screenshot.jpg)
 
-| Version | Description | Date |
-| --- | --- | --- |
-| 1.1 | Jekyll version deployable with gem | 07/15/2018 |
-| 1.2 | New features: Pagination, Prev/Next post | 07/22/2018 |
-| 2.0 | Gatsby or Vuepress version (vote in Issues) | who knows... |
+## Contents
 
-As the project was and will be designed to improve your writing experience, only documentation, gem, deployment process with CI relevant PRs are acceptable in the future.
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Options](#options)
+  - [Sidebar menu](#sidebar-menu)
+  - [Scrolling sidebar content](#scrolling-sidebar-content)
+  - [Themes](#themes)
+  - [Reverse layout](#reverse-layout)
+- [Development](#development)
+- [Author](#author)
+- [License](#license)
+- [Thanks](#thanks)
 
-I want you to know how much I value your support.
+## Features
 
-Share it to your timeline!
+* Now compatible with Jekyll 3.x
+* Two-column layout with scrolling sidebar content
+* Ideal for websites that require  master-detail view of content
 
-# Update 05/06/2016
+## Quick Start
 
-Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
+Download the zip file or clone the BlackDoc repo.
 
-This project is under MIT license, so feel free to make it your own.
-
-# Leonids Jekyll Themes
-
-**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
-
-## What is Leonids?
-
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Simple and clear permalink structure.
-* Support for Disqus Comments.
-* Support for multi-authors.
-* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
-
-See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
-
-## Quick setup
-
+```bash
+$ git clone git@github.com:karloespiritu/BlackDoc.git mysite
+$ cd mysite
 ```
-git clone https://github.com/renyuanz/leonids
-cd leonids
-jekyll server
+Make sure you have Ruby 2.2.5 or higher installed.
+
+```bash
+$ ruby --version
+ruby 2.2.5
 ```
 
-Check out your awesome blog at `http://localhost:4000` and Cheers!
+Install bundler and install dependencies.
 
-## Running with Docker
+```bash
+$ gem install bundler
+$ bundle install
+```
+
+Build and run your BlackDoc site.
+
+```bash
+$ jekyll serve
+```
+
+## Usage
+
+BlackDoc is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
+
+
+## Options
+
+BlackDoc includes some customizable options, typically applied via classes on the `<body>` element.
+
+
+### Sidebar menu
+
+Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
 
 ```
-docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
+---
+layout: page
+title: About
+---
 ```
 
-## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
-Leonids features a simple resume page. It is divided up into five sections:
+**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
 
-* Bio (Edit \_data/index/careers.yml)
-* Education (Edit \_data/index/education.yml)
-* Skills (Edit \_data/index/skills.yml)
-* Projects (Edit \_data/index/projects.yml)
-* About (Edit \_includes/sections/about.html)
 
-You can put all your info into these files, and they will be featured on the resume page.
+### Scrolling sidebar content
 
-## TODO
+By default, BlackDoc includes a scrolling sidebar that will display your markdown files in alphabetical order.
 
-- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
-- [ ] Multi languages support.
+### Themes
+
+BlackDoc ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
+
+To use a theme, add anyone of the available theme classes to the `<body>` element in the `default.html` layout, like so:
+
+```html
+<body class="theme-base-08">
+  ...
+</body>
+```
+
+To create your own theme, look to the Themes section of [included CSS file](https://github.com/karloespiritu/blackdoc/blob/master/public/css/blackdoc.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+
+### Reverse layout
+
+![BlackDoc reverse screenshot](https://raw.githubusercontent.com/karloespiritu/BlackDoc/master/public/images/reverse-screenshot.png)
+
+BlackDoc's page orientation can be reversed with a single class.
+
+```html
+<body class="layout-reverse">
+  ...
+</body>
+```
+
+## Author
+
+**Karlo Espiritu**
+- <https://github.com/karloespiritu>
+- <https://twitter.com/karloespiritu>
+
+## License
+
+Open sourced under the [MIT license](LICENSE.md).
+
+\m/
+
+## Thanks
+
+Thanks to [@mdo](https://twitter.com/mdo) for creating the awesome [Poole](http://getpoole.com) project.
