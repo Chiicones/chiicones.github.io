@@ -1,34 +1,10 @@
-# Ignore docs files
-_gh_pages
-_site
-.ruby-version
-.jekyll-metadata
+# Don't commit system files or dependencies
+*.DS_Store
+node_modules/
 
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.orig
-*.log
-*.rej
-*.swo
-*.swp
-*.zip
-*.vi
-*~
-
-# OS or Editor folders
-.DS_Store
-._*
-Thumbs.db
-.cache
-.project
-.settings
-.tmproj
-*.esproj
-nbproject
-*.sublime-project
-*.sublime-workspace
-.idea
-
-# Folders to ignore
-node_modules
+# Ensure Hugo builds aren't committed to Git
+public/
+site/public/
+dist/
+.tmp/
+_site/

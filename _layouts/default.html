@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-us">
+{% include head.html %}
 
-  {% include head.html %}
+<!-- Add your site or application content here -->
+<p>{{ content }}</p>
 
-  <body>
-
-    {% include sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
-    </div>
-
-  </body>
-</html>
+{% include footer.html %}
