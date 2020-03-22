@@ -1,33 +1,9 @@
 ---
-layout: default
+layout: archive
 ---
-<section class="mast section-padding--double">
-  <div class="grid">
-    <h2>
-      {{ page.autopages.display_name }}
-    </h2>
-  </div>
-</section>
 
-<div class="section-padding--none">
-  <div class="grid-large">
-    <hr class="sep"/>
-  </div>
-</div>
+{{ content }}
 
-<!-- The main content area -->
-<div class="posts">
-  <div class="grid-xlarge">
-    <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
-
-      {% for post in paginator.posts %}
-
-        <!-- The tag below includes the markup for each post - partials/post-card.html -->
-        {% include post-card.html %}
-
-      {% endfor %}
-    </div>
-  </div>
-
-  {% include pagination.html %}
+<div class="entries-{{ page.entries_layout | default: 'list' }}">
+  {% include posts-tag.html taxonomy=page.taxonomy type=page.entries_layout %}
 </div>
