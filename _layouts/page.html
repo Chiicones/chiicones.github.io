@@ -1,28 +1,17 @@
 ---
-layout: default
+layout: base
 ---
-<section class="post">
-  <div>
-    <div class="post__header section-padding--double">
-      <div class="grid-small">
-        <h2>{{ page.title }}</h2>
+<body style="padding: 0">
+
+  <article class="post-full">
+    <header class="bg-holder post-page {% if page.color %}bg-{{ page.color }}{% endif %}" style="{% if page.cover %}background:url({{page.cover}}) no-repeat center center; background-size: cover{% endif %}">
+      <a href="/" class="overlay"><i class="fa fa-home fa-2x"></i></a>
+      {% if page.cover %}<div class="img-overlay"></div>{% endif %}
+    </header>
+    <div class="mui-container mui-panel post-content">
+      <h1><a href="{{page.url}}">{{ page.title }}</a></h1>
+      <div class="post-html" style="border: none">
+          {{ content }}
       </div>
     </div>
-
-    {% if page.image %}
-      <div class="post__img">
-        <div>
-          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
-        </div>
-      </div>
-    {% endif %}
-
-    <div class="post__content section-padding">
-      <div class="grid">
-        <div id="markdown">
-          {{content}}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </article>

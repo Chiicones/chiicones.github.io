@@ -1,85 +1,46 @@
 ---
-layout: default
+layout: base
 ---
-<div class="post">
-  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="post__header section-padding--double">
-      <div class="grid-small">
-        <h2 itemprop="name headline">{{ page.title }}</h2>
+<body style="padding: 0">
 
-        <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
+  <article class="post-full">
+    <header class="bg-holder post-page {% if page.color %}bg-{{ page.color }}{% endif %}" style="{% if page.cover %}background:url({{page.cover}}) no-repeat center center; background-size: cover{% endif %}">
+      <a href="{{site.url}}/" class="overlay"><i class="fa fa-home fa-2x"></i></a>
+      {% if page.cover %}<div class="img-overlay"></div>{% endif %}
+    </header>
+    <div class="mui-container mui-panel post-content">
+      <h1 class="article-title"><a href="{{page.url}}">{{ page.title }}</a></h1>
+      <p class="post-meta">by <a href="{{ site.url }}">{% if page.author %}{{ page.author }}{% else %}{{ site.full_name }}{% endif %}</a> on <time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M" }}"><i class="fa fa-calendar"></i>{{ page.date | date: "%B %-d, %Y" }}</time>
+      <span class="sharer">
+        Share on: 
+        <a class="sh-fb" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+window.location.href,'_blank','height=300,width=600');return false;"><i class="fa fa-facebook fa-lg"></i></a>
+        {% if site.twitter %}
+            <a class="sh-twt" href="#" target="_blank" onclick="window.open('https://twitter.com/share?url='+window.location.href+'&via={{ site.twitter }}','_blank','height=300,width=600');return false;"><i class="fa fa-twitter fa-lg"></i></a>
+        {% else %}
+            <a class="sh-twt" href="#" target="_blank" onclick="window.open('https://twitter.com/share?url='+window.location.href,'_blank','height=300,width=600');return false;"><i class="fa fa-twitter fa-lg"></i></a>
+        {% endif %}
+        </span>
+      </p>
+      {% if page.tags and page.tags.size > 0 %}
+        <p class="post-tag-container">
+            {% for tag in page.tags %}
+            <span class="post-tag"><i class="fa fa-tag"></i>{{ tag }}</span>
+            {% endfor %}
+        </p>
+      {% endif %}
+      <div class="post-html">
+          {{ content }}
       </div>
-    </div>
-
-    {% if page.image %}
-      <div class="post__img">
-        <div>
-          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
-        </div>
-      </div>
+    {% if site.disqus %}
+    <footer>
+      <p><a href="#" id="showComments"><i class="fa fa-comment-o"></i>Comments</a></p>
+      <div id="disqus_thread"></div>
+    </footer>
     {% endif %}
-
-    <div class="post__content section-padding">
-      <div class="grid">
-        <div id="markdown" itemprop="articleBody">
-          {{content}}
-        </div>
-
-        {% include share.html %}
-      </div>
     </div>
-
-    <!-- Everything inside the #author tags pulls data from the author -->
-    {% if page.author %}
-      <div class="section-padding--none">
-        <div class="grid">
-          <hr class="sep"/>
-        </div>
-      </div>
-
-      <div class="section-padding">
-        <div class="grid-small">
-          {% for author in page.author %}
-            {% assign authorDetails = site.author | where: "name", author %}
-            {% if forloop.first == true %}
-              <span class="post__author">Posted by
-            {% else %}
-              <span class="post__author">&amp;
-            {% endif %}
-            {% if authorDetails[0]["url"] %}<a href="{{ authorDetails[0]['url'] }}" title="More By {{ author }}">{% endif %}{{ author }}{% if authorDetails[0]["url"] %}</a>{% endif %}</span>
-            <p class="post__bio">{{ authorDetails[0]["bio"] }}</p>
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-
-    {% include disqus.html %}
-
   </article>
-</div>
 
-<!-- Links to Previous/Next posts -->
-{% assign relatedTag = page.tags | first %}
-{% if relatedTag %}
-  <section class="related section-padding">
-    <div class="grid-xlarge">
-      <h2 class="related__title">Related</h2>
-      <div class="related__container">
-        {% for post in site.tags[relatedTag] limit: 3 %}
-          <article class="related__post">
-            <a class="related__link" href="{{ post.url | absolute_url }}">
-              {% if post.image %}
-                <figure class="related__img">
-                  <img src="{{ post.image }}" alt="{{ post.title }}"/>
-                </figure>
-              {% endif %}
-              <div>
-                <h2 class="related__text">{{ post.title }}</h2>
-              </div>
-            </a>
-          </article>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-{% endif %}
+  {% if site.disqus %}
+  <script src="/js/script.js"></script>
+  {% endif %}
+
