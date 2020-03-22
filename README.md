@@ -1,22 +1,36 @@
-![uBuild Blocks](uploads/2018/06/21/theme.png)
+Strange Case
+============
 
-# uBuild Jekyll Theme
+Strange Case is a simple, clean and responsive theme for Jekyll. 
 
-[View the announcement post on Forestry.io](https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/#/)
 
-`ubuild-jekyll` is a Jekyll theme designed to work with [Forestry](https://forestry.io/)'s [Blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature.  This theme provides a set of page-level components and a pre-configured Forestry Blocks UI that will empower content editors to construct their own webpages.
+### Demo 
 
-## Quick Start
+[Demo](http://thephuse.github.io/strange_case/)
 
-[![Import this project into Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=forestryio/ubuild-jekyll&provider=github&engine=jekyll)
+### Overview 
 
-*This option is available for Github and Gitlab users only. If you use Bitbucket please use the Alternative Setup*
+* Fixed Sidebar with cover image
+* Minimal design 
+* Easy to configure
+* Browser support: Latest releases of Chrome, Safari, Firefox, Mobile Safari and IE 9+.
 
-## Alternative Setup
+### Screenshots
 
-1. Fork this repo
-2. [Sign up for a free Forestry account](https://app.forestry.io/signup)
-3. [Import your repo](https://forestry.io/docs/quickstart/setup-site/#import-site-from-repo) as a new Jekyll project
+![screenshot](/images/screenshot1.png)
+![screenshot](/images/screenshot2.png)
 
-To use the page builder, select the **Page Builder** template when creating a new page.
+### Setup
 
+1. Install [Jekyll](http://jekyllrb.com/)
+2. Fork or [download](https://github.com/thephuse/strange_case) this theme repo
+3. Edit the `_config.yml` file (if you make any additional changes to this file, you will need to stop and restart your command in the next step)
+4. From your command line, switch to your site directory and build using `jekyll serve`
+5. Site will be accessible by viewing http://localhost:4000/strange_case/
+
+### Download
+
+[Download](https://github.com/thephuse/strange_case)
+
+### License
+* [MIT](http://opensource.org/licenses/MIT)
