@@ -1,6 +1,6 @@
 ---
-layout: post
-title: What's Jekyll?
+title: Logan e um mundo que se esvai
+tags: formatinho
 ---
 
 ![Logan PB](https://miro.medium.com/max/540/0*OfsT0gY5eHOoaKt8.png)
