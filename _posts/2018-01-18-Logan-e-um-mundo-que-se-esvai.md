@@ -1,8 +1,6 @@
 ---
 layout: post
-title:  "Logan e um mundo que se esvai"
-categories: [formatinho]
-published: true
+title: What's Jekyll?
 ---
 
 ![Logan PB](https://miro.medium.com/max/540/0*OfsT0gY5eHOoaKt8.png)
