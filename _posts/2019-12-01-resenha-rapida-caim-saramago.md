@@ -3,9 +3,9 @@ title: Resenha rápida de Caim, do José Saramago
 tags: formatinho
 ---
 
-![Capa da edição brasileira do livro]({{site.baseurl}}/https://miro.medium.com/max/333/1*qyxEEAM45Cge5B3sB-gcqg.jpeg)
-
 Nesse livro, o escritor português, ateu e comunista calçou os sapatos de Caim, responsável pelo primeiro assassinato da história do mundo (bíblico). O primeiro fatricida, assim, adquire algumas das características de [José Saramago](https://pt.wikipedia.org/wiki/Jos%C3%A9_Saramago) e, desde o momento que é preterido por Deus em prol do seu irmão Abel, começa um embate com O Criador. O livro de José se desenrola através dessa investigação e descrença de Caim/Saramago sobre algumas passagens bíblicas.
+
+![Capa da edição brasileira do livro]({{site.baseurl}}/https://miro.medium.com/max/333/1*qyxEEAM45Cge5B3sB-gcqg.jpeg)
 
 É um livro pequeno e está estruturado em ficção as opiniões pessoais de Saramago sobre o conteúdo bíblico. Há também uma busca do escritos sobre o que seria o que chamam de fé. Pode-se pensar isso por conta de um trecho de Carta aos Hebreus que ilustra a epígrafe do livro:
 
