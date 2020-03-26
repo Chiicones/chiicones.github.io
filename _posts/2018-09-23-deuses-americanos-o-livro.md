@@ -23,7 +23,7 @@ Outro exemplo brasileiro é o termo [“açaí”](https://pt.wikipedia.org/wiki
 
 Meus pais saíram do interior de Minas Gerais e moraram boa parte da vida adulta na Tijuca. Criaram os filhos na região e eram quase vizinhos do *Maracanã*. Todas as tardes, revoadas de pássaros conhecidos como *maritacas* faziam um escarcéu nas árvores perto de onde a gente morava. *Maracanã* e *Maritaca* são nomes populares para as aves conhecidas como periquitão-maracanã (cujo nome científico é *[Psittacara leucophthalmus](https://www.wikiaves.com.br/periquitao-maracana)*). Outro nome popular para o periquitão-maracanã é *Araguari*, nome da cidade de origem dos meus pais. É coincidência ou escolheram aquela região como local de moradia por alguma familiaridade simbólica?
 
----
+***
 
 Voltando ao livro, Wednesday (ou Odin) chegou aos EUA através dos imigrantes europeus. Com o tempo, foi deixado de lado pelas religiões cristãs. Sobreviveu por conta da fé de alguns seguidores de religiões pagãs, referências cotidianas e obscuras a ele e, acredito, pelas referências da cultura pop como filmes, gibis e livros. Ele se sente cada vez mais deixado de lado por novas divindades, como a Televisão, Mídia, etc. Com ajuda de Shadow, se reúne com outros antigos deuses para organizar algum tipo de resistência para uma aparente guerra que está porvir. Mas, nesse mundo de simbolismos e interpretações, nem tudo é o que parece.
 
@@ -39,6 +39,6 @@ A beleza do livro é essa e perceber que esses deuses, criaturas que julgamos se
 
 No final, Shadow (e nós) é apenas marionetes de um jogo maior. Um jogo simbólico que se desenrola, nos afeta (imagina um “isso não é de Deus” para um campo simbólico maior) e que continuamos a seguir por ignorar essa realidade escondida bem diante dos nossos olhos.
 
----
+***
 
 Não vou falar muito da história em si e dos pormenores, mas vou apontar algumas semelhanças a outros universos nerds. A trama tem um quê de **As Guerras de Trolltooth** (aquele livro de ficção no mundo dos livros-jogo de Steve Jackson). Os Novos Deuses parecem um tanto inspirados na Tecnocracia, do roleplaying game **Mago: A Ascenção**. Há até uma Umbra, também de Mago e **Lobisomem: O Apocalypse**. É bacana como ele descreve *o mundo espiritual, como uma espécie de bastidor de teatro que ganha vida ao descer as cortinas*. Há todo um mundo que não conhecemos.
