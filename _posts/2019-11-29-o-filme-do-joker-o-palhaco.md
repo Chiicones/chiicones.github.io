@@ -1,6 +1,8 @@
 ---
-title: O filme do Joker, o palhaço
-tags: formatinho
+layout: post
+title:  "O filme do Joker, o palhaço (com spoilers)"
+date:   2019-11-21 19:00:00 -0300
+categories: formatinho
 ---
 
 É basicamente um Ônibus 174 com personagens da DC Comics. Saca aquele documentário que mostra o histórico e os últimos passos do Sandro antes dele sequestrar o ônibus da linha 174, Central-Gávea, e tudo dá incrivelmente errado? É (quase) a mesma coisa mas com uma trilha sonora sinistra, ótimas atuações e o tema de palhaço.
