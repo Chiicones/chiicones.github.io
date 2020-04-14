@@ -1,5 +1,5 @@
 ---
-title: O filme do Joker, o palhaço (com spoilers)
+title: O filme do Joker, o palhaço
 tags: formatinho
 ---
 
