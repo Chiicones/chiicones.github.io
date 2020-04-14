@@ -1,6 +1,10 @@
 ---
 title: Logan e um mundo que se esvai
 tags: formatinho
+article_header:
+  type: cover
+  image:
+    src: /Logan.jpg
 ---
 
 ![Logan PB](https://miro.medium.com/max/540/0*OfsT0gY5eHOoaKt8.png)
