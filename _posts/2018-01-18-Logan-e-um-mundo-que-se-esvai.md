@@ -21,7 +21,8 @@ Curti como a história traz toda a história e narrativa dos X-Men para um pouco
 
 O poder do Caliban (identificar e localizar mutantes) é quase trivial em um mundo onde o Gene-X foi suprimido por terapia genética. Mas é altamente relevante para andamento do filme. O sotaque e a personalidade britânica também dão outro charme a um personagem que sempre foi meio rasteiro nos quadrinhos. O Caliban dos quadrinhos e do filme era um tanto pé no saco, mas com um sarcasmo britânico, até que se tornou interessante.
 
-![A versão básica do Donald Pierce](https://miro.medium.com/max/300/0*vlfifiddzBgnMLK5.jpg)Os Carniceiros também foram retratados de uma maneira excelente: futuristas mas com um pé na realidade. Bem menospresepado que nos quadrinhos (com toda aquela roupa). Mas ao mesmo tempo não chega a apresentar ameaça real a Logan, ao contrário do que fez sua contraparte de tinta e papel que chegou a pregar Wolverine em uma “cruz” no deserto australiano.
+![A versão básica do Donald Pierce](https://miro.medium.com/max/300/0*vlfifiddzBgnMLK5.jpg)
+Os Carniceiros também foram retratados de uma maneira excelente: futuristas mas com um pé na realidade. Bem menos presepado que nos quadrinhos (com toda aquela roupa). Mas ao mesmo tempo não chega a apresentar ameaça real a Logan, ao contrário do que fez sua contraparte de tinta e papel que chegou a pregar Wolverine em uma “cruz” no deserto australiano.
 
 O futuro retratado no longa também é bem interessante: alguns avanços cibernéticos (mas nada além da conta), carros, caminhões e tratores automatizados (algo trivial que assume aura sinistra no campo de milho e na estrada) e terapia genética através da comida. São muitos avanços para um futuro tão próximo (12 anos), mas quem sabe o que a gente consegue avançar até 2029?
 
