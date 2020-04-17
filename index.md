@@ -1,5 +1,4 @@
 
-[Página 1](/1)
 
 ## Welcome to GitHub Pages
 
