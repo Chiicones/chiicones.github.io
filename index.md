@@ -1,5 +1,5 @@
 
-[Link](chiicones.github.io/1)
+[Página 1](/1)
 
 ## Welcome to GitHub Pages
 
