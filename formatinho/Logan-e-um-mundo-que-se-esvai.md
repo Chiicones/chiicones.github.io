@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<h1>{{ Logan e um mundo que se esvai }}</h1>
+
+<p class="view">by {{ page.author | default: site.author }}</p>
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+
+
+![Logan PB](https://miro.medium.com/max/540/0*OfsT0gY5eHOoaKt8.png)
+
+Logan é um baita filme de super-herói justamente por tentar fugir um pouco da narrativa das histórias dos super-caras. Até existem grandes vilões, como os [Carniceiros](http://marvel.wikia.com/wiki/Reavers_(Earth-616)) (muito bem representados) e o clone do baixinho-mais-invocado-da-Marvel (que nos quadrinhos é o andróide [Albert](http://marvel.wikia.com/wiki/Albert_(Robot)), mas a dinâmica da história se dá mais pelo relacionamento do Wolverine com o professor X e a novata X-23 do que o velho mote de “vamos acabar com o vilão”.
+
+É adorável ver um Charles Xavier senil discutindo com um cada vez mais rabugento Wolverine (fui conquistado na cena que Charlie bota a língua pra fora para mostrar que tomou o remédio). Não se engane, as porradas são maneiríssimas e finalmente fazem jus ao personagem principal, mas o que salva o filme é a preocupação e carinho que “Chuck” e Logan tem pelo outro. E como a X-23 conquista esse carinho em pouco tempo de tela/existência na história.
+
+![Charles Xavier ficou velho](https://miro.medium.com/max/540/0*EsLl6PioH4CmSJw8.png)
+
+Minha namorada ficou horrorizada com o filme e não se divertiu tanto quanto eu, por conta do excesso de violência. Ela se divertiu mesmo nos pós-créditos, achando graça de uma garota em prantos o desfecho do filme (_spoilers!_). Eu até vibrei no início na cena da limousine, mas depois pendi mais para o lado humano e achei as porradas um pouco cansativas.
+
+Curti como a história traz toda a história e narrativa dos X-Men para um pouco mais perto da “realidade”. Sem tantos personagens fazendo piruetas por aí, foi possível sacar mais o peso dos mutantes na realidade que vivem/viviam. Tá certo que iniciativas como Sentinelas ou atitudes do governo e da sociedade geral nos filmes anteriores já davam bons indícios do que peso de ser mutante (_“Você já tentou não ser mutante?”_, perguntou a mãe do Homem de Gelo no segundo filme da série), mas quando dizem que o governo dos EUA consideram o cérebro do Xavier uma arma de destruição em massa, isso soou menos trivial do que o medo do que telepatas ou garotos com olhos que disparam laser retratado nos outros filmes. E é esse o mérito de Logan: menos é mais.
+
+O poder do Caliban (identificar e localizar mutantes) é quase trivial em um mundo onde o Gene-X foi suprimido por terapia genética. Mas é altamente relevante para andamento do filme. O sotaque e a personalidade britânica também dão outro charme a um personagem que sempre foi meio rasteiro nos quadrinhos. O Caliban dos quadrinhos e do filme era um tanto pé no saco, mas com um sarcasmo britânico, até que se tornou interessante.
+
+![A versão básica do Donald Pierce](https://miro.medium.com/max/300/0*vlfifiddzBgnMLK5.jpg)Os Carniceiros também foram retratados de uma maneira excelente: futuristas mas com um pé na realidade. Bem menospresepado que nos quadrinhos (com toda aquela roupa). Mas ao mesmo tempo não chega a apresentar ameaça real a Logan, ao contrário do que fez sua contraparte de tinta e papel que chegou a pregar Wolverine em uma “cruz” no deserto australiano.
+
+O futuro retratado no longa também é bem interessante: alguns avanços cibernéticos (mas nada além da conta), carros, caminhões e tratores automatizados (algo trivial que assume aura sinistra no campo de milho e na estrada) e terapia genética através da comida. São muitos avanços para um futuro tão próximo (12 anos), mas quem sabe o que a gente consegue avançar até 2029?
+
+Um sentimento de que o mundo acabou e só sobraram restos para quem ficou permeia todo o filme. Isso é com os mutantes e os vilões. O novo não veio, a mudança estagnou. Como cantou Raul Seixas em As Profecias: o mundo acabou “sem um estrondo, mas com um gemido“. Os humanos continuam procurando se distrair com as mesmas coisas: cassinos, esportes, etc. Qualquer coisa disponível. Os vilões não tem enormes aspirações, são quase burocráticos, querendo cumprir o dever e ir pra casa. As corporações ganharam e sufocaram qualquer chance de transformação. Acho que é o sentimento mais forte do filme. As pessoas tocam as vidas mas tá tudo dominado por alguém. Parece um eterno período de entressafra. É como se fosse uma consolidação de um movimento que tá surgindo nos dias de hoje, com a perda da liberdade e individualidade, puxado talvez por esse populismo de direita.
+
+Essa metáfora cai bem com a mensagem que os X-Men sempre tentaram passar: o novo, o contraditório, o esquisito e o fabuloso que teima em surgir apesar da sociedade não aceitar/querer. É irônico que o novo/a salvação venha justamente desse lado vencedor, na forma da pequena X-23. No final, Logan é bom por querer dar um ponto final a uma história e pavimentar o caminho para que outras venham. Coisa que não acontece tanto nos quadrinhos.
