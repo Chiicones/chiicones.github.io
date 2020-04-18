@@ -1,8 +1,3 @@
----
-title: Logan e um mundo que se esvai
-tags: formatinho
----
-
 ![Logan PB](https://miro.medium.com/max/540/0*OfsT0gY5eHOoaKt8.png)
 
 Logan é um baita filme de super-herói justamente por tentar fugir um pouco da narrativa das histórias dos super-caras. Até existem grandes vilões, como os [Carniceiros](http://marvel.wikia.com/wiki/Reavers_(Earth-616)) (muito bem representados) e o clone do baixinho-mais-invocado-da-Marvel (que nos quadrinhos é o andróide [Albert](http://marvel.wikia.com/wiki/Albert_(Robot)), mas a dinâmica da história se dá mais pelo relacionamento do Wolverine com o professor X e a novata X-23 do que o velho mote de “vamos acabar com o vilão”.
