@@ -1,4 +1,4 @@
-[Link](formatinho)
+[Link](formatinho/1)
 
 ## Welcome to GitHub Pages
 
