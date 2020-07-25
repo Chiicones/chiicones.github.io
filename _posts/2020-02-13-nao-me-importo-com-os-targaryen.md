@@ -1,9 +1,16 @@
----
-title: Não me importo com os Targaryen — uma crítica a GoT
-tags: formatinho
+title: "Não me importo com os Targaryen — uma crítica a GoT"
+excerpt_separator: "<!--more-->"
+categories:
+  - Formatinho
+tags:
+  - Formatinho
+  - Game of Thrones
+  - Targaryen
 ---
 
 Acabei há um tempo de ver Game of Thrones (GoT) e estava ensaiando escrever uma crítica à série. Não sabia bem que ponto abordar. Li as críticas e comentários de fãs, que sempre chegam com teorias e entendimentos novos e até dá vontade de rever. Gostei da série, até mesmo do final — apesar de reconhecer que a última temporada foi apressada. Mas o ponto que quero dizer é: não me importo com os Targaryen. GoT tem personagems muito mais interessantes.
+
+<!--more-->
 
 Faço aqui uma intervenção nesse texto após ter publicado e divulgado o mesmo. Segue um disclaimer: Vi a série após o fim da mesma, então não tive a emoção de esperar a próxima temporada e nem de ir aos poucos me envolvendo com as personagens. Vi em binge watching durante algumas semanas. Às vezes via 2 ou 3 episódios na mesma noite. Também assisti tudo sem som, pra não acordar as pessoas da casa.
 
