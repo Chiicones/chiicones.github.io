@@ -5,7 +5,8 @@ about: "What would make this theme better?"
 
 <!--
   Before opening a new issue please search all issues at 
-  https://github.com/mmistakes/minimal-mistakes/issues to avoid duplication.
+  https://github.com/mmistakes/jekyll-theme-basically-basic/issues 
+  to avoid duplication.
 -->
 
 ## Summary
