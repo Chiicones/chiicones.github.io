@@ -1,3 +1,4 @@
+---
 title: "Não me importo com os Targaryen — uma crítica a GoT"
 excerpt_separator: "<!--more-->"
 categories:
