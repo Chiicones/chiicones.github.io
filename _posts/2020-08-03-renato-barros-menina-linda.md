@@ -13,13 +13,13 @@ Renato Barros, vocalista da Renato e Seus Blue Caps - banda mais longeva do rock
 
 Transcrevo abaixo um trecho do livro “Dez, Nota Dez! Eu sou Carlos Imperial” que retrata o início da banda :
 
+<!--more-->
+
 Como resultado da boa audiência do programa na TV Rio, Imperial foi chamado para apresentar o seu “Os Brotos Comandam” na Rádio Carioca. Sua estreia foi no dia 1o de setembro de 1964.
 
 “Brotos no 13” começava sempre com Renato e Seus Blue Caps tocando. Numa noite, antes do programa começar, Imperial chegou trazendo um compacto com uma música com um X marcado a caneta. Chamou Renato para conversar num botequim em frente à TV Rio. Queria que tocasse a tal música na noite seguinte. 
 
 Renato olhou o nome do conjunto, chamava-se The Beatles. Nunca ouvira falar neles.
-
-<!--more-->
 
 - Renato, esse conjunto é sucesso no mundo todo, menos aqui no Brasil. Eu quero que os Blue Caps abram o programa de amanhã com essa música deles.- Imperial, isso é impossível! Não vai dar tempo.
 
