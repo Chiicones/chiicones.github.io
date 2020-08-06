@@ -13,7 +13,6 @@ tags:
 
 <!--more-->
 
-
 Foi algo terrível terrível o que aconteceu com o Simonal e isso não dá pra negar. Se você ler a biografia Nem Vem Que Não Tem vai ver que:
 - Houve um racismo brabo entre a alta classe brasileira. Ele era casado com uma loira e se exibia constantemente com carrões e tudo mais. Se a esquerda execrou, cadê a direita pra apoiar?
 - A alta sociedade brasileira também execrou Simona por conta da ligação dele com o movimento [Pilantragem](https://pt.wikipedia.org/wiki/A_Turma_da_Pilantragem), capitaneado pelo devasso Carlos Imperial. "E vamos voltar à Pilantragem…" cantava ele, lembra? Ligaram ele ao jeitinho, malandragem e aos hábitos devassos do Imperial. Não era um "negro quieto/neutro" tipo Pelé. Negro e "malandro"? Não pode. A série documental O Negro no Futebol Brasileiro, baseada no livro de mesmo nome, fala bem essa "falta de posicionamento" do Pelé sobre questões raciais e sociais do Brasil.
@@ -28,8 +27,6 @@ Foi algo terrível terrível o que aconteceu com o Simonal e isso não dá pra n
 - Era época de censura pela ditadura militar. Não duvido que tenha tido alguma ordem dos militares pra abafar o caso. Os militares negavam as práticas de tortura que ocorriam nos porões e casas da ditadura. Se prolongassem o assunto, talvez alguém tivesse que se explicar melhor…
 - Acredito que parte da classe artística realmente se absteve de ajudar ele, não dá pra negar e nem passar pano. Mas isso pode ser por conta dos motivos 3 e 4. Tem um trecho da biografia que é surreal. Roberto Carlos encontra ele após um show, abraça forte e promete ajudar. Depois some e não dá mais notícias. E olha que dizem que o Roberto era alinhado aos militares. Mas, tempos depois, ele banca uma cirurgia do Simonal.
 - A esquerda da época não é a esquerda de hoje. **Muitas vezes a esquerda da época repetia preconceitos da sociedade vigente**. Havia, por exemplo, algum preconceito contra homossexuais. Alguns diziam que era "hábito de burguês" - acho que isso é relatado ou no filme Lampião da Esquina (sobre o jornal alternativo dedicado à causa homossexual) ou São Paulo em HiFi (sobre a cena homossexual em SP nas décadas 60, 70 e 80). Talvez tenham queimado o cantor por não ser um "negro alinhado" ou algo parecido.
-
-![Wilson Simonal em 1971. Crédito: Correio da Manhã (wikipedia)]({{site.baseurl}}/_posts/Simonal%20-%20Correio%20da%20Manha.jpeg)![Simonal - Correio da Manha.jpeg]({{site.baseurl}}/_posts/Simonal - Correio da Manha.jpeg)
 
 Recomendo ler a biografia do Simonal  -  li o **Nem Vem que Não Tem** (que tá em campanha para a edição comemorativa de 10 anos), do Ricardo Alexandre, e tô devendo o **Simonal: Quem não tem swing morre com a boca cheia de formiga**, livro de Gustavo Alonso - pra ficar preso ao documentário **Ninguém Sabe o Duro que Dei**, do Claudio Manoel. Recomendo também ler a biografia de outros artistas da época.
 
