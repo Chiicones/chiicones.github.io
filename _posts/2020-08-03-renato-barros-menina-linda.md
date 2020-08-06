@@ -21,7 +21,7 @@ Como resultado da boa audiência do programa na TV Rio, Imperial foi chamado par
 
 Renato olhou o nome do conjunto, chamava-se The Beatles. Nunca ouvira falar neles.
 
-- Renato, esse conjunto é sucesso no mundo todo, menos aqui no Brasil. Eu quero que os Blue Caps abram o programa de amanhã com essa música deles.- Imperial, isso é impossível! Não vai dar tempo.
+> Renato, esse conjunto é sucesso no mundo todo, menos aqui no Brasil. Eu quero que os Blue Caps abram o programa de amanhã com essa música deles.- Imperial, isso é impossível! Não vai dar tempo.
 
 Mesmo assim o guitarrista levou o compacto para casa. A canção se chamava “I Should Known Better”. Renato achava difícil decorar numa única noitea a letra em inglês e ainda ensaiar com o resto do conjunto. Resolveu fazer uma versão em português que nada tinha a ver com a letra original. Deu-lhe o nome de “Menina Linda”. Antes de começar o programa da TV, explicou a situação para Imperial:
 
