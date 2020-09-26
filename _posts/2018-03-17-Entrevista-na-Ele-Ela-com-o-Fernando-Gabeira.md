@@ -17,6 +17,8 @@ Comprei pra ler a entrevista com o Fernando Gabeira, que, naquele mesmo ano, se 
 
 Na época ele tinha 45 anos e já era um maluco beleza, mas com pé no chão. Se declarava adepto da teoria de Desobediência Civil. A entrevista foi realizada por Sérgio Costa. Segue abaixo:
 
+<!--more-->
+
 ELE ELA — Fernando Gabeira, você é realmente candidato ao governo do Estado do Rio de Janeiro?
 Fernando Gabeira — Sou.
 — E como surgiu essa candidatura?
