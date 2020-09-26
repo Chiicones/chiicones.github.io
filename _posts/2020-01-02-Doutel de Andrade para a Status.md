@@ -1,5 +1,13 @@
-Doutel de Andrade para a Status (1979)
-
+---
+title: Doutel de Andrade para a Status (1979)
+excerpt_separator: "<!--more-->"
+categories:
+  - Entrevistas com Políticos em Revistas Antigas
+tags:
+  - Entrevistas com Políticos em Revistas Antigas
+  - Status
+  - Doutel
+---
 Publicada anteriormente em 29 de novembro de 2015
 
 A entrevista a seguir, mais uma da série entrevista com políticos em revistas masculinas antigas, é com Doutel de Andrade, ex-deputado federal do PTB e do PDT e ex-vice-governador de Santa Catarina, para a Status (maio de 1979). Ele é um dos fundadores do PDT e um dos homens de confiança do Brizola. Segundo o texto da entrevista: “no Brasil, nestes quinze anos, ele foi garganta e símbolo do Partido Trabalhista Brasileiro. Lá fora, PTB é Brizola. Aqui dentro, PTB é Doutel“. Não sei até que ponto isso era verdade em 1979, já que não conhecia nada sobre ele até pegar na revista.
