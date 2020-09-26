@@ -12,6 +12,8 @@ Publicada anteriormente em 29 de novembro de 2015
 
 A entrevista a seguir, mais uma da série entrevista com políticos em revistas masculinas antigas, é com Doutel de Andrade, ex-deputado federal do PTB e do PDT e ex-vice-governador de Santa Catarina, para a Status (maio de 1979). Ele é um dos fundadores do PDT e um dos homens de confiança do Brizola. Segundo o texto da entrevista: “no Brasil, nestes quinze anos, ele foi garganta e símbolo do Partido Trabalhista Brasileiro. Lá fora, PTB é Brizola. Aqui dentro, PTB é Doutel“. Não sei até que ponto isso era verdade em 1979, já que não conhecia nada sobre ele até pegar na revista.
 
+<!--more-->
+
 O jornalista Doutel se aproximou da vida política ao cobrir a Constituinte de 1946 e a campanha à presidência de Getúlio Vargas. Se aproximou de João Goulart, Leonel Brizola e Alberto Pasqualini. Se juntou à Frente Ampla, junto com Lacerda, Jango e JK. E após o Golpe Militar de 64, se uniu ao MDB. Teve os direitos políticos cassados em 1969. O site do PDT tem uma pequena biografia sobre ele:
 
     Com Doutel também foi cassado o PTB, com base no Ato Institucional nº 2, que extinguiu todos os partidos então existentes. O PTB, a segunda maior bancada da Câmara, tinha 113 deputados e tudo indicava que se tornaria o partido mais forte na eleição que se avizinhava. Em substituição às legendas tradicionais, o regime implantou a Arena, partido da ditadura,“majoritário”, detendo 2\3 do Congresso, e o MDB, para fazer a chamada oposição consentida. Impedido de exercer qualquer atividade política por dez anos, Doutel foi para casa, mas mandou em seu lugar a esposa Lígia Doutel de Andrade, eleita pelo MDB (não havia outra alternativa) deputada federal, no pleito seguinte de 1968.
