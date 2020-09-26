@@ -16,6 +16,8 @@ Depois da entrevista com o Gabeira no post anterior, publico agora uma entrevist
 
 Então a entrevista para a Status aconteceu justamente no momento que FHC se lançou efetivamente no meio político, o que é algo bem bacana. Não encontrei esse material em outra parte da internet, então acredito que transcrevê-la seja algo bom para o debate político em geral. A entrevista foi realizada por Jorge Cunha Lima (acho que esse daqui). Segue ela abaixo:
 
+<!--more-->
+
 O intelectual Fernando Henrique Cardoso, filho e neto de generais, fala de militares, de estudantes, do futuro político do país… Entrevista a Jorge da Cunha Lima.
 
 Fernando Henrique Cardoso afirma enfaticamente que não é função do intelectual soprar no ouvido do príncipe, muito menos no dos líderes sindicais. Mas o que o professor eleito para a cátedra “Simon Bolivar”, por dois anos, na Universidade de Cambridge, na Inglaterra, não consegue evitar, como intelectual, é que ele próprio seja considerado “o príncipe dos sociólogos brasileiros”.
