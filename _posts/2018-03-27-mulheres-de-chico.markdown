@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "mulheres de chico há um tempão atrás"
+title:  "Mulheres de Chico há um tempão atrás"
 date:   2018-03-27 08:27:14 -0300
-categories: blog
+categories: formatinho
 ---
-# mulheres de chico há um tempão atrás
-
 ## texto escrito e publicado originalmente em 4 de maio de 2010
 
 Domingo último fui no Mulheres de Chico, tipo um bloco de carnaval que refaz as músicas do Chico Buarque em forma de axé e outros ritmos negros de uma forma lindaça. Dançante mesmo, de arriscar um passinho e mexer o corpo pra quem não é de arriscar passinhos e mexer o corpo.
