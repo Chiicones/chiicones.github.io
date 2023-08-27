@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Chico lê, vê e recomenda 99"
+date:   2023-08-26 11:30:14 -0300
+categories: boletim
+---
+# Testando a volta do boletim, agora em uma outra plataforma/domínio
+
+Parei o meu boletim porque o substack, antiga plataforma de hospedagem e envio da newsletter, estava dando problema. Consegui então configurar o novo domínio do meu blog - ainda não com o layout que eu queria e sem espaço para comentários - mas vou fazendo ajuste aos poucos. É isso! Aproveitem!
+
+**Tão bebendo água?**
+
+[![Muita água nessa hora!](http://chico.jor.br/wp-content/uploads/2023/08/IMG_20230823_152949-scaled.jpg "Companheiro de todas as horas nesse calorão")
+
+**Por que Lula precisa indicar uma mulher negra ao STF**; *Manifesto assinado por 100 entidades da sociedade civil pede que presidente considere importância da representatividade para o cargo; mulheres negras trazem vivência que nenhum tribunal tem, diz jurista por Gil Luiz Mendes* | Ponte Jornalismo - [link](https://ponte.org/por-que-lula-precisa-indicar-uma-mulher-negra-ao-stf/)
+
+**Podcast: Resumido #226 - Reféns do celular / Sexo em carros autônomos / Controle parental**; *No RESUMIDO #226: estamos reféns do celular, sexo em carros autônomos, tirem os nerds do poder, Google acelera na IA de música, hackers invadem satélite do exército dos EUA, Visa e os ingressos NFT e muito mais.* | Resumido.cc [link](https://resumido.cc/podcasts/refens-do-celular-sexo-em-carros-autonomos-controle-parental/)
+
