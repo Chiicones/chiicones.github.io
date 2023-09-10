@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Chico lê, vê e recomenda #100"
+date:   2023-09-10 11:35:14 -0300
+categories: boletim
+comments: true
+---
+# Edição #100
+
+E esse boletim chegou à edição 100! Ainda quero mudar o layout disso aqui, mas vamos aos poucos. O próximo passo mais imediato é colocar espaço para que leitores possam fazer comentários aqui.
+
+Esse sábado, vimos [O Conformista](https://www.imdb.com/title/tt0065571/?ref_=nv_sr_srsg_0_tt_4_nm_0_q_os%2520conformistas), de Bernardo Bertolucci. Pode-se dizer que o filme fala sobre a ascensão e queda do facismo do ponto de vista de seus agentes (e o entorno). É maravilhoso visualmente. E é bem dinâmico para um filme de 1970. Tem pra ver na plataforma [Mubi](https://mubi.com/pt/br/films/the-conformist). Um diálogo específico me pareceu bastante atual por conta do cenário bolsonarista da política brasileira: 
+
+>Ítalo: Um homem normal? Para mim, homem normal é aquele que vira a cabeça para ver o traseiro de uma mulher bonita. A questão não é apenas virar a cabeça. Existem cinco ou seis razões. E ele fica feliz em encontrar pessoas que são como ele, iguais a ele. Por isso ele gosta de praia lotada, de futebol, do barzinho do centro...
+> Marcello: Na Piazza Veneza.
+> Ítalo: Ele gosta de pessoas parecidas com ele e não confia nas que são diferentes. É por isso que um homem normal é um verdadeiro irmão, um verdadeiro cidadão, um verdadeiro patriota...
+> Marcello: Um verdadeiro fascista.
+
+No boletim anterior, falei sobre a Guerra na Ucrânia. Desde então vi uma notícia que explica melhor a razão da invasão da Ucrânia pela Rússia: os ucranianos têm reservas mineirais equivalentes à US$ 12 trilhões - não só de minério de ferro, mas carvão, titânio e manganês, além de ouro, gás natural, petróleo, caulim, sal, gesso, zircônio e urânio. E os russos querem essas reservas para si. Veja mais sobre o assunto nessa matéria de Eugen Theise para a [DW](https://noticias.uol.com.br/ultimas-noticias/deutschewelle/2023/08/30/a-russia-quer-drenar-a-ucrania-guerra-revela-sede-de-r-60-trilhoes-de-putin.htm). 
+
+**Gojira**
+
+Falando em guerra, mas indo para o campo de ficção, o [trailer de Godzilla Minus One](https://www.youtube.com/watch?v=r7DqccP1Q_4) torna novamente, de forma mais palatável, o monstro japonês mais famoso de todos os tempos em uma arma de destruição em massa ambulante. É um "volta às raízes". Será que vai passar no cinema? O filme estreia em 3 de novembro de 2023 nos [cinemas japoneses](https://www.mundoconectado.com.br/cinema/godzilla-minus-one-veja-o-novo-trailer-do-filme-que-estreia-ainda-em-2023/).
+
+[![Gojira. Créditos: Divulgação/Toho](https://www.mundoconectado.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=910&height=568&format=webp&quality=91&imagick=uploads.mundoconectado.com.br/2023/09/04074656/23_09_04_073113-912x569.jpg "Créditos: Divulgação/Toho")
+
+Por enquanto é só. Vamos pra algumas leituras e audições.
+
+## Clipping
+
+**Recriação 3D Tenochtitlan, a capital do império Asteca**
+
+*Após 1,5 ano de trabalho, Thomas Kole (e mais uma galera) recriou a cidade de Mexico-Tenochtitlan, uma espécie de Veneza americana, localizada no meio do lago Texcoco. Havia templos enormes e plantações de milho, feijões, flores - tudo sustentado em espécies de "jangadas" interconectadas entre si. Os espanhóis, quando chegaram à América, consideravam a cidade algo maravilhoso, talvez sem comparação com cidades europeias. Tenochtitlan na época tinha 200 mil habitantes e sua área de influência era sobre mais de 5 milhões de pessoas.*
+
+*Mas isso não impediu que destruissem a cidade, drenassem o lago para construir no local o que hoje é a Cidade do México. Veja como era a cidade em 1518 reconstruida em modelo 3D [aqui](https://tenochtitlan.thomaskole.nl/)*
+
+**Desastres climáticos mais frequentes e mortíferos: o que o RS ensina para o país**; Gestores públicos e população precisam desenvolver cultura de prevenção, assim como acontece na costa leste do EUA, diz especialista por Cristiane Prizibisczki para o [(O)Eco](https://oeco.org.br/noticias/desastres-climaticos-mais-frequentes-e-mortiferos-o-que-rs-ensina-para-o-pais/). Acho bizarro ver notícias sobre o Rio Grande do Sul sobre chuvas torrenciais e secas, o que antes parecia que só acontecia em certas regiões do Ceará. Talvez o Estado possa se beneficiar do programa para recuperar terras degradadas do [governo federal](https://oeco.org.br/reportagens/brasil-quer-alavancar-recuperacao-de-terras-degradadas/) 
+
+*Menos de três meses após o último evento climático extremo registrado no Rio Grande do Sul, o estado volta a ser castigado por um ciclone que, até a tarde desta quarta-feira (6), já havia deixado 32 mortos e centenas de desabrigados. As imagens da elevação das águas no Rio das Antas, que subiram mais de 20 metros – o equivalente a um prédio de sete andares – causaram espanto, mas o que também chama atenção no fenômeno é a frequência, diz especialista.*
+
+(...)
+
+*Isto é, os eventos extremos estão se tornando não só mais frequentes, mas também mais mortais. Números do Sistema Integrado de Informações sobre Desastres, do Ministério da Integração, mostram que, entre 2017 e 2021, tais eventos causaram 14 mortes. Somente em 2023 já foram contabilizados ao menos 47 óbitos.*
+
+*“A repetição [de eventos extremos] tem acontecido muito rapidamente. Não é um evento que você olha e fala: não acontecia há 50, 100 anos, não! Está acontecendo de maneira repetitiva, com uma frequência muito grande, o que é um prenúncio da tendência ao agravamento”, explicou a ((o))eco o professor do Instituto de Energia e Meio Ambiente da Universidade de São Paulo, Pedro Côrtes.*
+
+**Porteira aberta para o modelo repressivo de Guarda Municipal**; O Supremo Tribunal Federal não transformou as guardas em “polícias militares municipais”;  por outro lado, o STF não impediu que as guardas se transformem em polícias militares municipais. Artigo de Luiz Flavio Sapori publicado em [Ponte Jornalismo](https://ponte.org/artigo-porteira-aberta-para-o-modelo-repressivo-de-guarda-municipal/)
+
+*Não é desejável que as Guardas Municipais se consolidem como polícias locais repressivas, compreendendo suas atribuições para além dos crimes e atos infracionais que atentem contra o patrimônio público municipal. Por um lado, cria-se um foco crônico de disputa de competências entre Guardas e Polícias Militares, acentuando a já notória frouxa articulação do sistema de segurança pública na sociedade brasileira. Por outro lado, a incorporação do viés repressivo de policiamento tende a acentuar os abusos no uso da força física na ação operacional com eventual repercussão nos níveis de letalidade.*
+
+**Saiu 139**; A lista de lançamentos da Revista NOIZE é um projeto de curadoria de músicas nacionais, entregue para o leitor toda sexta-feira. O trabalho tem continuidade na plataforma do Spotify, com a playlist Lançamentos que você deveria ouvir, disponível no nosso perfil com o melhor para você. Nesta semana, não deixe de conferir a nova versão de “Ombrim”, de Marina Sena com Chicão do Piseiro, Roni e MTS no Beat, o disco Música do esquecimento, da Sophia Chablau e uma enorme perda de tempo, e o single “Lili”, de Don L. Na [Noize](https://noize.com.br/saiu-139-lancamentos-que-voce-deveria-ouvir)
