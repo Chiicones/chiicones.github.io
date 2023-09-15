@@ -3,6 +3,7 @@ layout: post
 title:  "Mulheres de Chico há um tempão atrás"
 date:   2018-03-27 08:27:14 -0300
 categories: formatinho
+comments: true
 ---
 ## texto escrito e publicado originalmente em 4 de maio de 2010
 

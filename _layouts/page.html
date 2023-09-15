@@ -5,6 +5,19 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+
+<!-- Coloque o código do Google Analytics aqui -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6108599105"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-6108599105');
+</script>
+
+    
   </header>
 
   <div class="post-content">

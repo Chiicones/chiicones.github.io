@@ -3,6 +3,7 @@ layout: post
 title:  "Logan e um mundo que se esvai"
 date:   2018-01-18 10:30:14 -0300
 categories: blog
+comments: true
 ---
 Logan é um baita filme de super-herói justamente por tentar fugir um pouco da narrativa das histórias dos super-caras. Até existem grandes vilões, como os Carniceiros (muito bem representados) e o clone do baixinho-mais-invocado-da-Marvel (que nos quadrinhos é o andróide Albert, mas a dinâmica da história se dá mais pelo relacionamento do Wolverine com o professor X e a novata X-23 do que o velho mote de “vamos acabar com o vilão”.
 
