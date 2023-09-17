@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Chico lê, vê e recomenda #101"
-date:   2023-09-17 11:35:14 -0300
+date:   2023-09-16 11:35:14 -0300
 categories: boletim
 tags: [boletim, newsletter]
 comments: true
