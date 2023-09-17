@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Chico lê, vê e recomenda #101"
-date:   2023-09-17 08:00:14 -0300
+date:   2023-09-17 10:08:00 -0300
 categories: boletim
 tags: [boletim, newsletter]
 comments: true
@@ -12,7 +12,9 @@ Progressão do ano: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░
 
 Agora com espaço para comentários! Basta fazer o cadastro. Não precisa de cadastro para clicar nos emojis.
 
-Próximo passo é ir mexendo no layout. E trazer pra essa cantinho da internet uns textos meus espalhados por aí.
+Consegui colocar exibição de vídeos na página. Próximo passo é ir mexendo no layout. E trazer pra essa cantinho da internet uns textos meus espalhados por aí.
+
+**Loto não tão fácil**
 
 Pra ganhar o prêmio da Lotofácil da Independência era necessário acertar 15 números. Daí era só correr para o abraço e levar R$ 192 milhões. Acertei 13 e levei R$ 30. Peguei esse dinheiro e, aproveitando que a Lotérica fica dentro de um Extra, fiz compras pra casa. Tem uma [ex-BBB](https://extra.globo.com/economia/noticia/2023/09/ex-bbb-milionaria-saiba-quais-as-chances-de-ganhar-na-lotofacil-como-paulinha-leite.ghtml) que é especializada em bolões e já ganhou 54 vezes na loteria.
 
