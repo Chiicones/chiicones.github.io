@@ -27,9 +27,14 @@ Seria fantástico. Dá uma olhada.
 Foi feito com ferramenta inteligência artificial Midjourney. Peguei no [Reddit](https://www.reddit.com/r/midjourney/comments/16fw1ab/what_a_georges_m%C3%A9li%C3%A8s_superhero_movie_would_look/).
 
 
-**Guerra na Ucrânia**
+**O novo clipe dos Rolling Stones**
 
-No boletim anterior, falei sobre a Guerra na Ucrânia. Desde então vi uma notícia que explica melhor a razão da invasão da Ucrânia pela Rússia: os ucranianos têm reservas mineirais equivalentes à US$ 12 trilhões - não só de minério de ferro, mas carvão, titânio e manganês, além de ouro, gás natural, petróleo, caulim, sal, gesso, zircônio e urânio. E os russos querem essas reservas para si. Veja mais sobre o assunto nessa matéria de Eugen Theise para a [DW](https://noticias.uol.com.br/ultimas-noticias/deutschewelle/2023/08/30/a-russia-quer-drenar-a-ucrania-guerra-revela-sede-de-r-60-trilhoes-de-putin.htm). 
+Já viram?
+
+{% include youtube.html id="_mEC54eTuGw" %}
+
+
+
 
 **Gojira**
 
