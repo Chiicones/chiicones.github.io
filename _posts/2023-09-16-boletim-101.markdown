@@ -34,8 +34,6 @@ Já viram?
 {% include youtube.html id="_mEC54eTuGw" %}
 
 
-
-
 **Gojira**
 
 Falando em guerra, mas indo para o campo de ficção, o [trailer de Godzilla Minus One](https://www.youtube.com/watch?v=r7DqccP1Q_4) torna novamente, de forma mais palatável, o monstro japonês mais famoso de todos os tempos em uma arma de destruição em massa ambulante. É um "volta às raízes". Será que vai passar no cinema? O filme estreia em 3 de novembro de 2023 nos [cinemas japoneses](https://www.mundoconectado.com.br/cinema/godzilla-minus-one-veja-o-novo-trailer-do-filme-que-estreia-ainda-em-2023/).
@@ -50,7 +48,6 @@ Por enquanto é só. Vamos pra algumas leituras e audições.
 
 ## Clipping
 
-
 **lejos: o que nos impede de conhecer mais a música da Colômbia por Jarmeson de Lima para [Revista Continente](https://revistacontinente.com.br/edicoes/273/tao-proximos-e-tan-lejos--o-que-nos-impede-de-conhecer-mais-a-musica-da-colombia)**; 
 
 *Ok, então um país do tamanho da Bahia consegue mostrar ao mundo que é mais do que apenas salsa, cumbia e Shakira, e consegue representar a diversidade que sua geografia possui? Porque apesar de “pequeno”, o país tem regiões bem distintas que impactam diretamente a cultura e os hábitos da população: temos uma parte andina e, ao lado do Pacífico em paralelo com o norte caribenho, uma grande área que é coberta pela Amazônia.*
@@ -60,6 +57,9 @@ Por enquanto é só. Vamos pra algumas leituras e audições.
 **Como eram feitos os guarda-chuvas na China há 1000 anos?**; spoiler: com bambus, linhas e colas caseiras no [Tiktok](https://vm.tiktok.com/ZMjBeaocT/)
 
 **Com o primeiro-ministro Modi, a Índia está caminhando para o totalitarismo religioso**; *a Al Jazeera aponta para os riscos para muçulmanos que vivem no País. Veja esse vídeo (em inglês) no* [YouTube da Al Jazeera](https://www.youtube.com/watch?v=hmq02A8rXsk)
+
+**Índia será a próxima superpotência global?**; *A Índia passa por um momento crucial: é uma economia de crescimento rápido com uma das maiores e mais jovens populações do mundo. Em 2022, ela entrou pela primeira vez no grupo das cinco maiores economias. E várias projeções indicam que, em 2030, estará atrás apenas da China e dos Estados Unidos. Ao mesmo tempo, a Índia está ganhando também um papel geopolítico maior. Isso em meio a incertezas causadas pela rivalidade cada vez mais acirrada entre Estados Unidos e China e também no contexto da guerra na Ucrânia. Afinal, a Índia vai virar uma superpotência global?* no YouTube da [DW Brasil](https://www.youtube.com/watch?v=eqL8qI5IvQE)
+
 
 **Revista elege os 100 escudos mais bonitos do mundo com quatro brasileiros**; *Eleição tradicional da "Four Four Two" coloca Chapecoense, Fluminense, Palmeiras e Vasco entre os 100 escudos mais bonitos do mundo. Por BMFC para o [Globoesporte]*(https://ge.globo.com/futebol/futebol-internacional/noticia/2023/09/15/revista-elege-os-100-escudos-mais-bonitos-do-mundo-com-quatro-brasileiros-veja-lista.ghtml)
 
