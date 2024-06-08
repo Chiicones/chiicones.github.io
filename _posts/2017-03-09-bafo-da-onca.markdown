@@ -4,7 +4,7 @@ title:  "Olha a onda iáiá"
 date:   2017-03-09 09:27:14 -0300
 categories: blog
 comments: true
-thumbnail: /imagens/Bloco-O-Bafo-da-Onça.jpeg
+thumbnail: /imagens/Bloco-Bafo-da-Onça.png
 ---
 Dois dos blocos de carnaval de rua mais tradicionais do Rio tiveram destinos completamente diferentes. Em setembro de 2010, o prefeito Eduardo Paes inaugurou a nova sede do Cacique de Ramos. A prefeitura investiu R$ 1 milhão para reformar a quadra, que passou a contar com um centro cultural e uma quadra de esportes. Em maio deste ano, a Assembleia Legislativa do Rio de Janeiro (Alerj) concedeu ao Cacique a medalha Tiradentes — a mais alta condecoração do legislativo estadual do Rio — em homenagem aos seus 50 anos. Também em 2011 a escola de samba Estação Primeira da Mangueira escolheu o bloco como tema do seu carnaval de 2012. A pergunta que fica é: e o Bafo da Onça? Não teve todo esse destaque mas continua na ativa e está ensaiando a sua volta.
 
@@ -18,7 +18,7 @@ Como conta Roberto Saldanha (mais conhecido como Capilé), presidente do Bafo h�
 
 Segundo ele, foi com o Bafo que surgiram os blocos com fantasias uniformizadas. “Antes o povo saia com qualquer roupa, de qualquer jeito, vestido de mulher, aqueles negócios… Aí o Bafo não. O Bafo colocou aquele short de onça (nos homens) e as meninas iam de sainha (de onça). O lado esquerdo era mulher e o lado direito era homem. Eram duas filas que saiam juntas. Não misturava. As crianças saiam (juntas). Minha mãe saia com a criançada toda, meu irmão, filha da vizinha. Era uma ala quase, porque a família toda saia”. Sete anos mais tarde, o Cacique de Ramos surgiria com fantasias inspiradas nos índios (daí o nome “Cacique”).
 
-[![Bafo da Onça desfilando](/imagens/Bloco-O-Bafo-da-Onça.jpeg "Fonte: Wikipedia")
+[![Bafo da Onça desfilando](/imagens/Bloco-Bafo-da-Onça.png "Fonte: Wikipedia")
 
 Tião colocou as mais belas mulatas do bairro na frente do bloco, o que foi logo seguido por outras agremiações. O radialista e empresário Oswaldo Sargentelli recrutou algumas dançarinas do Bafo e inventou as “Mulatas do Sargentelli”. Em 1970 elas eram parte da atração de sua casa de espetáculos Sambão, criada em Copacabana um ano antes. O “mulatólogo” e suas dançarinas participavam dos ensaios e desfiles do bloco. Uma das mais famosas foi a espetacular Adele de Fátima, que foi coroada rainha da bateria da Mocidade Independente de Padre Miguel e participou de algumas chanchadas no cinema (como “Histórias que Nossas Babás não Contavam”) e programas de televisão. Outra foi Solange Couto, que mais tarde viria a estrelar diversas telenovelas da Globo (ficou famosa com o bordão “Não é brinquedo não?” na novela O Clone).
 
