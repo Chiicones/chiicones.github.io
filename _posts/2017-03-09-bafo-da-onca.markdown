@@ -4,6 +4,7 @@ title:  "Olha a onda iáiá"
 date:   2017-03-09 09:27:14 -0300
 categories: blog
 comments: true
+thumbnail: /assets/images/Bloco_O_Bafo_da_Onça.jpeg
 ---
 Dois dos blocos de carnaval de rua mais tradicionais do Rio tiveram destinos completamente diferentes. Em setembro de 2010, o prefeito Eduardo Paes inaugurou a nova sede do Cacique de Ramos. A prefeitura investiu R$ 1 milhão para reformar a quadra, que passou a contar com um centro cultural e uma quadra de esportes. Em maio deste ano, a Assembleia Legislativa do Rio de Janeiro (Alerj) concedeu ao Cacique a medalha Tiradentes — a mais alta condecoração do legislativo estadual do Rio — em homenagem aos seus 50 anos. Também em 2011 a escola de samba Estação Primeira da Mangueira escolheu o bloco como tema do seu carnaval de 2012. A pergunta que fica é: e o Bafo da Onça? Não teve todo esse destaque mas continua na ativa e está ensaiando a sua volta.
 
