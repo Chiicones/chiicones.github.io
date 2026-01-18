@@ -23,7 +23,7 @@ email: chicobarbosa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Repositório de textos meus diversos espalhados por aí. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://chiicones.github.io
+url: "https://chiicones.github.io"
 twitter_username: jekyllrb
 github_username:  jekyll
 
