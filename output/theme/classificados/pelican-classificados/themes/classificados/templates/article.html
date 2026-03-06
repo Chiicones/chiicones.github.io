@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ article.title }} — {{ SITENAME }}</title>
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body class="article-page">
+
+  <header class="masthead masthead--compact">
+    <div class="masthead-top">
+      <a href="{{ SITEURL }}/" class="back-link">← Voltar aos classificados</a>
+      <span class="edition">{{ article.date.strftime('%d %b %Y') }}</span>
+    </div>
+    <div class="masthead-title">
+      <div class="masthead-rule"></div>
+      <a href="{{ SITEURL }}/" class="site-name-link">
+        <h1 class="site-name">{{ SITENAME | upper }}</h1>
+      </a>
+      <div class="masthead-rule double"></div>
+    </div>
+  </header>
+
+  <main class="article-main">
+
+    <article class="article-full">
+
+      <div class="article-header">
+        <div class="article-meta-row">
+          <a href="{{ SITEURL }}/category/{{ article.category.slug }}.html" class="article-category">
+            {{ article.category }}
+          </a>
+          {% if article.tags %}
+            {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/tag/{{ tag.slug }}.html" class="article-tag">#{{ tag }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
+
+        <h1 class="article-title">{{ article.title }}</h1>
+
+        <div class="article-dateline">
+          Publicado em
+          <a href="{{ SITEURL }}/{{ article.date.strftime('%Y/%m/%d') }}/" class="article-date-link">
+            {{ article.date.strftime('%d de %B de %Y') }}
+          </a>
+          {% if article.author %}
+            · por <span class="article-author">{{ article.author }}</span>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="article-infobox">
+        <div class="infobox-title">Informações do Evento</div>
+        <div class="infobox-grid">
+          {% if article.location %}
+          <div class="infobox-item">
+            <span class="infobox-label">Local</span>
+            <a href="{{ SITEURL }}/tag/{{ article.location | lower | replace(' ', '-') }}.html" class="infobox-value infobox-link">
+              ◎ {{ article.location }}
+            </a>
+          </div>
+          {% endif %}
+
+          {% if article.event_date %}
+          <div class="infobox-item">
+            <span class="infobox-label">Data do Evento</span>
+            <a href="{{ SITEURL }}/{{ article.event_date | replace('/', '/') }}/" class="infobox-value infobox-link">
+              ◷ {{ article.event_date }}
+            </a>
+          </div>
+          {% endif %}
+
+          {% if article.price %}
+          <div class="infobox-item">
+            <span class="infobox-label">Entrada</span>
+            <span class="infobox-value infobox-price">{{ article.price }}</span>
+          </div>
+          {% endif %}
+
+          {% if article.organizer %}
+          <div class="infobox-item">
+            <span class="infobox-label">Organização</span>
+            <span class="infobox-value">{{ article.organizer }}</span>
+          </div>
+          {% endif %}
+
+          {% if article.contact %}
+          <div class="infobox-item">
+            <span class="infobox-label">Contato</span>
+            <span class="infobox-value">{{ article.contact }}</span>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="article-divider">✦ ✦ ✦</div>
+
+      <div class="article-body">
+        {{ article.content }}
+      </div>
+
+      {% if article.tags %}
+      <div class="article-tags-footer">
+        <span class="tags-label">Relacionado:</span>
+        {% for tag in article.tags %}
+          <a href="{{ SITEURL }}/tag/{{ tag.slug }}.html" class="tag-pill">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+    </article>
+
+    {% if articles %}
+    <aside class="article-sidebar">
+      <div class="sidebar-header">Outros Eventos</div>
+      {% for other in articles %}
+        {% if other.slug != article.slug %}
+          <div class="sidebar-card">
+            <a href="{{ SITEURL }}/{{ other.url }}" class="sidebar-card-link">
+              <span class="sidebar-cat">{{ other.category }}</span>
+              <span class="sidebar-title">{{ other.title }}</span>
+              {% if other.location %}
+                <span class="sidebar-loc">◎ {{ other.location }}</span>
+              {% endif %}
+              {% if other.price %}
+                <span class="sidebar-price">{{ other.price }}</span>
+              {% endif %}
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </aside>
+    {% endif %}
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <p>{{ SITENAME }} · <a href="{{ SITEURL }}/">← Todos os eventos</a></p>
+  </footer>
+
+  <script src="{{ SITEURL }}/theme/js/main.js"></script>
+</body>
+</html>
