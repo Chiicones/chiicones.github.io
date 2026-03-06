@@ -1,0 +1,348 @@
+---
+title: "Indicadores Econômicos — Banco Central do Brasil"
+format:
+  dashboard:
+    theme: flatly
+    nav-buttons:
+      - icon: github
+        href: https://github.com/SEU-USUARIO/SEU-REPO
+    logo: https://www.bcb.gov.br/Content/img/logobcb.svg
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(httr)
+library(jsonlite)
+library(dplyr)
+library(lubridate)
+library(plotly)
+library(DT)
+
+# ── Função de download ──────────────────────────────────────
+baixar_serie <- function(codigo, data_inicio = NULL) {
+  params <- list(formato = "json", dataFinal = format(Sys.Date(), "%d/%m/%Y"))
+  if (!is.null(data_inicio))
+    params$dataInicial <- format(data_inicio, "%d/%m/%Y")
+
+  url  <- paste0("https://api.bcb.gov.br/dados/serie/bcdata.sgs.", codigo, "/dados")
+  resp <- tryCatch(GET(url, query = params, timeout(30)), error = function(e) NULL)
+  if (is.null(resp) || http_error(resp)) return(NULL)
+
+  dados <- tryCatch(fromJSON(content(resp, "text", encoding = "UTF-8")), error = function(e) NULL)
+  if (is.null(dados) || nrow(dados) == 0) return(NULL)
+
+  dados |>
+    transmute(data = dmy(data), valor = as.numeric(valor)) |>
+    filter(!is.na(data), !is.na(valor))
+}
+
+# ── Baixa todas as séries (últimos 20 anos) ─────────────────
+di <- Sys.Date() - years(20)
+
+selic_meta     <- baixar_serie(432,   di)
+selic_efetiva  <- baixar_serie(11,    di)
+ipca_mensal    <- baixar_serie(433,   di)
+ipca_12m       <- baixar_serie(13522, di)
+cambio_compra  <- baixar_serie(10813, di)
+cambio_venda   <- baixar_serie(1,     di)
+pib_trimestral <- baixar_serie(22109, di)
+pib_anual      <- baixar_serie(7326,  di)
+
+# ── Helpers ─────────────────────────────────────────────────
+ultimo   <- function(df) tail(df$valor, 1)
+fmt_pct  <- function(x) paste0(format(round(x, 2), nsmall = 2, decimal.mark = ","), "%")
+fmt_brl  <- function(x) paste0("R$ ", format(round(x, 4), nsmall = 4, big.mark = ".", decimal.mark = ","))
+variacao <- function(df) {
+  d <- tail(df$valor, 1) - tail(df$valor, 2)[1]
+  paste0(if (d >= 0) "▲ +" else "▼ ", format(round(d, 2), nsmall = 2, decimal.mark = ","))
+}
+
+grafico <- function(df, titulo, unidade = "%", cor = "#1a5276") {
+  ylab <- if (unidade == "R$") "R$" else "%"
+  tmpl <- if (unidade == "R$") "%{x|%d/%m/%Y}: <b>R$ %{y:.4f}</b><extra></extra>"
+          else                 "%{x|%d/%m/%Y}: <b>%{y:.2f}%</b><extra></extra>"
+
+  plot_ly(df, x = ~data, y = ~valor, type = "scatter", mode = "lines",
+          line = list(color = cor, width = 2), name = titulo,
+          hovertemplate = tmpl) |>
+    add_trace(fill = "tozeroy", fillcolor = paste0(cor, "22"),
+              line = list(width = 0), showlegend = FALSE, hoverinfo = "skip") |>
+    layout(
+      title       = list(text = titulo, font = list(size = 14)),
+      xaxis       = list(title = "", showgrid = FALSE),
+      yaxis       = list(title = ylab, gridcolor = "#ecf0f1"),
+      hovermode   = "x unified",
+      plot_bgcolor  = "white",
+      paper_bgcolor = "white",
+      font          = list(family = "Inter, sans-serif"),
+      margin        = list(t = 40)
+    ) |>
+    config(displaylogo = FALSE, locale = "pt-BR")
+}
+
+tabela_stats <- function(df, unidade = "%") {
+  fmt <- if (unidade == "R$") function(x) fmt_brl(x) else function(x) fmt_pct(x)
+  data.frame(
+    Estatística = c("Mínimo", "Máximo", "Média", "Mediana", "Desvio padrão", "Observações"),
+    Valor = c(fmt(min(df$valor)), fmt(max(df$valor)), fmt(mean(df$valor)),
+              fmt(median(df$valor)), fmt(sd(df$valor)), as.character(nrow(df)))
+  )
+}
+```
+
+# Selic
+
+## Row {height=20%}
+
+```{r}
+#| content: valuebox
+#| title: "Selic Meta — último valor"
+list(icon = "percent", color = "primary", value = fmt_pct(ultimo(selic_meta)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Variação"
+list(icon = "arrow-left-right", color = "secondary", value = variacao(selic_meta))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Selic Efetiva — último valor"
+list(icon = "graph-up", color = "info", value = fmt_pct(ultimo(selic_efetiva)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Última atualização"
+list(icon = "calendar3", color = "light",
+     value = format(tail(selic_meta$data, 1), "%d/%m/%Y"))
+```
+
+## Row {height=55%}
+
+```{r}
+#| title: Taxa Selic Meta (% a.a.)
+grafico(selic_meta, "Taxa Selic Meta (% a.a.)", cor = "#1a5276")
+```
+
+```{r}
+#| title: Taxa Selic Efetiva (% a.a.)
+grafico(selic_efetiva, "Taxa Selic Efetiva (% a.a.)", cor = "#2e86c1")
+```
+
+## Row {height=25%}
+
+```{r}
+#| title: Estatísticas — Selic Meta
+datatable(tabela_stats(selic_meta), rownames = FALSE, options = list(dom = "t"))
+```
+
+```{r}
+#| title: Estatísticas — Selic Efetiva
+datatable(tabela_stats(selic_efetiva), rownames = FALSE, options = list(dom = "t"))
+```
+
+# IPCA
+
+## Row {height=20%}
+
+```{r}
+#| content: valuebox
+#| title: "IPCA Mensal — último valor"
+list(icon = "percent", color = "warning", value = fmt_pct(ultimo(ipca_mensal)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Variação mensal"
+list(icon = "arrow-left-right", color = "secondary", value = variacao(ipca_mensal))
+```
+
+```{r}
+#| content: valuebox
+#| title: "IPCA Acumulado 12m"
+list(icon = "graph-up-arrow", color = "danger", value = fmt_pct(ultimo(ipca_12m)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Última atualização"
+list(icon = "calendar3", color = "light",
+     value = format(tail(ipca_mensal$data, 1), "%d/%m/%Y"))
+```
+
+## Row {height=55%}
+
+```{r}
+#| title: IPCA Mensal (%)
+grafico(ipca_mensal, "IPCA — Variação Mensal (%)", cor = "#d35400")
+```
+
+```{r}
+#| title: IPCA Acumulado 12 meses (%)
+grafico(ipca_12m, "IPCA — Acumulado 12 meses (%)", cor = "#e74c3c")
+```
+
+## Row {height=25%}
+
+```{r}
+#| title: Estatísticas — IPCA Mensal
+datatable(tabela_stats(ipca_mensal), rownames = FALSE, options = list(dom = "t"))
+```
+
+```{r}
+#| title: Estatísticas — IPCA 12m
+datatable(tabela_stats(ipca_12m), rownames = FALSE, options = list(dom = "t"))
+```
+
+# Câmbio
+
+## Row {height=20%}
+
+```{r}
+#| content: valuebox
+#| title: "USD/BRL Compra — último valor"
+list(icon = "currency-dollar", color = "success", value = fmt_brl(ultimo(cambio_compra)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Variação"
+list(icon = "arrow-left-right", color = "secondary", value = variacao(cambio_compra))
+```
+
+```{r}
+#| content: valuebox
+#| title: "USD/BRL Venda — último valor"
+list(icon = "currency-exchange", color = "info", value = fmt_brl(ultimo(cambio_venda)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Última atualização"
+list(icon = "calendar3", color = "light",
+     value = format(tail(cambio_compra$data, 1), "%d/%m/%Y"))
+```
+
+## Row {height=55%}
+
+```{r}
+#| title: Câmbio USD/BRL — Compra (R$)
+grafico(cambio_compra, "Câmbio USD/BRL — Compra (R$)", unidade = "R$", cor = "#1e8449")
+```
+
+```{r}
+#| title: Câmbio USD/BRL — Venda (R$)
+grafico(cambio_venda, "Câmbio USD/BRL — Venda (R$)", unidade = "R$", cor = "#27ae60")
+```
+
+## Row {height=25%}
+
+```{r}
+#| title: Estatísticas — Compra
+datatable(tabela_stats(cambio_compra, "R$"), rownames = FALSE, options = list(dom = "t"))
+```
+
+```{r}
+#| title: Estatísticas — Venda
+datatable(tabela_stats(cambio_venda, "R$"), rownames = FALSE, options = list(dom = "t"))
+```
+
+# PIB
+
+## Row {height=20%}
+
+```{r}
+#| content: valuebox
+#| title: "PIB Trimestral — último valor"
+list(icon = "bar-chart-line", color = "primary", value = fmt_pct(ultimo(pib_trimestral)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Variação"
+list(icon = "arrow-left-right", color = "secondary", value = variacao(pib_trimestral))
+```
+
+```{r}
+#| content: valuebox
+#| title: "PIB Anual — último valor"
+list(icon = "graph-up", color = "info", value = fmt_pct(ultimo(pib_anual)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Última atualização"
+list(icon = "calendar3", color = "light",
+     value = format(tail(pib_trimestral$data, 1), "%d/%m/%Y"))
+```
+
+## Row {height=55%}
+
+```{r}
+#| title: PIB — Variação Trimestral (%)
+grafico(pib_trimestral, "PIB — Variação Trimestral (%)", cor = "#6c3483")
+```
+
+```{r}
+#| title: PIB — Variação Anual (%)
+grafico(pib_anual, "PIB — Variação Anual (%)", cor = "#8e44ad")
+```
+
+## Row {height=25%}
+
+```{r}
+#| title: Estatísticas — PIB Trimestral
+datatable(tabela_stats(pib_trimestral), rownames = FALSE, options = list(dom = "t"))
+```
+
+```{r}
+#| title: Estatísticas — PIB Anual
+datatable(tabela_stats(pib_anual), rownames = FALSE, options = list(dom = "t"))
+```
+
+# Sobre
+
+## Row
+
+```{r}
+#| title: Sobre este dashboard
+htmltools::HTML("
+<div style='max-width:700px; font-family: Inter, sans-serif; line-height:1.7'>
+  <h4>📊 Indicadores Econômicos — BCB</h4>
+  <p>Dashboard gerado com <strong>Quarto</strong> e hospedado no <strong>GitHub Pages</strong>.
+  Os dados são baixados diretamente da API pública do Banco Central do Brasil
+  (<a href='https://www.bcb.gov.br/estatisticas/api' target='_blank'>SGS — Sistema Gerenciador de Séries Temporais</a>)
+  a cada <em>render</em> do documento.</p>
+
+  <h5>Séries disponíveis</h5>
+  <table class='table table-sm table-bordered'>
+    <thead><tr><th>Indicador</th><th>Código SGS</th><th>Periodicidade</th></tr></thead>
+    <tbody>
+      <tr><td>Taxa Selic Meta</td><td>432</td><td>Reuniões COPOM</td></tr>
+      <tr><td>Taxa Selic Efetiva</td><td>11</td><td>Diária</td></tr>
+      <tr><td>IPCA Mensal</td><td>433</td><td>Mensal</td></tr>
+      <tr><td>IPCA Acumulado 12m</td><td>13522</td><td>Mensal</td></tr>
+      <tr><td>Câmbio USD/BRL Compra</td><td>10813</td><td>Diária</td></tr>
+      <tr><td>Câmbio USD/BRL Venda</td><td>1</td><td>Diária</td></tr>
+      <tr><td>PIB Variação Trimestral</td><td>22109</td><td>Trimestral</td></tr>
+      <tr><td>PIB Variação Anual</td><td>7326</td><td>Anual</td></tr>
+    </tbody>
+  </table>
+
+  <h5>Como atualizar os dados</h5>
+  <p>Basta re-renderizar o arquivo e fazer push para o GitHub:</p>
+  <pre style='background:#f4f4f4;padding:10px;border-radius:6px'>quarto render dashboard_bcb.qmd
+git add docs/
+git commit -m 'Atualiza dados'
+git push</pre>
+
+  <h5>Tecnologias</h5>
+  <p>R · Quarto Dashboards · Plotly · DT · httr · GitHub Pages</p>
+</div>
+")
+```
