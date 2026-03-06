@@ -1,0 +1,36 @@
+title: "Meu Site Pessoal"
+description: "Blog e Portfólio"
+baseurl: "" # Use '/' se estiver hospedando no domínio raiz
+url: "http://example.com" # URL do seu site
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Menu
+menu:
+  home: "/"
+  about: "/about/"
+  portfolio: "/portfolio/"
+  contact: "/contact/"
+title: "Chiicones | Compilação de textos"
+description: "Blog e Portfólio"
+baseurl: "" # Use '/' se estiver hospedando no domínio raiz
+url: "https://chiicones.github.io/" # URL do seu site
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Menu
+menu:
+  home: "/"
+  about: "/about/"
+  portfolio: "/portfolio/"
+  contact: "/contact/"

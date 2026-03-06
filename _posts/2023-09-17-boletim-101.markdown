@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "Chico lê, vê e recomenda #101"
+date:   2023-09-17 10:08:00 -0300
+categories: boletim
+tags: [boletim, newsletter]
+comments: true
+---
+# Edição #101
+
+Progressão do ano: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░ 71% de 100%
+
+Agora com espaço para comentários! Basta fazer o cadastro. Não precisa de cadastro para clicar nos emojis.
+
+Consegui colocar exibição de vídeos na página. Próximo passo é ir mexendo no layout. E trazer pra essa cantinho da internet uns textos meus espalhados por aí.
+
+**Loto não tão fácil**
+
+Pra ganhar o prêmio da Lotofácil da Independência era necessário acertar 15 números. Daí era só correr para o abraço e levar R$ 192 milhões. Acertei 13 e levei R$ 30. Peguei esse dinheiro e, aproveitando que a Lotérica fica dentro de um Extra, fiz compras pra casa. Tem uma [ex-BBB](https://extra.globo.com/economia/noticia/2023/09/ex-bbb-milionaria-saiba-quais-as-chances-de-ganhar-na-lotofacil-como-paulinha-leite.ghtml) que é especializada em bolões e já ganhou 54 vezes na loteria.
+
+Foi uma semana corrida.
+
+Sol, chuva e agora Sol de novo. E a gente administrando a saúde e as oportunidades de lavagem de roupa.
+
+**Como seria um filme de Super-Herói do pioneiro do cinema Georges Méliès?** 
+
+Seria fantástico. Dá uma olhada.
+
+[![Super-Homem por Georges Méliès](/imagens/SuperHomem_Georges_Melies.png "Fonte: Reddit")
+
+Foi feito com ferramenta inteligência artificial Midjourney. Peguei no [Reddit](https://www.reddit.com/r/midjourney/comments/16fw1ab/what_a_georges_m%C3%A9li%C3%A8s_superhero_movie_would_look/).
+
+**O novo clipe dos Rolling Stones**
+
+Já viram?
+
+{% include youtube.html id="_mEC54eTuGw" %}
+
+É o primeiro disco com músicas inéditas desde 2005. E o primeiro desde a morte do bateirista Charlie Watts, que se foi em 2021. Watss era (e acho que ainda é) o meu Rolling Stone favorito. O clipe é fantástico, misturando a música com clipes e artes da história da banda. Não pesquisei, mas acho que teve dedo de ferramenta de inteligência artificial na confecção do vídeo.
+
+O disco, Hackney Diamonds, tem participação de artistas como Paul McCartney, Stevie Wonder, Lady Gaga and Elton John. Essa matéria do [New York Times](https://www.nytimes.com/2023/09/14/arts/music/rolling-stones-hackney-diamonds.html) aponta que o álbum tem uma "pegada humana". Numa tradução via Google Tradutor: *"As músicas são assumidamente tocadas à mão e orgânicas, não quantizadas em uma grade de computador; eles aceleram e desaceleram com um pulso humano."* É uma alternativa às músicas pop modernas com excesso de pós-produção, até no vocal. Tem galerinha nova que nem sabe cantar, mas tem ajuda de ferramentas de produção musical pra dar aquela ajustada na voz. Tô falando de vocês, povo do *Trap*.
+
+Por enquanto é só. Vamos pra algumas leituras e audições. Dessa vez são várias recomendações.
+
+## Clipping
+
+**Tão próximos e tan lejos: o que nos impede de conhecer mais a música da Colômbia por Jarmeson de Lima para [Revista Continente](https://revistacontinente.com.br/edicoes/273/tao-proximos-e-tan-lejos--o-que-nos-impede-de-conhecer-mais-a-musica-da-colombia)**; 
+
+*Ok, então um país do tamanho da Bahia consegue mostrar ao mundo que é mais do que apenas salsa, cumbia e Shakira, e consegue representar a diversidade que sua geografia possui? Porque apesar de “pequeno”, o país tem regiões bem distintas que impactam diretamente a cultura e os hábitos da população: temos uma parte andina e, ao lado do Pacífico em paralelo com o norte caribenho, uma grande área que é coberta pela Amazônia.*
+
+*Foi em parte motivado por essas questões que fui até a Colômbia neste ano para passar algumas semanas com a aprovação de um projeto através do programa Ibermúsicas. Por lá tive a oportunidade de conhecer melhor a cena musical contemporânea de um país que está se reerguendo e se revitalizando após anos ofuscado pela violência de guerrilhas urbanas e pelo narcotráfico.*
+
+**Como eram feitos os guarda-chuvas na China há 1000 anos?**; spoiler: com bambus, linhas e colas caseiras no [Tiktok](https://vm.tiktok.com/ZMjBeaocT/)
+
+**Com o primeiro-ministro Modi, a Índia está caminhando para o totalitarismo religioso**; *a Al Jazeera aponta para os riscos para muçulmanos que vivem no País. Veja esse vídeo (em inglês) no* [YouTube da Al Jazeera](https://www.youtube.com/watch?v=hmq02A8rXsk)
+
+**Índia será a próxima superpotência global?**; *A Índia passa por um momento crucial: é uma economia de crescimento rápido com uma das maiores e mais jovens populações do mundo. Em 2022, ela entrou pela primeira vez no grupo das cinco maiores economias. E várias projeções indicam que, em 2030, estará atrás apenas da China e dos Estados Unidos. Ao mesmo tempo, a Índia está ganhando também um papel geopolítico maior. Isso em meio a incertezas causadas pela rivalidade cada vez mais acirrada entre Estados Unidos e China e também no contexto da guerra na Ucrânia. Afinal, a Índia vai virar uma superpotência global?* no YouTube da [DW Brasil](https://www.youtube.com/watch?v=eqL8qI5IvQE)
+
+**Revista elege os 100 escudos mais bonitos do mundo com quatro brasileiros**; *Eleição tradicional da "Four Four Two" coloca Chapecoense, Fluminense, Palmeiras e Vasco entre os 100 escudos mais bonitos do mundo*. Por BMFC para o [Globoesporte](https://ge.globo.com/futebol/futebol-internacional/noticia/2023/09/15/revista-elege-os-100-escudos-mais-bonitos-do-mundo-com-quatro-brasileiros-veja-lista.ghtml)
+
+**Morro do Corcovado abrigou mirante em formato de chapéu antes do Cristo Redentor**; *Observatório de ferro encomendado por dom Pedro II foi aberto em 1885 junto a uma ferrovia que levava turistas ao topo da montanha no Rio de Janeiro*. Por Ana Sachs para [Casa e Jardim](https://revistacasaejardim.globo.com/urbanismo/noticia/2023/09/morro-do-corcovado-abrigou-mirante-em-formato-de-chapeu-antes-do-cristo-redentor.ghtml)
+
+**Mini Doc: Raul Seixas e a Confusão em Caieiras (1982)** no [YouTube](https://youtu.be/rcGey7EmcEc?si=JcYD00UpY_FSNJzV)
+
+*Polícia, agressão e cheque frio. Só pra variar, a carreira de altos e baixos de Raul Seixas teve mais um capítulo na cidade de Caieiras, SP, em 16 de maio de 1982. Durante um show, interesses políticos confundiram o público  como se ele fosse um sósia. A situação acabou na delegacia, onde rolou agressão, questionamentos, falta de documentos e de quebra, Raul dormiu na cadeia. Com novas entrevistas exclusivas, este mini documentário aborda o episódio e seus desdobramentos, que afastaram Raul do público durante aquele ano nebuloso de 1982.*
+
+**Se tem bolo de pote, também tem sorvete de pote (de vidro)**; Dá pra ver as instruções (em inglês) nesse vídeo do [The Root](https://www.theroot.com/how-to-make-ice-cream-at-home-with-a-mason-jar-1850844055)
+
+**30 anos dos Acordos de Oslo**: *por que palestinos dizem que tratado de paz com Israel foi um erro*. Texto de Yolande Knell para a [BBC](https://www.bbc.com/portuguese/articles/cz4g507l8lgo)
