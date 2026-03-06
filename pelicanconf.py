@@ -20,6 +20,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+SUMMARY_MAX_LENGTH = 50
+TYPOGRIFY = False
+
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
