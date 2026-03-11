@@ -704,3 +704,123 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+
+/* ==================
+   FICHA DE EVENTO
+   Estilo: classificado compacto
+   ================== */
+
+.classifieds-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  border-left: 1px solid var(--rule-light);
+  border-right: 1px solid var(--rule-light);
+}
+
+.ficha {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s, background 0.15s;
+}
+
+.ficha:hover {
+  background: var(--paper-dark);
+  box-shadow: 2px 2px 0 var(--rule-light);
+}
+
+/* Cabeçalho da ficha — fundo escuro como na imagem */
+.ficha-header {
+  background: var(--ink);
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ficha-cat {
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--paper);
+  opacity: 0.7;
+  text-decoration: none;
+}
+.ficha-cat:hover { opacity: 1; text-decoration: underline; }
+
+.ficha-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--paper);
+  line-height: 1.25;
+  text-decoration: none;
+}
+.ficha-title:hover { text-decoration: underline; }
+
+/* Corpo da ficha — linhas de informação */
+.ficha-body {
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: var(--paper-darker);
+}
+
+.ficha-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--rule-light);
+}
+.ficha-row:last-child { border-bottom: none; }
+
+.ficha-label {
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--ink-light);
+}
+
+.ficha-value {
+  font-size: 0.82rem;
+  color: var(--ink-mid);
+  font-family: var(--font-body);
+  line-height: 1.35;
+}
+
+.ficha-price {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+/* Rodapé da ficha */
+.ficha-footer {
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--rule-light);
+  background: var(--paper);
+  text-align: right;
+}
+
+.ficha-cta {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+.ficha-cta:hover { text-decoration: underline; }
+
+
