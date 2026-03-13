@@ -1,13 +1,24 @@
-// Pelican Classificados — main.js
+// chiicones — main.js
+
 document.addEventListener('DOMContentLoaded', () => {
-  // Prevent category/date links from triggering card link
-  document.querySelectorAll('.card-link .card-category').forEach(el => {
-    el.addEventListener('click', e => e.stopPropagation());
-  });
-  document.querySelectorAll('.card-link .card-location').forEach(el => {
-    el.addEventListener('click', e => e.stopPropagation());
-  });
-  document.querySelectorAll('.card-link .card-date-link').forEach(el => {
-    el.addEventListener('click', e => e.stopPropagation());
-  });
+
+    // Marca o link de navegação ativo
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.site-nav__link').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.style.color = 'var(--color-accent)';
+        }
+    });
+
+    // Scroll suave para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', e => {
+            const target = document.querySelector(anchor.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
 });
