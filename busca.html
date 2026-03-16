@@ -15,10 +15,14 @@
 <body>
 
     <header class="site-header">
-        <div class="container">
+        <div class="header-inner">
             <a href="https://chiicones.github.io/" class="site-logo">
                 <span class="site-logo__name">Agenda DF</span>
             </a>
+            <form class="header-search" action="https://chiicones.github.io/busca.html" method="get">
+                <input type="text" name="q" class="header-search__input" placeholder="Buscar eventos...">
+                <button type="submit" class="header-search__btn">→</button>
+            </form>
         </div>
     </header>
 
@@ -32,7 +36,7 @@
 <section class="search-section">
     <div class="container">
         <div class="search-box">
-            <input type="text" id="search-input" class="search-input" placeholder="Teatro, Circo, CCBB, Águas Claras..." autofocus>
+            <input type="text" id="search-input" class="search-input" placeholder="Teatro, Circo, CCBB, Águas Claras...">
         </div>
         <div id="search-results" class="search-results"></div>
     </div>
@@ -60,10 +64,7 @@ function doSearch(query) {
     const q = query.toLowerCase().trim();
     const results = document.getElementById('search-results');
 
-    if (!q) {
-        results.innerHTML = '';
-        return;
-    }
+    if (!q) { results.innerHTML = ''; return; }
 
     const matched = articles.filter(a =>
         (a.title && a.title.toLowerCase().includes(q)) ||
@@ -105,15 +106,14 @@ function doSearch(query) {
         <div class="footer-inner">
             <div class="footer-col footer-col--categories">
                 <p class="footer-col__title">Categorias</p>
-		 <a href="/busca.html" class="footer-link">Busca</a>
-		 <a href="/categoria/circo.html" class="footer-link">Circo</a>
-		 <a href="/categoria/comedia.html" class="footer-link">Comédia</a>
-		 <a href="/categoria/exposicao.html" class="footer-link">Exposição</a>
-		 <a href="/categoria/familia.html" class="footer-link">Família</a>
-		 <a href="/categoria/feira.html" class="footer-link">Feira</a>
-		 <a href="/categoria/festival.html" class="footer-link">Festival</a>
-		 <a href="/categoria/musica.html" class="footer-link">Música</a>
-		 <a href="/categoria/teatro.html" class="footer-link">Teatro</a>
+                    <a href="/categoria/circo.html" class="footer-link">Circo</a>
+                    <a href="/categoria/comedia.html" class="footer-link">Comédia</a>
+                    <a href="/categoria/exposicao.html" class="footer-link">Exposição</a>
+                    <a href="/categoria/familia.html" class="footer-link">Família</a>
+                    <a href="/categoria/feira.html" class="footer-link">Feira</a>
+                    <a href="/categoria/festival.html" class="footer-link">Festival</a>
+                    <a href="/categoria/musica.html" class="footer-link">Música</a>
+                    <a href="/categoria/teatro.html" class="footer-link">Teatro</a>
             </div>
             <div class="footer-col footer-col--extra">
                 <p class="footer-col__title">Mais</p>
