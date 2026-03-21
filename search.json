@@ -7,7 +7,7 @@
     "category_url": "categoria/festa.html",
     "tags": "bloco, Mellody, funk, Lago Paranoá, gratuito, ao ar livre, Brasília",
     "local": "Orla do Lago Paranoá — Brasília",
-    "data": "22/03/2026 (domingo)",
+    "data": "22/03/2026",
     "entrada": "Gratuita"
   },
   {
@@ -18,7 +18,7 @@
     "category_url": "categoria/opera.html",
     "tags": "ópera, música barroca, Venus and Adonis, John Blow, gratuito, Brasília, música antiga",
     "local": "Consultar no site (Escola de Música de Brasília ou auditório parceiro)",
-    "data": "22/03/2026 (domingo)",
+    "data": "22/03/2026",
     "entrada": "Gratuita"
   },
   {
@@ -29,7 +29,7 @@
     "category_url": "categoria/show.html",
     "tags": "MPB, pop, show, 25 anos de carreira, Centro de Convenções, ingresso pago",
     "local": "Ulysses Centro de Convenções — Brasília",
-    "data": "21/03/2026 (sábado)",
+    "data": "21/03/2026",
     "entrada": "A partir de R$ 90 (meia)"
   },
   {
@@ -40,7 +40,7 @@
     "category_url": "categoria/opera.html",
     "tags": "ópera, música clássica, Cia dos Cantores Líricos, lírico, Brasília, ingresso pago",
     "local": "Teatro Dulcina — SCS Quadra 3, Bloco A — Brasília",
-    "data": "21/03/2026 (sábado)",
+    "data": "21/03/2026",
     "entrada": "A partir de R$ 60"
   },
   {
@@ -51,7 +51,18 @@
     "category_url": "categoria/teatro.html",
     "tags": "teatro, dança, espetáculo, ingresso pago, Brasília, artes cênicas",
     "local": "Teatro do SESI — W3 Sul, SGAS 913 — Brasília",
-    "data": "21 e 22/03/2026",
+    "data": "22/03/2026",
+    "entrada": "Consultar no site"
+  },
+  {
+    "title": "Espetáculo \"O Labirinto de Vidro\" — Teatro em Brasília",
+    "url": "eventos/espetaculo-o-labirinto-de-vidro-teatro-em-brasilia.html",
+    "summary": "<p>O espetáculo \"O Labirinto de Vidro\" chega a Brasília com uma montagem que une teatro e linguagem corporal para explorar os limites entre o real e o imaginário, entre o que vemos e o que sentimos.</p>\n<p>Sobre o espetáculo</p>\n<p>\"O Labirinto de Vidro\" é uma obra cênica que mergulha o …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, dança, espetáculo, ingresso pago, Brasília, artes cênicas",
+    "local": "Teatro do SESI — W3 Sul, SGAS 913 — Brasília",
+    "data": "21/03/2026",
     "entrada": "Consultar no site"
   },
   {
@@ -62,7 +73,7 @@
     "category_url": "categoria/festa.html",
     "tags": "festa, Thai Na Cena, Bar Banks, Asa Norte, música, ingresso pago, Brasília",
     "local": "Bar Banks — CLN 213, Bloco B, Loja 40 — Asa Norte, Brasília",
-    "data": "21/03/2026 (sábado)",
+    "data": "21/03/2026",
     "entrada": "Consultar no site"
   },
   {
@@ -73,7 +84,18 @@
     "category_url": "categoria/festival.html",
     "tags": "samba, pagode, cultura negra, Ceilândia, gratuito, Dia da Eliminação da Discriminação Racial",
     "local": "Ceilândia Sul — EQNN 18/20 (próximo ao metrô)",
-    "data": "20 e 21/03/2026 (sexta e sábado)",
+    "data": "20/03/2026",
+    "entrada": "Gratuita (21/03) | Ingressos a partir de R$ 50 para o dia 20/03"
+  },
+  {
+    "title": "Festival Samba DF — Resistência e Cultura Negra em Ceilândia",
+    "url": "eventos/festival-samba-df-resistencia-e-cultura-negra-em-ceilandia.html",
+    "summary": "<p>No Dia Internacional pela Eliminação da Discriminação Racial, Ceilândia sedia a primeira edição do Festival Samba DF — uma ação coletiva de valorização do samba da capital, que reúne arte, militância e economia criativa em uma festa aberta a toda a cidade.</p>\n<p>Sobre o festival</p>\n<p>O festival prioriza, em seu line-up …</p>",
+    "category": "Festival",
+    "category_url": "categoria/festival.html",
+    "tags": "samba, pagode, cultura negra, Ceilândia, gratuito, Dia da Eliminação da Discriminação Racial",
+    "local": "Ceilândia Sul — EQNN 18/20 (próximo ao metrô)",
+    "data": "21/03/2026",
     "entrada": "Gratuita (21/03) | Ingressos a partir de R$ 50 para o dia 20/03"
   },
   {
@@ -84,7 +106,7 @@
     "category_url": "categoria/esporte.html",
     "tags": "futebol, Candangão, gratuito, Mané Garrincha, esporte, DF",
     "local": "Estádio Nacional de Brasília Mané Garrincha",
-    "data": "21/03/2026 (sábado)",
+    "data": "21/03/2026",
     "entrada": "Gratuita (retirada online pela Bilheteria Digital)"
   },
   {
@@ -95,7 +117,7 @@
     "category_url": "categoria/festa.html",
     "tags": "funk, eletrônico, drop, Conic, Asa Sul, ingresso pago, balada, Brasília",
     "local": "Birosca do Conic — SRS Ed. Conic, Asa Sul, Brasília",
-    "data": "21/03/2026 (sábado)",
+    "data": "21/03/2026",
     "entrada": "Consultar no site"
   },
   {
@@ -106,7 +128,18 @@
     "category_url": "categoria/teatro.html",
     "tags": "teatro lambe-lambe, teatro de animação, gratuito, ao ar livre, Brasília, boneco, miniatura",
     "local": "Parque da Cidade Sarah Kubitschek — Brasília",
-    "data": "21 e 22/03/2026 (sábado e domingo)",
+    "data": "21/03/2026",
+    "entrada": "Gratuita"
+  },
+  {
+    "title": "IV Encontro de Teatro Lambe-Lambe de Brasília",
+    "url": "eventos/iv-encontro-de-teatro-lambe-lambe-de-brasilia.html",
+    "summary": "<p>O IV Encontro de Teatro Lambe-Lambe de Brasília chega ao Parque da Cidade para dois dias de apresentações gratuitas e ao ar livre. Uma experiência íntima, poética e encantadora para todas as idades.</p>\n<p>Sobre o evento</p>\n<p>O teatro lambe-lambe é uma forma de teatro de animação em que o espectador …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro lambe-lambe, teatro de animação, gratuito, ao ar livre, Brasília, boneco, miniatura",
+    "local": "Parque da Cidade Sarah Kubitschek — Brasília",
+    "data": "22/03/2026",
     "entrada": "Gratuita"
   },
   {
@@ -128,7 +161,7 @@
     "category_url": "categoria/show.html",
     "tags": "MPB, romântico, show, Centro de Convenções, ingresso pago",
     "local": "Ulysses Centro de Convenções — Brasília",
-    "data": "20/03/2026 (sexta-feira)",
+    "data": "20/03/2026",
     "entrada": "A partir de R$ 180"
   },
   {
@@ -139,7 +172,18 @@
     "category_url": "categoria/festival.html",
     "tags": "cultura popular, patrimônio imaterial, gratuito, Ceilândia, hip hop, choro, samba",
     "local": "Praça da Juventude — Ceilândia (DF)",
-    "data": "20 e 21/03/2026 (sexta e sábado)",
+    "data": "21/03/2026",
+    "entrada": "Gratuita (retirada pelo Sympla)"
+  },
+  {
+    "title": "Festival do Patrimônio Brasileiro — Criolo, Hamilton de Holanda e Mariene de Castro em Ceilândia",
+    "url": "eventos/festival-do-patrimonio-brasileiro-criolo-hamilton-de-holanda-e-mariene-de-castro-em-ceilandia.html",
+    "summary": "<p>Nos dias 20 e 21 de março, a Praça da Juventude, em Ceilândia, recebe a primeira edição do Festival do Patrimônio Brasileiro — um grande encontro das tradições culturais do país, com shows, feiras, homenagens a bens culturais imateriais, seminário e rodas de cultura popular. Entrada gratuita para todos os espetáculos …</p>",
+    "category": "Festival",
+    "category_url": "categoria/festival.html",
+    "tags": "cultura popular, patrimônio imaterial, gratuito, Ceilândia, hip hop, choro, samba",
+    "local": "Praça da Juventude — Ceilândia (DF)",
+    "data": "20/03/2026",
     "entrada": "Gratuita (retirada pelo Sympla)"
   },
   {
@@ -161,7 +205,51 @@
     "category_url": "categoria/teatro.html",
     "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
     "local": "Teatro da CAIXA Cultural Brasília — SBS Quadra 4, Lotes 3/4",
-    "data": "18 a 22/03/2026",
+    "data": "18/03/2026",
+    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
+  },
+  {
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia.html",
+    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
+    "local": "Teatro da CAIXA Cultural Brasília — SBS Quadra 4, Lotes 3/4",
+    "data": "21/03/2026",
+    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
+  },
+  {
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia.html",
+    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
+    "local": "Teatro da CAIXA Cultural Brasília — SBS Quadra 4, Lotes 3/4",
+    "data": "19/03/2026",
+    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
+  },
+  {
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia.html",
+    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
+    "local": "Teatro da CAIXA Cultural Brasília — SBS Quadra 4, Lotes 3/4",
+    "data": "20/03/2026",
+    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
+  },
+  {
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia.html",
+    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
+    "local": "Teatro da CAIXA Cultural Brasília — SBS Quadra 4, Lotes 3/4",
+    "data": "22/03/2026",
     "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
   },
   {
