@@ -220,13 +220,35 @@
     "entrada": "Solidário (1kg alimento) | Meia: R$ 30 | Inteira: R$ 60 (consultar lotes no Shotgun)"
   },
   {
+    "title": "Oficina Maker — Insetos Elétricos no SESI Lab",
+    "url": "eventos/oficina-maker-insetos-eletricos-no-sesi-lab.html",
+    "summary": "<p>Nesta oficina maker, os visitantes constroem robôs em forma de insetos adaptados a ambientes simulados por inteligência artificial, explorando conceitos de morfologia, nicho ecológico e circuitos elétricos.</p>\n<p>Sobre a oficina</p>\n<p>Uma experiência hands-on que une biologia, tecnologia e criatividade. Os participantes montam seus próprios insetos robóticos e os testam em …</p>",
+    "category": "Oficina",
+    "category_url": "categoria/oficina.html",
+    "tags": "oficina, maker, robótica, inteligência artificial, insetos, SESI Lab, gratuito, educativo",
+    "local": "SESI Lab — SCTS Lote 1, Plano Piloto, Brasília",
+    "data": "22/03/2026 (domingo)",
+    "entrada": "Gratuita (senha distribuída 30 min antes na recepção, sujeito a disponibilidade)"
+  },
+  {
+    "title": "Oficina Maker — Programando Rotas Urbanas no SESI Lab",
+    "url": "eventos/oficina-maker-programando-rotas-urbanas-no-sesi-lab.html",
+    "summary": "<p>Neste jogo de tabuleiro, os visitantes simulam trajetos sobre o mapa do Distrito Federal usando programação desplugada, levando a reflexões sobre mobilidade urbana, sustentabilidade e escolhas conscientes.</p>\n<p>Sobre a oficina</p>\n<p>Uma atividade lúdica e interativa que transforma o mapa do DF em campo de aprendizado. Sem computador, usando apenas lógica …</p>",
+    "category": "Oficina",
+    "category_url": "categoria/oficina.html",
+    "tags": "oficina, maker, programação, mobilidade urbana, tabuleiro, sustentabilidade, SESI Lab, gratuito, educativo",
+    "local": "SESI Lab — SCTS Lote 1, Plano Piloto, Brasília",
+    "data": "22/03/2026 (domingo)",
+    "entrada": "Gratuita (senha distribuída 30 min antes na recepção, sujeito a disponibilidade)"
+  },
+  {
     "title": "Ópera \"Venus and Adonis\" em Brasília",
     "url": "eventos/opera-venus-and-adonis-em-brasilia.html",
     "summary": "<p>Brasília recebe uma apresentação da ópera barroca \"Venus and Adonis\", de John Blow — considerada a primeira ópera genuinamente inglesa e precursora do \"Dido and Aeneas\", de Purcell. Entrada gratuita.</p>\n<p>Sobre a ópera</p>\n<p>Composta por volta de 1683 para a corte do rei Carlos II da Inglaterra, \"Venus and Adonis\" é …</p>",
     "category": "Ópera",
     "category_url": "categoria/opera.html",
     "tags": "ópera, música barroca, Venus and Adonis, John Blow, gratuito, Brasília, música antiga",
-    "local": "Teatro Sesc Paulo Autran",
+    "local": "Teatro Sesc Paulo Gracindo  - Gama",
     "data": "22/03/2026",
     "entrada": "Gratuita"
   },
@@ -237,7 +259,7 @@
     "category": "Ópera",
     "category_url": "categoria/opera.html",
     "tags": "ópera, música barroca, Venus and Adonis, John Blow, gratuito, Brasília, música antiga",
-    "local": "Teatro Sesc Paulo Gracindo  - Gama",
+    "local": "Teatro Sesc Paulo Autran",
     "data": "22/03/2026",
     "entrada": "Gratuita"
   },
