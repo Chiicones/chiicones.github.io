@@ -1,5 +1,60 @@
 [
   {
+    "title": "Exposição 'Comigo Ninguém Pode' — A Pintura de Jeff Alan",
+    "url": "eventos/exposicao-comigo-ninguem-pode-a-pintura-de-jeff-alan.html",
+    "summary": "<p>Até 31 de maio, a Caixa Cultural Brasília apresenta 50 obras do artista visual pernambucano Jeff Alan, que exploram memória, identidade e pertencimento.</p>\n<h2>Sobre a exposição</h2>\n<p>Um universo criativo construído a partir de vivências, afetos e referências do território do artista — marcado por cores vibrantes e pela presença de personagens …</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "pintura, arte contemporânea, negritude, periferia, gratuito, Caixa Cultural Brasilia",
+    "local": "Caixa Cultural Brasilia",
+    "data": "Até 31/05/2026",
+    "entrada": "Entrada gratuita"
+  },
+  {
+    "title": "Exposição 'Ancestral: Afro-Américas' — Arte Negra entre Brasil e EUA",
+    "url": "eventos/exposicao-ancestral-afro-americas-arte-negra-entre-brasil-e-eua.html",
+    "summary": "<p>Até 3 de maio, o CCBB Brasília apresenta gratuitamente a exposição que celebra as raízes africanas que conectam Brasil e Estados Unidos por meio da arte.</p>\n<h2>Sobre a exposição</h2>\n<p>A mostra reúne cerca de 130 obras de artistas negros dos dois países e propõe um mergulho na força estética, política …</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "arte, afro-brasileira, exposição, gratuito, CCBB, CCBB Brasilia",
+    "local": "CCBB Brasilia",
+    "data": "Até 03/05/2026",
+    "entrada": "Gratuito"
+  },
+  {
+    "title": "Exposição Beirada a Leste — Sesc 504 Sul",
+    "url": "eventos/exposicao-beirada-a-leste-sesc-504-sul.html",
+    "summary": "<p>Para alguns é o oeste, para outros, talvez seja o leste o lugar de oriente-ação. Beiradas descortinam mundos. Beirada a Leste é uma exposição que reúne fotografias, pinturas, desenhos e gravuras, cujo fio condutor é a vida que floresce à margem.</p>\n<p>Sobre a exposição</p>\n<p>As obras apresentadas vêm de um …</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "exposição, fotografia, pintura, gravura, desenho, gratuito, Sesc, 504 Sul",
+    "local": "Sesc 504 Sul",
+    "data": "20/03 a 29/04/2026",
+    "entrada": "Gratuita (sem necessidade de retirada de ingresso)"
+  },
+  {
+    "title": "Exposição Carnavalesco Canibalesco — Arte de Badu em Brasília",
+    "url": "eventos/exposicao-carnavalesco-canibalesco-arte-de-badu-em-brasilia.html",
+    "summary": "<p>A Pilastra Galeria-Escola apresenta \"Carnavalesco Canibalesco\", primeira individual do artista goiano Badu fora de Goiânia. A abertura acontece no dia 19 de março, às 19h, com visitação gratuita até 25 de abril.</p>\n<p>Sobre a exposição</p>\n<p>Em trânsito entre o bordado, a pintura, o desenho e objetos, Badu subverte e recria …</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "arte contemporânea, exposição, gratuito, Guará, bordado, pintura, carnaval",
+    "local": "A Pilastra Galeria-Escola — Guará II, QE 40, rua 09, lote 8",
+    "data": "Abertura 19/03 às 19h | Visitação: 20/03 a 25/04/2026",
+    "entrada": "Gratuita"
+  },
+  {
+    "title": "Exposição 'Câmbio de Paradigma. Giro no Brasil'",
+    "url": "eventos/exposicao-cambio-de-paradigma-giro-no-brasil.html",
+    "summary": "<p>Data: Até 18/04/2026\nHorario: Seg–Sex 9h às 19h · Sáb 8h às 12h\nEntrada: Gratuito</p>\n<p>Mostra coletiva organizada pela Embaixada da Espanha e pelo Instituto Cervantes, reunindo seis artistas espanhóis, quatro brasileiros e uma artista convidada local. As obras abordam política, raça, gênero, tecnologia e ecologia.</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "exposição, arte contemporânea, gratuito, Espanha, Asa Sul, Instituto Cervantes de Brasilia",
+    "local": "Instituto Cervantes de Brasilia",
+    "data": "",
+    "entrada": ""
+  },
+  {
     "title": "Melody na REPU — Birosca do Conic",
     "url": "eventos/melody-na-repu-birosca-do-conic.html",
     "summary": "<p>A REPU está de volta e traz Melody para agitar a primeira edição do ano com atração musical na nova Birosca do Conic. A garota do pipoco, do falsete e dos hits que conquistaram o Brasil vem de jetski pra uma das festas mais coloridas, alegres e pop de Brasília …</p>",
@@ -11,6 +66,17 @@
     "entrada": "Consultar lotes no Shotgun"
   },
   {
+    "title": "A Comunidade do Arco-Íris — CCBB Brasília",
+    "url": "eventos/a-comunidade-do-arco-iris-ccbb-brasilia.html",
+    "summary": "<p>Única obra de Caio Fernando Abreu voltada ao público infantil, o espetáculo propõe uma reflexão sobre confiança, amizade, democracia e convivência. A trama acompanha brinquedos e seres mágicos que decidem viver em comunidade em uma floresta, longe da poluição e do consumo. Em cartaz após temporadas de sucesso em São …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro infantil, família, Caio Fernando Abreu, CCBB, gratuito, CCBB Brasilia",
+    "local": "CCBB Brasilia",
+    "data": "Até 29/03/2026",
+    "entrada": "A partir de R$ 15"
+  },
+  {
     "title": "Dias de Espelunca com Pagode da Gigi",
     "url": "eventos/dias-de-espelunca-com-pagode-da-gigi.html",
     "summary": "<p>Rodrigo Dias aterrisa na Espelunca trazendo o aclamadíssimo Pagode da Gigi — daquele jeito que tem que ser: samba quente, sorriso solto, drinks de alto nível e o domingo virando história.</p>\n<p>Sobre o evento</p>\n<p>O Pagode da Gigi é um dos encontros mais queridos da cena de pagode e samba de …</p>",
@@ -20,6 +86,17 @@
     "local": "Espelunca",
     "data": "29/03/2026",
     "entrada": "Cortesias gratuitas disponíveis no Shotgun (válidas o domingo inteiro)"
+  },
+  {
+    "title": "Irmã Angélica — Ópera de Puccini no Sesc Ceilândia",
+    "url": "eventos/irma-angelica-opera-de-puccini-no-sesc-ceilandia.html",
+    "summary": "<p>Os teatros do Sesc Gama e Sesc Ceilândia recebem a ópera Irmã Angélica, do compositor italiano Giacomo Puccini, em seis apresentações com entrada franca. O espetáculo, que estreou em Brasília em 2024, retorna em nova temporada com um elenco e equipe técnica formados majoritariamente por mulheres.</p>\n<p>Sobre a ópera</p>\n<p>O …</p>",
+    "category": "Ópera",
+    "category_url": "categoria/opera.html",
+    "tags": "ópera, Puccini, música clássica, entrada franca, Sesc, Ceilândia, elenco feminino",
+    "local": "Sesc Ceilandia",
+    "data": "28 e 29/03/2026 | Temporada completa até 19/04/2026",
+    "entrada": "Franca mediante doação de 1kg de alimento não perecível ou material de limpeza"
   },
   {
     "title": "Josyara em Brasília — Novo Show no Infinu",
@@ -75,17 +152,6 @@
     "local": "Birosca do Conic",
     "data": "28/03/2026",
     "entrada": "Consultar lotes no Shotgun | Portadores do ingresso do Gop Tun Festival 2026 entram de graça"
-  },
-  {
-    "title": "Irmã Angélica — Ópera de Puccini no Sesc Ceilândia",
-    "url": "eventos/irma-angelica-opera-de-puccini-no-sesc-ceilandia.html",
-    "summary": "<p>Os teatros do Sesc Gama e Sesc Ceilândia recebem a ópera Irmã Angélica, do compositor italiano Giacomo Puccini, em seis apresentações com entrada franca. O espetáculo, que estreou em Brasília em 2024, retorna em nova temporada com um elenco e equipe técnica formados majoritariamente por mulheres.</p>\n<p>Sobre a ópera</p>\n<p>O …</p>",
-    "category": "Ópera",
-    "category_url": "categoria/opera.html",
-    "tags": "ópera, Puccini, música clássica, entrada franca, Sesc, Ceilândia, elenco feminino",
-    "local": "Sesc Ceilandia",
-    "data": "28 e 29/03/2026 | Temporada completa até 19/04/2026",
-    "entrada": "Franca mediante doação de 1kg de alimento não perecível ou material de limpeza"
   },
   {
     "title": "Sabor de Cuba — Baile Latino no Infinu",
@@ -198,6 +264,17 @@
     "entrada": "Cortesia gratuita até 20h | Antecipado: R$ 15 | Porta: R$ 20"
   },
   {
+    "title": "Espetáculo \"O Labirinto de Vidro\" — Teatro em Brasília - dia 22",
+    "url": "eventos/espetaculo-o-labirinto-de-vidro-teatro-em-brasilia-dia-22.html",
+    "summary": "<p>O espetáculo \"O Labirinto de Vidro\" chega a Brasília com uma montagem que une teatro e linguagem corporal para explorar os limites entre o real e o imaginário, entre o que vemos e o que sentimos.</p>\n<p>Sobre o espetáculo</p>\n<p>\"O Labirinto de Vidro\" é uma obra cênica que mergulha o …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, dança, espetáculo, ingresso pago, Brasília, artes cênicas",
+    "local": "Teatro do SESI",
+    "data": "22/03/2026",
+    "entrada": "Consultar no site"
+  },
+  {
     "title": "Flamenco — Música e Dança com Fábio Rodriguez no Infinu",
     "url": "eventos/flamenco-musica-e-danca-com-fabio-rodriguez-no-infinu.html",
     "summary": "<p>O Grupo Capricho Espanhol sobe ao palco do Infinu para um show recheado de magia e beleza da cultura flamenca, com a presença ilustre de Fábio Rodriguez. O grupo se apresenta acompanhado do violão flamenco de Lucas Trigueiro e do cajón de Patrizia Veloso.</p>\n<p>Sobre o espetáculo</p>\n<p>O Capricho Espanhol …</p>",
@@ -209,6 +286,28 @@
     "entrada": "Meia-entrada/Solidário: R$ 40 | Inteira: R$ 80"
   },
   {
+    "title": "Hannah Arendt — Uma Aula Magna no Sesc 504 Sul",
+    "url": "eventos/hannah-arendt-uma-aula-magna-no-sesc-504-sul.html",
+    "summary": "<p>Criado por Eduardo Wotzik, o espetáculo traz à cena contemporânea as ideias e reflexões de uma das mais importantes pensadoras do século XX. Em formato de aula teatral, Hannah Arendt retorna ao nosso tempo para discutir temas como ética, educação, sociedade de massas e cidadania.</p>\n<p>Sobre o espetáculo</p>\n<p>A encenação …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, filosofia, Hannah Arendt, aula teatral, gratuito, Sesc, 504 Sul, cidadania",
+    "local": "Sesc 504 Sul",
+    "data": "20, 21 e 22/03/2026",
+    "entrada": "Gratuita mediante doação de 1kg de alimento não perecível (Mesa Brasil Sesc)"
+  },
+  {
+    "title": "IV Encontro de Teatro Lambe-Lambe de Brasília - dia 22",
+    "url": "eventos/iv-encontro-de-teatro-lambe-lambe-de-brasilia-dia-22.html",
+    "summary": "<p>O IV Encontro de Teatro Lambe-Lambe de Brasília chega ao Parque da Cidade para dois dias de apresentações gratuitas e ao ar livre. Uma experiência íntima, poética e encantadora para todas as idades.</p>\n<p>Sobre o evento</p>\n<p>O teatro lambe-lambe é uma forma de teatro de animação em que o espectador …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro lambe-lambe, teatro de animação, gratuito, ao ar livre, Brasília, boneco, miniatura",
+    "local": "Parque da Cidade Sarah Kubitschek",
+    "data": "22/03/2026",
+    "entrada": "Gratuita"
+  },
+  {
     "title": "Mahmundi em Brasília — Lançamento do Álbum \"Bem-vindos de Volta\" no Infinu",
     "url": "eventos/mahmundi-em-brasilia-lancamento-do-album-bem-vindos-de-volta-no-infinu.html",
     "summary": "<p>Mahmundi retorna a Brasília para apresentar \"Bem-vindos de Volta\", seu mais recente álbum. Sozinha no palco, a cantora e compositora apresenta seu repertório em uma releitura eletrônica, manipulando bases, sintetizadores e camadas vocais ao vivo.</p>\n<p>Sobre o show</p>\n<p>\"Bem-vindos de volta\" é uma experiência íntima e eletrônica que revisita a …</p>",
@@ -218,6 +317,28 @@
     "local": "Espaco Infinu",
     "data": "22/03/2026",
     "entrada": "Solidário (1kg alimento) | Meia: R$ 30 | Inteira: R$ 60 (consultar lotes no Shotgun)"
+  },
+  {
+    "title": "Mostra Todd Haynes — Últimos Dias no CCBB Brasília",
+    "url": "eventos/mostra-todd-haynes-ultimos-dias-no-ccbb-brasilia.html",
+    "summary": "<p>Últimos dias da retrospectiva dedicada a Todd Haynes, um dos cineastas mais influentes do cinema contemporâneo. A mostra reúne 23 filmes, incluindo Carol, Longe do Paraíso, Velvet Goldmine e Segredos de um Escândalo, além de obras em diálogo com sua filmografia.</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "cinema, gratuito, CCBB, Todd Haynes, CCBB Brasilia",
+    "local": "CCBB Brasilia",
+    "data": "Até 22/03/2026",
+    "entrada": "Gratuito"
+  },
+  {
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 22",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-22.html",
+    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
+    "local": "Teatro da CAIXA Cultural",
+    "data": "22/03/2026",
+    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
   },
   {
     "title": "Oficina Maker — Insetos Elétricos no SESI Lab",
@@ -330,17 +451,6 @@
     "entrada": "Consultar no site"
   },
   {
-    "title": "Espetáculo \"O Labirinto de Vidro\" — Teatro em Brasília - dia 22",
-    "url": "eventos/espetaculo-o-labirinto-de-vidro-teatro-em-brasilia-dia-22.html",
-    "summary": "<p>O espetáculo \"O Labirinto de Vidro\" chega a Brasília com uma montagem que une teatro e linguagem corporal para explorar os limites entre o real e o imaginário, entre o que vemos e o que sentimos.</p>\n<p>Sobre o espetáculo</p>\n<p>\"O Labirinto de Vidro\" é uma obra cênica que mergulha o …</p>",
-    "category": "Teatro",
-    "category_url": "categoria/teatro.html",
-    "tags": "teatro, dança, espetáculo, ingresso pago, Brasília, artes cênicas",
-    "local": "Teatro do SESI",
-    "data": "22/03/2026",
-    "entrada": "Consultar no site"
-  },
-  {
     "title": "Festa Thai Na Cena no Bar Banks",
     "url": "eventos/festa-thai-na-cena-no-bar-banks.html",
     "summary": "<p>O Bar Banks, um dos pontos culturais mais animados da Asa Norte, recebe mais uma edição da Festa Thai Na Cena — uma noite de música, encontro e boa energia para agitar o sábado brasiliense.</p>\n<p>Sobre o evento</p>\n<p>A Thai Na Cena é uma festa que celebra a diversidade musical e …</p>",
@@ -352,15 +462,15 @@
     "entrada": "Consultar no site"
   },
   {
-    "title": "Festival Samba DF — Resistência e Cultura Negra em Ceilândia - dia 20",
-    "url": "eventos/festival-samba-df-resistencia-e-cultura-negra-em-ceilandia-dia-20.html",
-    "summary": "<p>No Dia Internacional pela Eliminação da Discriminação Racial, Ceilândia sedia a primeira edição do Festival Samba DF — uma ação coletiva de valorização do samba da capital, que reúne arte, militância e economia criativa em uma festa aberta a toda a cidade.</p>\n<p>Sobre o festival</p>\n<p>O festival prioriza, em seu line-up …</p>",
+    "title": "Festival do Patrimônio Brasileiro — Criolo, Hamilton de Holanda e Mariene de Castro em Ceilândia - dia 21",
+    "url": "eventos/festival-do-patrimonio-brasileiro-criolo-hamilton-de-holanda-e-mariene-de-castro-em-ceilandia-dia-21.html",
+    "summary": "<p>Nos dias 20 e 21 de março, a Praça da Juventude, em Ceilândia, recebe a primeira edição do Festival do Patrimônio Brasileiro — um grande encontro das tradições culturais do país, com shows, feiras, homenagens a bens culturais imateriais, seminário e rodas de cultura popular. Entrada gratuita para todos os espetáculos …</p>",
     "category": "Festival",
     "category_url": "categoria/festival.html",
-    "tags": "samba, pagode, cultura negra, Ceilândia, gratuito, Dia da Eliminação da Discriminação Racial",
-    "local": "Ceilândia Sul — EQNN 18/20 (próximo ao metrô)",
-    "data": "20/03/2026",
-    "entrada": "Ingressos a partir de R$ 50 para o dia 20/03"
+    "tags": "cultura popular, patrimônio imaterial, gratuito, Ceilândia, hip hop, choro, samba",
+    "local": "Praça da Juventude — Ceilândia (DF)",
+    "data": "21/03/2026",
+    "entrada": "Gratuita (retirada pelo Sympla)"
   },
   {
     "title": "Festival Samba DF — Resistência e Cultura Negra em Ceilândia - dia 21",
@@ -418,17 +528,6 @@
     "entrada": "Gratuita"
   },
   {
-    "title": "IV Encontro de Teatro Lambe-Lambe de Brasília - dia 22",
-    "url": "eventos/iv-encontro-de-teatro-lambe-lambe-de-brasilia-dia-22.html",
-    "summary": "<p>O IV Encontro de Teatro Lambe-Lambe de Brasília chega ao Parque da Cidade para dois dias de apresentações gratuitas e ao ar livre. Uma experiência íntima, poética e encantadora para todas as idades.</p>\n<p>Sobre o evento</p>\n<p>O teatro lambe-lambe é uma forma de teatro de animação em que o espectador …</p>",
-    "category": "Teatro",
-    "category_url": "categoria/teatro.html",
-    "tags": "teatro lambe-lambe, teatro de animação, gratuito, ao ar livre, Brasília, boneco, miniatura",
-    "local": "Parque da Cidade Sarah Kubitschek",
-    "data": "22/03/2026",
-    "entrada": "Gratuita"
-  },
-  {
     "title": "Jurema Dança — Música Radioativa na Espelunca",
     "url": "eventos/jurema-danca-musica-radioativa-na-espelunca.html",
     "summary": "<p>O Jurema Dança chega a Brasília com a edição Música Radioativa, unindo expressões populares do sertão e música eletrônica. Depois de passar pela Chapada dos Veadeiros e pela Bahia, o projeto ocupa a Espelunca com um marco histórico: a estreia nacional do COCO NUCLEAR ao vivo.</p>\n<p>Sobre o evento</p>\n<p>COCO …</p>",
@@ -438,6 +537,17 @@
     "local": "Espelunca",
     "data": "21/03/2026",
     "entrada": "Lotes a partir de R$ 25"
+  },
+  {
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 21",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-21.html",
+    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
+    "local": "Teatro da CAIXA Cultural",
+    "data": "21/03/2026",
+    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
   },
   {
     "title": "Pequila — O Grande Baile Latino no Ãm.bar",
@@ -462,17 +572,6 @@
     "entrada": "Consultar no site"
   },
   {
-    "title": "Exposição Beirada a Leste — Sesc 504 Sul",
-    "url": "eventos/exposicao-beirada-a-leste-sesc-504-sul.html",
-    "summary": "<p>Para alguns é o oeste, para outros, talvez seja o leste o lugar de oriente-ação. Beiradas descortinam mundos. Beirada a Leste é uma exposição que reúne fotografias, pinturas, desenhos e gravuras, cujo fio condutor é a vida que floresce à margem.</p>\n<p>Sobre a exposição</p>\n<p>As obras apresentadas vêm de um …</p>",
-    "category": "Exposição",
-    "category_url": "categoria/exposicao.html",
-    "tags": "exposição, fotografia, pintura, gravura, desenho, gratuito, Sesc, 504 Sul",
-    "local": "Sesc 504 Sul",
-    "data": "20/03 a 29/04/2026",
-    "entrada": "Gratuita (sem necessidade de retirada de ingresso)"
-  },
-  {
     "title": "Fábio Jr. — Turnê \"Bem Mais Que os Meus 20 e Poucos Anos\" em Brasília",
     "url": "eventos/fabio-jr-turne-bem-mais-que-os-meus-20-e-poucos-anos-em-brasilia.html",
     "summary": "<p>Fábio Jr. desembarca em Brasília para única apresentação da turnê \"Bem Mais Que os Meus 20 e Poucos Anos\", no Ulysses Centro de Convenções. O show promete reunir o público em uma noite de forte conexão com um dos artistas mais populares da música romântica brasileira.</p>\n<p>Sobre o show</p>\n<p>Em …</p>",
@@ -495,47 +594,25 @@
     "entrada": "Gratuita (retirada pelo Sympla)"
   },
   {
-    "title": "Festival do Patrimônio Brasileiro — Criolo, Hamilton de Holanda e Mariene de Castro em Ceilândia - dia 21",
-    "url": "eventos/festival-do-patrimonio-brasileiro-criolo-hamilton-de-holanda-e-mariene-de-castro-em-ceilandia-dia-21.html",
-    "summary": "<p>Nos dias 20 e 21 de março, a Praça da Juventude, em Ceilândia, recebe a primeira edição do Festival do Patrimônio Brasileiro — um grande encontro das tradições culturais do país, com shows, feiras, homenagens a bens culturais imateriais, seminário e rodas de cultura popular. Entrada gratuita para todos os espetáculos …</p>",
+    "title": "Festival Samba DF — Resistência e Cultura Negra em Ceilândia - dia 20",
+    "url": "eventos/festival-samba-df-resistencia-e-cultura-negra-em-ceilandia-dia-20.html",
+    "summary": "<p>No Dia Internacional pela Eliminação da Discriminação Racial, Ceilândia sedia a primeira edição do Festival Samba DF — uma ação coletiva de valorização do samba da capital, que reúne arte, militância e economia criativa em uma festa aberta a toda a cidade.</p>\n<p>Sobre o festival</p>\n<p>O festival prioriza, em seu line-up …</p>",
     "category": "Festival",
     "category_url": "categoria/festival.html",
-    "tags": "cultura popular, patrimônio imaterial, gratuito, Ceilândia, hip hop, choro, samba",
-    "local": "Praça da Juventude — Ceilândia (DF)",
-    "data": "21/03/2026",
-    "entrada": "Gratuita (retirada pelo Sympla)"
+    "tags": "samba, pagode, cultura negra, Ceilândia, gratuito, Dia da Eliminação da Discriminação Racial",
+    "local": "Ceilândia Sul — EQNN 18/20 (próximo ao metrô)",
+    "data": "20/03/2026",
+    "entrada": "Ingressos a partir de R$ 50 para o dia 20/03"
   },
   {
-    "title": "Hannah Arendt — Uma Aula Magna no Sesc 504 Sul",
-    "url": "eventos/hannah-arendt-uma-aula-magna-no-sesc-504-sul.html",
-    "summary": "<p>Criado por Eduardo Wotzik, o espetáculo traz à cena contemporânea as ideias e reflexões de uma das mais importantes pensadoras do século XX. Em formato de aula teatral, Hannah Arendt retorna ao nosso tempo para discutir temas como ética, educação, sociedade de massas e cidadania.</p>\n<p>Sobre o espetáculo</p>\n<p>A encenação …</p>",
-    "category": "Teatro",
-    "category_url": "categoria/teatro.html",
-    "tags": "teatro, filosofia, Hannah Arendt, aula teatral, gratuito, Sesc, 504 Sul, cidadania",
-    "local": "Sesc 504 Sul",
-    "data": "20, 21 e 22/03/2026",
-    "entrada": "Gratuita mediante doação de 1kg de alimento não perecível (Mesa Brasil Sesc)"
-  },
-  {
-    "title": "Exposição Carnavalesco Canibalesco — Arte de Badu em Brasília",
-    "url": "eventos/exposicao-carnavalesco-canibalesco-arte-de-badu-em-brasilia.html",
-    "summary": "<p>A Pilastra Galeria-Escola apresenta \"Carnavalesco Canibalesco\", primeira individual do artista goiano Badu fora de Goiânia. A abertura acontece no dia 19 de março, às 19h, com visitação gratuita até 25 de abril.</p>\n<p>Sobre a exposição</p>\n<p>Em trânsito entre o bordado, a pintura, o desenho e objetos, Badu subverte e recria …</p>",
-    "category": "Exposição",
-    "category_url": "categoria/exposicao.html",
-    "tags": "arte contemporânea, exposição, gratuito, Guará, bordado, pintura, carnaval",
-    "local": "A Pilastra Galeria-Escola — Guará II, QE 40, rua 09, lote 8",
-    "data": "Abertura 19/03 às 19h | Visitação: 20/03 a 25/04/2026",
-    "entrada": "Gratuita"
-  },
-  {
-    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 18",
-    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-18.html",
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 20",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-20.html",
     "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
     "category": "Teatro",
     "category_url": "categoria/teatro.html",
     "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
-    "local": "Teatro da CAIXA Cultural Brasília",
-    "data": "18/03/2026",
+    "local": "Teatro da CAIXA Cultural",
+    "data": "20/03/2026",
     "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
   },
   {
@@ -550,37 +627,26 @@
     "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
   },
   {
-    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 20",
-    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-20.html",
+    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 18",
+    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-18.html",
     "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
     "category": "Teatro",
     "category_url": "categoria/teatro.html",
     "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
-    "local": "Teatro da CAIXA Cultural",
-    "data": "20/03/2026",
+    "local": "Teatro da CAIXA Cultural Brasília",
+    "data": "18/03/2026",
     "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
   },
   {
-    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 21",
-    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-21.html",
-    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
-    "category": "Teatro",
-    "category_url": "categoria/teatro.html",
-    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
-    "local": "Teatro da CAIXA Cultural",
-    "data": "21/03/2026",
-    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
-  },
-  {
-    "title": "Musical Infantojuvenil \"Menino Mandela\" na CAIXA Cultural Brasília - dia 22",
-    "url": "eventos/musical-infantojuvenil-menino-mandela-na-caixa-cultural-brasilia-dia-22.html",
-    "summary": "<p>A CAIXA Cultural Brasília recebe, de 18 a 22 de março, o premiado musical infantojuvenil \"Menino Mandela\" — uma jornada poética e educativa pela infância do menino Rolihlahla, que anos mais tarde se tornaria Nelson Mandela, símbolo mundial da luta contra o apartheid.</p>\n<p>Sobre o espetáculo</p>\n<p>A história tem início quando …</p>",
-    "category": "Teatro",
-    "category_url": "categoria/teatro.html",
-    "tags": "teatro, musical, infantojuvenil, Nelson Mandela, CAIXA Cultural, educação, letramento racial",
-    "local": "Teatro da CAIXA Cultural",
-    "data": "22/03/2026",
-    "entrada": "R$ 30 (inteira) | R$ 15 (meia)"
+    "title": "1ª Feira da Gestante 2026 no Pátio Brasil Shopping",
+    "url": "eventos/1a-feira-da-gestante-2026-no-patio-brasil-shopping.html",
+    "summary": "<p>Data: 13 a 15/03/2026\nHorario: Sex 12h–21h · Sáb 10h–21h · Dom 13h–19h\nEntrada: Gratuito</p>\n<p>A maior feira do setor materno-infantil do país reúne mais de 50 expositores das cinco regiões do Brasil. Produtos para bebês de 0 a 2 anos e para gestantes, com preços a …</p>",
+    "category": "Feira",
+    "category_url": "categoria/feira.html",
+    "tags": "feira, família, bebê, gratuito, Asa Sul, Patio Brasil Shopping",
+    "local": "Patio Brasil Shopping",
+    "data": "",
+    "entrada": ""
   },
   {
     "title": "52 Anos do Planetário de Brasília — Programação Especial",
@@ -591,6 +657,39 @@
     "tags": "ciência, família, gratuito, tecnologia, Planetário, Planetario de Brasilia",
     "local": "Planetario de Brasilia",
     "data": "15/03/2026",
+    "entrada": "Gratuito"
+  },
+  {
+    "title": "Espetáculo 'Mais Um Clichê De Amor' no Sesc",
+    "url": "eventos/espetaculo-mais-um-cliche-de-amor-no-sesc.html",
+    "summary": "<p>Germano de Freitas e Louise Prata interpretam dois estranhos presos em um elevador após uma consulta terapêutica. Satirizando os clichês da comédia romântica, a peça explora as diferenças entre Diego e Juliana numa comédia leve e bem-humorada.</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, comédia romântica, Sesc, Asa Sul, Sesc Setor Comercial Sul",
+    "local": "Sesc Setor Comercial Sul",
+    "data": "14 e 15/03/2026",
+    "entrada": "A partir de R$ 25"
+  },
+  {
+    "title": "Flaira Ferro — Turnê 'Afeto Radical' na CAIXA Cultural",
+    "url": "eventos/flaira-ferro-turne-afeto-radical-na-caixa-cultural.html",
+    "summary": "<p>A cantora pernambucana Flaira Ferro traz a turnê do seu quarto álbum Afeto Radical à CAIXA Cultural Brasília. Um espetáculo performático onde a narrativa das canções é articulada por histórias sobre o tempo, a infância, a maternidade e os dilemas da modernidade.</p>",
+    "category": "Música",
+    "category_url": "categoria/musica.html",
+    "tags": "música ao vivo, gratuito, pernambuco, CAIXA Cultural, Caixa Cultural Brasilia",
+    "local": "Caixa Cultural Brasilia",
+    "data": "13 a 15/03/2026",
+    "entrada": "Gratuito"
+  },
+  {
+    "title": "Recitais Claudio Santoro e Vinícius de Moraes na Casa Thomas Jefferson",
+    "url": "eventos/recitais-claudio-santoro-e-vinicius-de-moraes-na-casa-thomas-jefferson.html",
+    "summary": "<p>Duas apresentações especiais dedicadas à obra de Claudio Santoro. Na sexta, o concerto Canções de Amor reúne a mezzo-soprano Denise de Freitas e o pianista Alessandro Santoro. No domingo, o recital Canções sem Palavras apresenta obras inéditas para piano a partir de manuscritos do compositor.</p>",
+    "category": "Música",
+    "category_url": "categoria/musica.html",
+    "tags": "música clássica, MPB, gratuito, Asa Sul, recital, CTJ Hall",
+    "local": "CTJ Hall",
+    "data": "13 e 15/03/2026",
     "entrada": "Gratuito"
   },
   {
@@ -627,17 +726,6 @@
     "entrada": ""
   },
   {
-    "title": "Espetáculo 'Mais Um Clichê De Amor' no Sesc",
-    "url": "eventos/espetaculo-mais-um-cliche-de-amor-no-sesc.html",
-    "summary": "<p>Germano de Freitas e Louise Prata interpretam dois estranhos presos em um elevador após uma consulta terapêutica. Satirizando os clichês da comédia romântica, a peça explora as diferenças entre Diego e Juliana numa comédia leve e bem-humorada.</p>",
-    "category": "Teatro",
-    "category_url": "categoria/teatro.html",
-    "tags": "teatro, comédia romântica, Sesc, Asa Sul, Sesc Setor Comercial Sul",
-    "local": "Sesc Setor Comercial Sul",
-    "data": "14 e 15/03/2026",
-    "entrada": "A partir de R$ 25"
-  },
-  {
     "title": "'O Concerto — Palhaçaria para Bebês' no Teatro Brasília Shopping",
     "url": "eventos/o-concerto-palhacaria-para-bebes-no-teatro-brasilia-shopping.html",
     "summary": "<p>O palhaço Zambelê descobre novas possibilidades sonoras brincando com objetos do cotidiano, transformando-os em ritmos e melodias que convidam o público a participar. Espetáculo sensorial e interativo para bebês de 6 meses a 5 anos e suas famílias.</p>",
@@ -660,50 +748,6 @@
     "entrada": "Gratuito"
   },
   {
-    "title": "1ª Feira da Gestante 2026 no Pátio Brasil Shopping",
-    "url": "eventos/1a-feira-da-gestante-2026-no-patio-brasil-shopping.html",
-    "summary": "<p>Data: 13 a 15/03/2026\nHorario: Sex 12h–21h · Sáb 10h–21h · Dom 13h–19h\nEntrada: Gratuito</p>\n<p>A maior feira do setor materno-infantil do país reúne mais de 50 expositores das cinco regiões do Brasil. Produtos para bebês de 0 a 2 anos e para gestantes, com preços a …</p>",
-    "category": "Feira",
-    "category_url": "categoria/feira.html",
-    "tags": "feira, família, bebê, gratuito, Asa Sul, Patio Brasil Shopping",
-    "local": "Patio Brasil Shopping",
-    "data": "",
-    "entrada": ""
-  },
-  {
-    "title": "A Comunidade do Arco-Íris — CCBB Brasília",
-    "url": "eventos/a-comunidade-do-arco-iris-ccbb-brasilia.html",
-    "summary": "<p>Única obra de Caio Fernando Abreu voltada ao público infantil, o espetáculo propõe uma reflexão sobre confiança, amizade, democracia e convivência. A trama acompanha brinquedos e seres mágicos que decidem viver em comunidade em uma floresta, longe da poluição e do consumo. Em cartaz após temporadas de sucesso em São …</p>",
-    "category": "Teatro",
-    "category_url": "categoria/teatro.html",
-    "tags": "teatro infantil, família, Caio Fernando Abreu, CCBB, gratuito, CCBB Brasilia",
-    "local": "CCBB Brasilia",
-    "data": "Até 29/03/2026",
-    "entrada": "A partir de R$ 15"
-  },
-  {
-    "title": "Exposição 'Câmbio de Paradigma. Giro no Brasil'",
-    "url": "eventos/exposicao-cambio-de-paradigma-giro-no-brasil.html",
-    "summary": "<p>Data: Até 18/04/2026\nHorario: Seg–Sex 9h às 19h · Sáb 8h às 12h\nEntrada: Gratuito</p>\n<p>Mostra coletiva organizada pela Embaixada da Espanha e pelo Instituto Cervantes, reunindo seis artistas espanhóis, quatro brasileiros e uma artista convidada local. As obras abordam política, raça, gênero, tecnologia e ecologia.</p>",
-    "category": "Exposição",
-    "category_url": "categoria/exposicao.html",
-    "tags": "exposição, arte contemporânea, gratuito, Espanha, Asa Sul, Instituto Cervantes de Brasilia",
-    "local": "Instituto Cervantes de Brasilia",
-    "data": "",
-    "entrada": ""
-  },
-  {
-    "title": "Flaira Ferro — Turnê 'Afeto Radical' na CAIXA Cultural",
-    "url": "eventos/flaira-ferro-turne-afeto-radical-na-caixa-cultural.html",
-    "summary": "<p>A cantora pernambucana Flaira Ferro traz a turnê do seu quarto álbum Afeto Radical à CAIXA Cultural Brasília. Um espetáculo performático onde a narrativa das canções é articulada por histórias sobre o tempo, a infância, a maternidade e os dilemas da modernidade.</p>",
-    "category": "Música",
-    "category_url": "categoria/musica.html",
-    "tags": "música ao vivo, gratuito, pernambuco, CAIXA Cultural, Caixa Cultural Brasilia",
-    "local": "Caixa Cultural Brasilia",
-    "data": "13 a 15/03/2026",
-    "entrada": "Gratuito"
-  },
-  {
     "title": "Magoo e Encontros Musicais no Temporaneo",
     "url": "eventos/magoo-e-encontros-musicais-no-temporaneo.html",
     "summary": "<p>O Temporaneo reúne a banda Magoo e cinco cantores da cena musical de Brasília em dois shows. André Fantom, Alex Hurtado, Diogo Villar, Marcelo Raro e Paulo Mesquita se alternam em um show coletivo revisitando clássicos do rock nacional e internacional.</p>",
@@ -715,26 +759,15 @@
     "entrada": "A partir de R$ 40"
   },
   {
-    "title": "Mostra Todd Haynes — Últimos Dias no CCBB Brasília",
-    "url": "eventos/mostra-todd-haynes-ultimos-dias-no-ccbb-brasilia.html",
-    "summary": "<p>Últimos dias da retrospectiva dedicada a Todd Haynes, um dos cineastas mais influentes do cinema contemporâneo. A mostra reúne 23 filmes, incluindo Carol, Longe do Paraíso, Velvet Goldmine e Segredos de um Escândalo, além de obras em diálogo com sua filmografia.</p>",
-    "category": "Exposição",
-    "category_url": "categoria/exposicao.html",
-    "tags": "cinema, gratuito, CCBB, Todd Haynes, CCBB Brasilia",
-    "local": "CCBB Brasilia",
-    "data": "Até 22/03/2026",
-    "entrada": "Gratuito"
-  },
-  {
-    "title": "Recitais Claudio Santoro e Vinícius de Moraes na Casa Thomas Jefferson",
-    "url": "eventos/recitais-claudio-santoro-e-vinicius-de-moraes-na-casa-thomas-jefferson.html",
-    "summary": "<p>Duas apresentações especiais dedicadas à obra de Claudio Santoro. Na sexta, o concerto Canções de Amor reúne a mezzo-soprano Denise de Freitas e o pianista Alessandro Santoro. No domingo, o recital Canções sem Palavras apresenta obras inéditas para piano a partir de manuscritos do compositor.</p>",
-    "category": "Música",
-    "category_url": "categoria/musica.html",
-    "tags": "música clássica, MPB, gratuito, Asa Sul, recital, CTJ Hall",
-    "local": "CTJ Hall",
-    "data": "13 e 15/03/2026",
-    "entrada": "Gratuito"
+    "title": "Arranha-Céu — 4ª Edição do Festival de Circo Atual",
+    "url": "eventos/arranha-ceu-4a-edicao-do-festival-de-circo-atual.html",
+    "summary": "<p>O Espaço Cultural Renato Russo vira um grande picadeiro. A quarta edição do Arranha-Céu apresenta espetáculos solos circenses, sessão de cinema com filmes do universo mágico do circo, oficinas e bate-papos.</p>\n<h2>Solos e Picadeiros</h2>\n<p>O mote desta edição traduz a complexidade da arte circense: a curadoria traz um olhar atento …</p>",
+    "category": "Circo",
+    "category_url": "categoria/circo.html",
+    "tags": "circo, festival, solos, oficinas, 508 Sul, Espaco Cultural Renato Russo",
+    "local": "Espaco Cultural Renato Russo",
+    "data": "06 a 08/03/2026",
+    "entrada": "A partir de R$ 30"
   },
   {
     "title": "Espetáculo 'Casa Comida e Alma Lavada'",
@@ -746,6 +779,61 @@
     "local": "Espaco Cultural CAESB",
     "data": "08/03/2026",
     "entrada": "A partir de R$ 75"
+  },
+  {
+    "title": "Festival Onda Coreana — Imersão em K-dramas no Taguatinga Shopping",
+    "url": "eventos/festival-onda-coreana-imersao-em-k-dramas-no-taguatinga-shopping.html",
+    "summary": "<p>Entrada: A partir de R$ 25\nData: 06 a 08/03/2026\nHorario: Sex e Sáb 12h–22h · Dom 12h–20h</p>\n<p>O primeiro festival do país totalmente dedicado aos K-dramas transforma o Taguatinga Shopping em um pedaço da Coreia do Sul. Uma experiência imersiva que conecta fãs por meio de …</p>",
+    "category": "Festival",
+    "category_url": "categoria/festival.html",
+    "tags": "cultura coreana, kpop, kbeauty, kdrama, taguatinga, Taguatinga Shopping",
+    "local": "Taguatinga Shopping",
+    "data": "",
+    "entrada": ""
+  },
+  {
+    "title": "Festival Palco Livre 2026 — 2ª Edição no Riacho Fundo",
+    "url": "eventos/festival-palco-livre-2026-2a-edicao-no-riacho-fundo.html",
+    "summary": "<p>Três noites especiais dedicadas à música e aos talentos do Distrito Federal. O estacionamento do Frango no Pote se torna palco de uma festa que celebra o melhor da música local.</p>\n<h2>Atrações confirmadas</h2>\n<p>Andrézin - o Príncipe, Junior Ferreira, Miguel Santos, Juninho Brother, Banda Imagem, Nego Rainer, Alisson e Ariel, Roniel …</p>",
+    "category": "Música",
+    "category_url": "categoria/musica.html",
+    "tags": "música, forró, sertanejo, gratuito, Riacho Fundo, Riacho Fundo I",
+    "local": "Riacho Fundo I",
+    "data": "06 a 08/03/2026",
+    "entrada": "Entrada gratuita"
+  },
+  {
+    "title": "Space Today Experience — Ciência e Cultura Geek na Arena Mané Garrincha",
+    "url": "eventos/space-today-experience-ciencia-e-cultura-geek-na-arena-mane-garrincha.html",
+    "summary": "<p>Um dos maiores eventos da cultura geek do país chega a Brasília reunindo pesquisadores, comunicadores, criadores de conteúdo e personalidades da internet em uma programação que conecta conhecimento e entretenimento.</p>\n<h2>Programação</h2>\n<p>Palestras, podcast ao vivo, simuladores imersivos, experiências interativas, painéis, espaços temáticos, áreas instagramáveis e ativações de marca. Destaque para …</p>",
+    "category": "Festival",
+    "category_url": "categoria/festival.html",
+    "tags": "geek, ciência, tecnologia, gratuito, cosplay, Arena BRB",
+    "local": "Arena BRB",
+    "data": "06 a 08/03/2026",
+    "entrada": "Gratuito"
+  },
+  {
+    "title": "Viola em Canto's de Mulher — 8ª Edição, Dia Internacional das Mulheres",
+    "url": "eventos/viola-em-cantos-de-mulher-8a-edicao-dia-internacional-das-mulheres.html",
+    "summary": "<p>O maior encontro de violeiras do Brasil celebra, em sua 8ª edição, a força, a resistência e o protagonismo das mulheres na música caipira. O festival integra a programação cultural do Dia Internacional das Mulheres.</p>\n<h2>Programação</h2>\n<p>Apresentações musicais, oficinas, rodas de prosa, feira de artesanato, exposição digital e gastronomia típica …</p>",
+    "category": "Música",
+    "category_url": "categoria/musica.html",
+    "tags": "viola, música caipira, mulheres, gratuito, Candangolândia, Praca dos Estados",
+    "local": "Praca dos Estados",
+    "data": "06 a 08/03/2026",
+    "entrada": "Entrada gratuita"
+  },
+  {
+    "title": "Zoo Animado 2026 — Teatro, Brinquedoteca e Educação Ambiental",
+    "url": "eventos/zoo-animado-2026-teatro-brinquedoteca-e-educacao-ambiental.html",
+    "summary": "<p>A segunda edição do Zoo Animado reúne lazer, cultura e conscientização ambiental em um ambiente que estimula o contato com a natureza e o respeito à fauna.</p>\n<h2>Programação</h2>\n<p>Durante o evento, o público pode aproveitar teatro infantil, expositores, brinquedoteca e atividades de educação ambiental. Uma programação diversificada voltada ao público …</p>",
+    "category": "Família",
+    "category_url": "categoria/familia.html",
+    "tags": "zoológico, infantil, família, gratuito, educação ambiental, Zoologico de Brasilia",
+    "local": "Zoologico de Brasilia",
+    "data": "06 a 08/03/2026",
+    "entrada": "A partir de R$ 10 na bilheteria"
   },
   {
     "title": "1º Funk Rio em Ceilândia — Funk Retrô dos Anos 90/2000",
@@ -792,61 +880,6 @@
     "entrada": "A partir de R$ 80"
   },
   {
-    "title": "Arranha-Céu — 4ª Edição do Festival de Circo Atual",
-    "url": "eventos/arranha-ceu-4a-edicao-do-festival-de-circo-atual.html",
-    "summary": "<p>O Espaço Cultural Renato Russo vira um grande picadeiro. A quarta edição do Arranha-Céu apresenta espetáculos solos circenses, sessão de cinema com filmes do universo mágico do circo, oficinas e bate-papos.</p>\n<h2>Solos e Picadeiros</h2>\n<p>O mote desta edição traduz a complexidade da arte circense: a curadoria traz um olhar atento …</p>",
-    "category": "Circo",
-    "category_url": "categoria/circo.html",
-    "tags": "circo, festival, solos, oficinas, 508 Sul, Espaco Cultural Renato Russo",
-    "local": "Espaco Cultural Renato Russo",
-    "data": "06 a 08/03/2026",
-    "entrada": "A partir de R$ 30"
-  },
-  {
-    "title": "Exposição 'Ancestral: Afro-Américas' — Arte Negra entre Brasil e EUA",
-    "url": "eventos/exposicao-ancestral-afro-americas-arte-negra-entre-brasil-e-eua.html",
-    "summary": "<p>Até 3 de maio, o CCBB Brasília apresenta gratuitamente a exposição que celebra as raízes africanas que conectam Brasil e Estados Unidos por meio da arte.</p>\n<h2>Sobre a exposição</h2>\n<p>A mostra reúne cerca de 130 obras de artistas negros dos dois países e propõe um mergulho na força estética, política …</p>",
-    "category": "Exposição",
-    "category_url": "categoria/exposicao.html",
-    "tags": "arte, afro-brasileira, exposição, gratuito, CCBB, CCBB Brasilia",
-    "local": "CCBB Brasilia",
-    "data": "Até 03/05/2026",
-    "entrada": "Gratuito"
-  },
-  {
-    "title": "Exposição 'Comigo Ninguém Pode' — A Pintura de Jeff Alan",
-    "url": "eventos/exposicao-comigo-ninguem-pode-a-pintura-de-jeff-alan.html",
-    "summary": "<p>Até 31 de maio, a Caixa Cultural Brasília apresenta 50 obras do artista visual pernambucano Jeff Alan, que exploram memória, identidade e pertencimento.</p>\n<h2>Sobre a exposição</h2>\n<p>Um universo criativo construído a partir de vivências, afetos e referências do território do artista — marcado por cores vibrantes e pela presença de personagens …</p>",
-    "category": "Exposição",
-    "category_url": "categoria/exposicao.html",
-    "tags": "pintura, arte contemporânea, negritude, periferia, gratuito, Caixa Cultural Brasilia",
-    "local": "Caixa Cultural Brasilia",
-    "data": "Até 31/05/2026",
-    "entrada": "Entrada gratuita"
-  },
-  {
-    "title": "Festival Onda Coreana — Imersão em K-dramas no Taguatinga Shopping",
-    "url": "eventos/festival-onda-coreana-imersao-em-k-dramas-no-taguatinga-shopping.html",
-    "summary": "<p>Entrada: A partir de R$ 25\nData: 06 a 08/03/2026\nHorario: Sex e Sáb 12h–22h · Dom 12h–20h</p>\n<p>O primeiro festival do país totalmente dedicado aos K-dramas transforma o Taguatinga Shopping em um pedaço da Coreia do Sul. Uma experiência imersiva que conecta fãs por meio de …</p>",
-    "category": "Festival",
-    "category_url": "categoria/festival.html",
-    "tags": "cultura coreana, kpop, kbeauty, kdrama, taguatinga, Taguatinga Shopping",
-    "local": "Taguatinga Shopping",
-    "data": "",
-    "entrada": ""
-  },
-  {
-    "title": "Festival Palco Livre 2026 — 2ª Edição no Riacho Fundo",
-    "url": "eventos/festival-palco-livre-2026-2a-edicao-no-riacho-fundo.html",
-    "summary": "<p>Três noites especiais dedicadas à música e aos talentos do Distrito Federal. O estacionamento do Frango no Pote se torna palco de uma festa que celebra o melhor da música local.</p>\n<h2>Atrações confirmadas</h2>\n<p>Andrézin - o Príncipe, Junior Ferreira, Miguel Santos, Juninho Brother, Banda Imagem, Nego Rainer, Alisson e Ariel, Roniel …</p>",
-    "category": "Música",
-    "category_url": "categoria/musica.html",
-    "tags": "música, forró, sertanejo, gratuito, Riacho Fundo, Riacho Fundo I",
-    "local": "Riacho Fundo I",
-    "data": "06 a 08/03/2026",
-    "entrada": "Entrada gratuita"
-  },
-  {
     "title": "Real Circo — A Realeza Circense em Brasília",
     "url": "eventos/real-circo-a-realeza-circense-em-brasilia.html",
     "summary": "<p>Internacionalmente reconhecido como a Realeza Circense, o Real Circo chega a Brasília com uma superprodução que une tradição, tecnologia de ponta, música ao vivo e números de adrenalina extrema.</p>\n<h2>Uma experiência imersiva</h2>\n<p>Muito além do circo tradicional, o Real Circo entrega uma experiência contemporânea pensada para encantar crianças, jovens e …</p>",
@@ -858,37 +891,15 @@
     "entrada": "A partir de R$ 35"
   },
   {
-    "title": "Space Today Experience — Ciência e Cultura Geek na Arena Mané Garrincha",
-    "url": "eventos/space-today-experience-ciencia-e-cultura-geek-na-arena-mane-garrincha.html",
-    "summary": "<p>Um dos maiores eventos da cultura geek do país chega a Brasília reunindo pesquisadores, comunicadores, criadores de conteúdo e personalidades da internet em uma programação que conecta conhecimento e entretenimento.</p>\n<h2>Programação</h2>\n<p>Palestras, podcast ao vivo, simuladores imersivos, experiências interativas, painéis, espaços temáticos, áreas instagramáveis e ativações de marca. Destaque para …</p>",
-    "category": "Festival",
-    "category_url": "categoria/festival.html",
-    "tags": "geek, ciência, tecnologia, gratuito, cosplay, Arena BRB",
-    "local": "Arena BRB",
-    "data": "06 a 08/03/2026",
+    "title": "Feira Paralelo — Edição Dia da Mulher",
+    "url": "eventos/feira-paralelo-edicao-dia-da-mulher.html",
+    "summary": "<p>A primeira edição do ano da Feira Paralelo vem com um gostinho especial: uma feira super voltada ao público feminino, em homenagem ao Dia Internacional da Mulher. Produtos, arte, gastronomia e muito afeto reunidos no Infinu durante todo o fim de semana.</p>",
+    "category": "Feira",
+    "category_url": "categoria/feira.html",
+    "tags": "feira, gratuito, mulheres, artesanato, Espaco Infinu",
+    "local": "Espaco Infinu",
+    "data": "08 e 09/03/2025",
     "entrada": "Gratuito"
-  },
-  {
-    "title": "Viola em Canto's de Mulher — 8ª Edição, Dia Internacional das Mulheres",
-    "url": "eventos/viola-em-cantos-de-mulher-8a-edicao-dia-internacional-das-mulheres.html",
-    "summary": "<p>O maior encontro de violeiras do Brasil celebra, em sua 8ª edição, a força, a resistência e o protagonismo das mulheres na música caipira. O festival integra a programação cultural do Dia Internacional das Mulheres.</p>\n<h2>Programação</h2>\n<p>Apresentações musicais, oficinas, rodas de prosa, feira de artesanato, exposição digital e gastronomia típica …</p>",
-    "category": "Música",
-    "category_url": "categoria/musica.html",
-    "tags": "viola, música caipira, mulheres, gratuito, Candangolândia, Praca dos Estados",
-    "local": "Praca dos Estados",
-    "data": "06 a 08/03/2026",
-    "entrada": "Entrada gratuita"
-  },
-  {
-    "title": "Zoo Animado 2026 — Teatro, Brinquedoteca e Educação Ambiental",
-    "url": "eventos/zoo-animado-2026-teatro-brinquedoteca-e-educacao-ambiental.html",
-    "summary": "<p>A segunda edição do Zoo Animado reúne lazer, cultura e conscientização ambiental em um ambiente que estimula o contato com a natureza e o respeito à fauna.</p>\n<h2>Programação</h2>\n<p>Durante o evento, o público pode aproveitar teatro infantil, expositores, brinquedoteca e atividades de educação ambiental. Uma programação diversificada voltada ao público …</p>",
-    "category": "Família",
-    "category_url": "categoria/familia.html",
-    "tags": "zoológico, infantil, família, gratuito, educação ambiental, Zoologico de Brasilia",
-    "local": "Zoologico de Brasilia",
-    "data": "06 a 08/03/2026",
-    "entrada": "A partir de R$ 10 na bilheteria"
   },
   {
     "title": "Papisa + Convenção das Bruxas — Dia Internacional das Mulheres",
@@ -900,17 +911,6 @@
     "local": "Espaco Infinu",
     "data": "08/03/2025",
     "entrada": "Gratuito para os 100 primeiros em cada show"
-  },
-  {
-    "title": "Feira Paralelo — Edição Dia da Mulher",
-    "url": "eventos/feira-paralelo-edicao-dia-da-mulher.html",
-    "summary": "<p>A primeira edição do ano da Feira Paralelo vem com um gostinho especial: uma feira super voltada ao público feminino, em homenagem ao Dia Internacional da Mulher. Produtos, arte, gastronomia e muito afeto reunidos no Infinu durante todo o fim de semana.</p>",
-    "category": "Feira",
-    "category_url": "categoria/feira.html",
-    "tags": "feira, gratuito, mulheres, artesanato, Espaco Infinu",
-    "local": "Espaco Infinu",
-    "data": "08 e 09/03/2025",
-    "entrada": "Gratuito"
   },
   {
     "title": "Luciana Oliveira + Wander Wildner — Sábado no Infinu",
