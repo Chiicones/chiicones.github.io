@@ -28,7 +28,7 @@
     "category": "Show",
     "category_url": "categoria/show.html",
     "tags": "MPB, baiana, ao vivo, Infinu, Asa Sul, ingresso pago, música autoral",
-    "local": "Infinu Comunidade Criativa",
+    "local": "Espaco Infinu",
     "data": "29/03/2026 (domingo)",
     "entrada": "Solidário (1kg alimento) | Meia-entrada por lei — consultar lotes no Shotgun"
   },
@@ -39,7 +39,7 @@
     "category": "Show",
     "category_url": "categoria/show.html",
     "tags": "jazz, contemporâneo, alemanha, ao vivo, Infinu, Asa Sul, ingresso pago",
-    "local": "Infinu Comunidade Criativa",
+    "local": "Espaco Infinu",
     "data": "28/03/2026 (sábado)",
     "entrada": "Cortesia até 18h (gratuita, limitada) | Antecipado: R$ 20 | Na hora: R$ 35"
   },
@@ -61,7 +61,7 @@
     "category": "Festa",
     "category_url": "categoria/festa.html",
     "tags": "emo, post-hardcore, alternativo, luz negra, neon, Infinu, Asa Sul, ingresso pago",
-    "local": "Infinu Comunidade Criativa",
+    "local": "Espaco Infinu",
     "data": "28/03/2026 (sábado)",
     "entrada": "Solidário (1kg alimento) | Meia-entrada por lei disponível — consultar Shotgun"
   },
@@ -83,7 +83,7 @@
     "category": "Show",
     "category_url": "categoria/show.html",
     "tags": "música latina, Cuba, ao vivo, baile, Infinu, Asa Sul, ingresso pago",
-    "local": "Infinu Comunidade Criativa",
+    "local": "Espaco Infinu",
     "data": "28/03/2026 (sábado)",
     "entrada": "Meia-entrada/Solidário: R$ 30 | Inteira: R$ 60"
   },
@@ -94,7 +94,7 @@
     "category": "Festa",
     "category_url": "categoria/festa.html",
     "tags": "reggae, afrobeat, amapiano, funk, reggaeton, R&B, dancehall, Asa Sul, Ambar, ingresso pago",
-    "local": "Ãm.bar",
+    "local": "Ambar",
     "data": "28/03/2026 (sábado)",
     "entrada": "Consultar no Shotgun"
   },
@@ -116,7 +116,7 @@
     "category": "Festa",
     "category_url": "categoria/festa.html",
     "tags": "anos 2000, pop, hip-hop, funk, eletrônico, nostalgia, Asa Sul, Ambar, ingresso pago",
-    "local": "Ãm.bar",
+    "local": "Ambar",
     "data": "27/03/2026 (sexta-feira)",
     "entrada": "Consultar no Shotgun"
   },
@@ -138,7 +138,7 @@
     "category": "Show",
     "category_url": "categoria/show.html",
     "tags": "jazz, rock, Rita Lee, instrumental, ao vivo, Infinu, Asa Sul, ingresso pago",
-    "local": "Infinu Comunidade Criativa",
+    "local": "Espaco Infinu",
     "data": "25/03/2026 (quarta-feira)",
     "entrada": "R$ 20 (em pé) | R$ 35 (com mesa) — 50 primeiras pessoas até 20h entram de graça"
   },
@@ -193,7 +193,7 @@
     "category": "Show",
     "category_url": "categoria/show.html",
     "tags": "flamenco, dança, música espanhola, Asa Sul, Infinu, ingresso pago, ao vivo",
-    "local": "Infinu Comunidade Criativa",
+    "local": "Espaco Infinu",
     "data": "22/03/2026 (domingo)",
     "entrada": "Meia-entrada/Solidário: R$ 40 | Inteira: R$ 80"
   },
@@ -204,7 +204,7 @@
     "category": "Show",
     "category_url": "categoria/show.html",
     "tags": "indie, eletrônico, lançamento de disco, Infinu, Asa Sul, ingresso pago, ao vivo",
-    "local": "Infinu Comunidade Criativa",
+    "local": "Espaco Infinu",
     "data": "22/03/2026 (domingo)",
     "entrada": "Solidário (1kg alimento) | Meia: R$ 30 | Inteira: R$ 60 (consultar lotes no Shotgun)"
   },
@@ -225,8 +225,8 @@
     "summary": "<p>O Conexão Charme apresenta a Resenha Black Bom, diretamente do Rio de Janeiro, em edição especial no Ãm.bar em Brasília. O baile black que conquistou o Brasil chega com equipe completa — DJs, coreógrafos, dançarinos e charmeiros representando diferentes gerações da cultura charme carioca.</p>\n<p>Sobre o evento</p>\n<p>A programação promove …</p>",
     "category": "Festa",
     "category_url": "categoria/festa.html",
-    "tags": "charme, soul, hip hop, flashback, R&B, freestyle, Asa Sul, Ambar, ingresso pago",
-    "local": "Ãm.bar",
+    "tags": "charme, soul, hip hop, flashback, R\\&B, freestyle, Asa Sul, Ambar, ingresso pago",
+    "local": "Ambar",
     "data": "22/03/2026 (domingo)",
     "entrada": "Consultar no Shotgun | Aniversariantes de março: entrada gratuita"
   },
@@ -402,7 +402,7 @@
     "category": "Festa",
     "category_url": "categoria/festa.html",
     "tags": "salsa, reggaeton, bachata, merengue, cúmbia, pop latino, Asa Sul, Ambar, ingresso pago",
-    "local": "Ãm.bar",
+    "local": "Ambar",
     "data": "21/03/2026 (sábado)",
     "entrada": "Consultar lotes no Shotgun"
   },
