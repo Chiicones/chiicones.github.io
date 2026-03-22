@@ -77,6 +77,17 @@
     "entrada": "Consultar lotes no Shotgun | Portadores do ingresso do Gop Tun Festival 2026 entram de graça"
   },
   {
+    "title": "Irmã Angélica — Ópera de Puccini no Sesc Ceilândia",
+    "url": "eventos/irma-angelica-opera-de-puccini-no-sesc-ceilandia.html",
+    "summary": "<p>Os teatros do Sesc Gama e Sesc Ceilândia recebem a ópera Irmã Angélica, do compositor italiano Giacomo Puccini, em seis apresentações com entrada franca. O espetáculo, que estreou em Brasília em 2024, retorna em nova temporada com um elenco e equipe técnica formados majoritariamente por mulheres.</p>\n<p>Sobre a ópera</p>\n<p>O …</p>",
+    "category": "Ópera",
+    "category_url": "categoria/opera.html",
+    "tags": "ópera, Puccini, música clássica, entrada franca, Sesc, Ceilândia, elenco feminino",
+    "local": "Sesc Ceilândia",
+    "data": "28 e 29/03/2026 | Temporada completa até 19/04/2026",
+    "entrada": "Franca mediante doação de 1kg de alimento não perecível ou material de limpeza"
+  },
+  {
     "title": "Sabor de Cuba — Baile Latino no Infinu",
     "url": "eventos/sabor-de-cuba-baile-latino-no-infinu.html",
     "summary": "<p>Chegando de um show onde abriram para o lendário Manu Chao, o consagrado grupo Sabor de Cuba aterrisa mais uma vez no Infinu para uma ode à boa música latina. Uma noite de ritmo, sabor e alegria que só a música cubana sabe entregar.</p>\n<p>Sobre o show</p>\n<p>O Sabor de …</p>",
@@ -215,9 +226,31 @@
     "category": "Ópera",
     "category_url": "categoria/opera.html",
     "tags": "ópera, música barroca, Venus and Adonis, John Blow, gratuito, Brasília, música antiga",
-    "local": "Consultar no site (Escola de Música de Brasília ou auditório parceiro)",
+    "local": "Teatro Sesc Paulo Autran",
     "data": "22/03/2026",
     "entrada": "Gratuita"
+  },
+  {
+    "title": "Ópera \"Venus and Adonis\" em Brasília",
+    "url": "eventos/opera-venus-and-adonis-em-brasilia.html",
+    "summary": "<p>Brasília recebe uma apresentação da ópera barroca \"Venus and Adonis\", de John Blow — considerada a primeira ópera genuinamente inglesa e precursora do \"Dido and Aeneas\", de Purcell. Entrada gratuita.</p>\n<p>Sobre a ópera</p>\n<p>Composta por volta de 1683 para a corte do rei Carlos II da Inglaterra, \"Venus and Adonis\" é …</p>",
+    "category": "Ópera",
+    "category_url": "categoria/opera.html",
+    "tags": "ópera, música barroca, Venus and Adonis, John Blow, gratuito, Brasília, música antiga",
+    "local": "Teatro Sesc Paulo Gracindo  - Gama",
+    "data": "22/03/2026",
+    "entrada": "Gratuita"
+  },
+  {
+    "title": "Pegando Pesado — Mução, Renan da Resenha e Zé Fabiano no Sesc Gama",
+    "url": "eventos/pegando-pesado-mucao-renan-da-resenha-e-ze-fabiano-no-sesc-gama.html",
+    "summary": "<p>O Projeto Pegando Pesado é o encontro de gerações no palco — a união de três humoristas genuinamente nordestinos, criados no cuscuz e no tabefe, que vieram do interior e conquistaram o Brasil falando de causos do sertão, fazendo piada com o cotidiano e levando a plateia à gargalhada.</p>\n<p>Sobre o …</p>",
+    "category": "Comédia",
+    "category_url": "categoria/comedia.html",
+    "tags": "stand up, comédia, nordestino, Sesc Gama, humor, ingresso pago",
+    "local": "Sesc Gama",
+    "data": "22/03/2026 (domingo)",
+    "entrada": "Ingressos à venda no site do Sesc DF"
   },
   {
     "title": "Resenha Black Bom (RJ) — Conexão Charme no Ãm.bar",
@@ -418,6 +451,17 @@
     "entrada": "Consultar no site"
   },
   {
+    "title": "Exposição Beirada a Leste — Sesc 504 Sul",
+    "url": "eventos/exposicao-beirada-a-leste-sesc-504-sul.html",
+    "summary": "<p>Para alguns é o oeste, para outros, talvez seja o leste o lugar de oriente-ação. Beiradas descortinam mundos. Beirada a Leste é uma exposição que reúne fotografias, pinturas, desenhos e gravuras, cujo fio condutor é a vida que floresce à margem.</p>\n<p>Sobre a exposição</p>\n<p>As obras apresentadas vêm de um …</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "exposição, fotografia, pintura, gravura, desenho, gratuito, Sesc, 504 Sul",
+    "local": "Sesc 504 Sul",
+    "data": "20/03 a 29/04/2026",
+    "entrada": "Gratuita (sem necessidade de retirada de ingresso)"
+  },
+  {
     "title": "Fábio Jr. — Turnê \"Bem Mais Que os Meus 20 e Poucos Anos\" em Brasília",
     "url": "eventos/fabio-jr-turne-bem-mais-que-os-meus-20-e-poucos-anos-em-brasilia.html",
     "summary": "<p>Fábio Jr. desembarca em Brasília para única apresentação da turnê \"Bem Mais Que os Meus 20 e Poucos Anos\", no Ulysses Centro de Convenções. O show promete reunir o público em uma noite de forte conexão com um dos artistas mais populares da música romântica brasileira.</p>\n<p>Sobre o show</p>\n<p>Em …</p>",
@@ -449,6 +493,17 @@
     "local": "Praça da Juventude — Ceilândia (DF)",
     "data": "21/03/2026",
     "entrada": "Gratuita (retirada pelo Sympla)"
+  },
+  {
+    "title": "Hannah Arendt — Uma Aula Magna no Sesc 504 Sul",
+    "url": "eventos/hannah-arendt-uma-aula-magna-no-sesc-504-sul.html",
+    "summary": "<p>Criado por Eduardo Wotzik, o espetáculo traz à cena contemporânea as ideias e reflexões de uma das mais importantes pensadoras do século XX. Em formato de aula teatral, Hannah Arendt retorna ao nosso tempo para discutir temas como ética, educação, sociedade de massas e cidadania.</p>\n<p>Sobre o espetáculo</p>\n<p>A encenação …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, filosofia, Hannah Arendt, aula teatral, gratuito, Sesc, 504 Sul, cidadania",
+    "local": "Sesc 504 Sul",
+    "data": "20, 21 e 22/03/2026",
+    "entrada": "Gratuita mediante doação de 1kg de alimento não perecível (Mesa Brasil Sesc)"
   },
   {
     "title": "Exposição Carnavalesco Canibalesco — Arte de Badu em Brasília",
