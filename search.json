@@ -227,7 +227,7 @@
     "category_url": "categoria/teatro.html",
     "tags": "teatro, Frankenstein, Mary Shelley, Grupo Liquidificador, CCBB, CCBB Brasilia, inteligência artificial, ingresso pago, 26-03-2026, 27-03-2026, 28-03-2026, 29-03-2026, 30-03-2026, 31-03-2026, 01-04-2026, 02-04-2026, 03-04-2026, 04-04-2026, 05-04-2026, 06-04-2026, 07-04-2026, 08-04-2026, 09-04-2026, 10-04-2026, 11-04-2026, 12-04-2026, 13-04-2026, 14-04-2026, 15-04-2026, 16-04-2026, 17-04-2026, 18-04-2026, 19-04-2026",
     "local": "CCBB Brasilia",
-    "data": "26/03 a 19/04/2026 — quinta a domingo",
+    "data": "26/03 a 19/04/2026 — a",
     "entrada": "R$ 30 (inteira) | R$ 15 (meia-entrada)"
   },
   {
@@ -273,6 +273,17 @@
     "local": "Ulysses Centro de Convencoes",
     "data": "28/03/2026",
     "entrada": "A partir de R$ 140,00 (meia)"
+  },
+  {
+    "title": "As Cores da América Latina",
+    "url": "eventos/as-cores-da-america-latina.html",
+    "summary": "<p>O espetáculo amazonense \"As Cores da América Latina\" combina teatro e dança para revisitar três manifestações populares do continente: a Fiesta de la Tirana (Chile), a Huaconada (Peru) e o Cavalo-Marinho (Brasil). Premiado no 34º Prêmio Shell de Teatro (2024) na categoria Destaque Nacional, a montagem aposta em uma encenação …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, dança, cultura latina, caixa cultural, acessibilidade, libras, audiodescrição, 02-04-2026, 05-04-2026",
+    "local": "Caixa Cultural",
+    "data": "2 a 5 de abril",
+    "entrada": "R$ 30,00 (inteira) / R$ 15,00 (meia)"
   },
   {
     "title": "As Guardiãs do K-Pop em Brasília",
@@ -374,6 +385,17 @@
     "entrada": "Gratuito"
   },
   {
+    "title": "Exposição Elas no Itamaraty",
+    "url": "eventos/exposicao-elas-no-itamaraty.html",
+    "summary": "<p>A exposição \"Elas no Itamaraty\" convida o público a refletir sobre a presença feminina no ministério, sob a ótica da arte e da diplomacia. A mostra apresenta obras de 23 artistas que constam no acervo artístico, histórico e de representação do Palácio do Itamaraty e que foram doadas entre 2023 …</p>",
+    "category": "Exposição",
+    "category_url": "categoria/exposicao.html",
+    "tags": "exposição, arte, mulheres, diplomacia, gratuito, itamaraty, 05-04-2026",
+    "local": "Itamaraty",
+    "data": "Até 5 de abril",
+    "entrada": "Gratuito (mediante agendamento)"
+  },
+  {
     "title": "Exposição Habitar o Interlúdio",
     "url": "eventos/exposicao-habitar-o-interludio.html",
     "summary": "<p>A Referência Galeria apresenta a exposição \"Habitar o Interlúdio\", do fotógrafo Fred Lamego, com curadoria de Léo Tavares. Com 37 fotografias inéditas produzidas em cidades como Macapá, Tóquio, Jerusalém e Montreal, a mostra convida o público a uma experiência de contemplação e introspecção, explorando o diálogo entre tempo, espaço e …</p>",
@@ -438,6 +460,50 @@
     "local": "Manhattan Shopping",
     "data": "7, 14, 21 e 28/03/2026",
     "entrada": "Gratuito"
+  },
+  {
+    "title": "Móveis Coloniais de Acaju e Rodrigo Barba — Felicidade Reinará",
+    "url": "eventos/moveis-coloniais-de-acaju-e-rodrigo-barba-felicidade-reinara.html",
+    "summary": "<p>A banda brasiliense Móveis Coloniais de Acaju e Rodrigo Barba, baterista da banda Los Hermanos, fazem show em Brasília. A apresentação do grupo faz parte da turnê \"Felicidade Reinará\", enquanto Rodrigo Barba e amigos celebram os 25 anos do disco \"Bloco do eu sozinho\" de Los Hermanos. Programação: abertura dos …</p>",
+    "category": "Show",
+    "category_url": "categoria/show.html",
+    "tags": "show, rock, mpb, móveis coloniais de acaju, rodrigo barba, los hermanos, birosca do conic, 12-04-2026",
+    "local": "Birosca do Conic",
+    "data": "12 de abril",
+    "entrada": "A partir de R$ 70,00"
+  },
+  {
+    "title": "Paixão do Cristo Negro de Samambaia",
+    "url": "eventos/paixao-do-cristo-negro-de-samambaia.html",
+    "summary": "<p>Realizado desde 1997, a Paixão do Cristo Negro retorna aos palcos de Samambaia em uma montagem que vai além da representação religiosa, consolidando-se como instrumento de valorização da cultura popular, inclusão social e formação cidadã. O espetáculo provoca reflexões sobre sofrimento humano, violência de gênero e racial, direito à terra …</p>",
+    "category": "Teatro",
+    "category_url": "categoria/teatro.html",
+    "tags": "teatro, cultura popular, gratuito, samambaia, paixão de cristo, inclusão social, 03-04-2026",
+    "local": "Cineteatro Veronica Moreno",
+    "data": "3 de abril de 2026",
+    "entrada": "Gratuito"
+  },
+  {
+    "title": "Páscoa no Boulevard Shopping — O Mistério da Chave da Páscoa",
+    "url": "eventos/pascoa-no-boulevard-shopping-o-misterio-da-chave-da-pascoa.html",
+    "summary": "<p>O Boulevard Shopping Brasília recebe uma programação gratuita e inclusiva de Páscoa com o espetáculo musical inédito e interativo \"O Mistério da Chave da Páscoa\", além de caça aos chocolates solidária, pintura de rosto, distribuição de pipoca e algodão-doce, espaço instagramável e a chegada do Sr. Pascoal com sessão de …</p>",
+    "category": "Evento",
+    "category_url": "categoria/evento.html",
+    "tags": "páscoa, infantil, gratuito, musical, caça aos chocolates, boulevard shopping, 28-03-2026",
+    "local": "Boulevard Shopping",
+    "data": "28 de março de 2026",
+    "entrada": "Gratuito (mediante doação de 1kg de alimento)"
+  },
+  {
+    "title": "Paulo Ricardo — Rock Popular",
+    "url": "eventos/paulo-ricardo-rock-popular.html",
+    "summary": "<p>O cantor Paulo Ricardo traz a turnê \"Rock Popular\" a Brasília em uma festa com tema anos 1980. O artista, que brilhou como vocalista da banda RPM, promete cantar os maiores hits da sua carreira solo e da época do RPM, incluindo sucessos como \"Olhar 43\", \"Radio Pirata\", \"A cruz …</p>",
+    "category": "Show",
+    "category_url": "categoria/show.html",
+    "tags": "show, rock, paulo ricardo, rpm, anos 80, brazólia, 15-05-2026",
+    "local": "Brazolia",
+    "data": "15 de maio",
+    "entrada": "A partir de R$ 50,00 (1º lote)"
   },
   {
     "title": "Samba 90 Graus em Brasília",
