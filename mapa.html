@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Eventos — Agenda DF</title>
+    <meta name="description" content="Eventos e experiências em Brasília">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://chiicones.github.io/theme/css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="https://chiicones.github.io/" class="site-logo">
+                <span class="site-logo__name">Agenda DF</span>
+            </a>
+            <form class="header-search" action="https://chiicones.github.io/busca.html" method="get">
+                <input type="text" name="q" class="header-search__input" placeholder="Buscar eventos...">
+                <button type="submit" class="header-search__btn">→</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="site-main">
+
+<div class="taxonomy-header">
+    <p class="taxonomy-label">Mapa</p>
+    <h1 class="taxonomy-title">Eventos no mapa</h1>
+</div>
+
+<section class="mapa-section">
+    <div class="mapa-filtros">
+        <input type="date" id="filtro-data" class="mapa-date-input">
+        <button id="btn-hoje" class="mapa-btn">Hoje</button>
+        <button id="btn-limpar" class="mapa-btn mapa-btn--outline">Ver todos</button>
+        <span id="mapa-contador" class="mapa-contador"></span>
+    </div>
+    <div id="mapa"></div>
+    <div id="mapa-lista"></div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+<script>
+const SITEURL = 'https://chiicones.github.io';
+let allArticles = [];
+let markers = [];
+let geocodeCache = {};
+
+// Inicializa mapa centrado em Brasília
+const map = L.map('mapa').setView([-15.7801, -47.9292], 11);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// Ícone customizado
+const icon = L.divIcon({
+    className: 'mapa-marker',
+    html: '<div class="mapa-marker__dot"></div>',
+    iconSize: [16, 16],
+    iconAnchor: [8, 8],
+    popupAnchor: [0, -10]
+});
+
+// Geocoding via Nominatim (OpenStreetMap)
+async function geocode(local) {
+    if (!local) return null;
+    if (geocodeCache[local]) return geocodeCache[local];
+
+    const query = local + ', Brasília, DF, Brasil';
+    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1`;
+
+    try {
+        const r = await fetch(url, { headers: { 'Accept-Language': 'pt-BR' } });
+        const data = await r.json();
+        if (data.length > 0) {
+            const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+            geocodeCache[local] = coords;
+            return coords;
+        }
+    } catch(e) {}
+    return null;
+}
+
+function formatDate(ddmmyyyy) {
+    // Converte "22-03-2026" para Date
+    const [dd, mm, yyyy] = ddmmyyyy.split('-');
+    return new Date(yyyy, mm - 1, dd);
+}
+
+function getEventDates(article) {
+    // Pega todas as tags que são datas (formato DD-MM-YYYY)
+    const dateTags = (article.tags || '').split(',')
+        .map(t => t.trim())
+        .filter(t => /^\d{2}-\d{2}-\d{4}$/.test(t));
+    return dateTags;
+}
+
+function renderMarkers(filtered) {
+    // Remove markers antigos
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
+
+    const lista = document.getElementById('mapa-lista');
+    lista.innerHTML = '';
+
+    document.getElementById('mapa-contador').textContent =
+        filtered.length === allArticles.length
+            ? `${filtered.length} eventos`
+            : `${filtered.length} de ${allArticles.length} eventos`;
+
+    filtered.forEach(async (article) => {
+        const coords = await geocode(article.local);
+        if (!coords) return;
+
+        const popup = `
+            <div class="mapa-popup">
+                <span class="mapa-popup__cat">${article.category}</span>
+                <strong class="mapa-popup__title">
+                    <a href="${SITEURL}/${article.url}">${article.title}</a>
+                </strong>
+                ${article.local ? `<span class="mapa-popup__local">📍 ${article.local}</span>` : ''}
+                ${article.data ? `<span class="mapa-popup__data">📅 ${article.data}</span>` : ''}
+                ${article.entrada ? `<span class="mapa-popup__entrada">🎟 ${article.entrada}</span>` : ''}
+                <a href="${SITEURL}/${article.url}" class="mapa-popup__link">Ver detalhes →</a>
+            </div>
+        `;
+
+        const marker = L.marker(coords, { icon })
+            .addTo(map)
+            .bindPopup(popup, { maxWidth: 280 });
+        markers.push(marker);
+
+        // Lista abaixo do mapa
+        const item = document.createElement('div');
+        item.className = 'mapa-item';
+        item.innerHTML = `
+            <a href="${SITEURL}/${article.url}" class="mapa-item__title">${article.title}</a>
+            <span class="mapa-item__meta">${article.local || ''}${article.data ? ' · ' + article.data : ''}</span>
+        `;
+        item.addEventListener('click', () => {
+            map.setView(coords, 14);
+            marker.openPopup();
+        });
+        lista.appendChild(item);
+    });
+}
+
+function filtrar() {
+    const dataFiltro = document.getElementById('filtro-data').value;
+    if (!dataFiltro) {
+        renderMarkers(allArticles);
+        return;
+    }
+
+    // dataFiltro está em YYYY-MM-DD
+    const [yyyy, mm, dd] = dataFiltro.split('-');
+    const tagBusca = `${dd}-${mm}-${yyyy}`;
+
+    const filtered = allArticles.filter(a => {
+        const dateTags = getEventDates(a);
+        return dateTags.includes(tagBusca);
+    });
+
+    renderMarkers(filtered);
+}
+
+// Inicializa
+fetch(`${SITEURL}/search.json`)
+    .then(r => r.json())
+    .then(data => {
+        allArticles = data.filter(a => a.local);
+        renderMarkers(allArticles);
+    });
+
+document.getElementById('filtro-data').addEventListener('change', filtrar);
+
+document.getElementById('btn-hoje').addEventListener('click', () => {
+    const hoje = new Date();
+    const yyyy = hoje.getFullYear();
+    const mm = String(hoje.getMonth() + 1).padStart(2, '0');
+    const dd = String(hoje.getDate()).padStart(2, '0');
+    document.getElementById('filtro-data').value = `${yyyy}-${mm}-${dd}`;
+    filtrar();
+});
+
+document.getElementById('btn-limpar').addEventListener('click', () => {
+    document.getElementById('filtro-data').value = '';
+    renderMarkers(allArticles);
+});
+</script>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col footer-col--categories">
+                <p class="footer-col__title">Categorias</p>
+                    <a href="/categoria/circo.html" class="footer-link">Circo</a>
+                    <a href="/categoria/comedia.html" class="footer-link">Comédia</a>
+                    <a href="/categoria/exposicao.html" class="footer-link">Exposição</a>
+                    <a href="/categoria/familia.html" class="footer-link">Família</a>
+                    <a href="/categoria/feira.html" class="footer-link">Feira</a>
+                    <a href="/categoria/festival.html" class="footer-link">Festival</a>
+                    <a href="/categoria/musica.html" class="footer-link">Música</a>
+                    <a href="/categoria/teatro.html" class="footer-link">Teatro</a>
+            </div>
+            <div class="footer-col footer-col--extra">
+                <p class="footer-col__title">Mais</p>
+                    <a href="/busca.html" class="footer-link">Busca</a>
+                    <a href="/categoria/blog.html" class="footer-link">Blog</a>
+                    <a href="/mapa.html" class="footer-link">Mapa</a>
+                    <a href="/pages/sobre.html" class="footer-link">Sobre</a>
+                <p class="footer-copy">&copy; 2026 Agenda DF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://chiicones.github.io/theme/js/main.js"></script>
+</body>
+</html>
