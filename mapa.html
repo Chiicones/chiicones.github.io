@@ -48,19 +48,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
 <script>
-const SITEURL = 'https://chiicones.github.io';
-let allArticles = [];
-let markers = [];
-let geocodeCache = {};
+var SITEURL = 'https://chiicones.github.io';
+var allArticles = [];
+var markers = [];
+var geocodeCache = {};
 
-// Inicializa mapa centrado em Brasília
-const map = L.map('mapa').setView([-15.7801, -47.9292], 11);
+var map = L.map('mapa').setView([-15.7801, -47.9292], 11);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
+    attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Ícone customizado
-const icon = L.divIcon({
+var icon = L.divIcon({
     className: 'mapa-marker',
     html: '<div class="mapa-marker__dot"></div>',
     iconSize: [16, 16],
@@ -68,9 +66,7 @@ const icon = L.divIcon({
     popupAnchor: [0, -10]
 });
 
-
-// Dicionário de coordenadas fixas para locais conhecidos de Brasília
-const COORDS_FIXAS = {
+var COORDS_FIXAS = {
     'espaco infinu': [-15.8344, -47.9131],
     'infinu': [-15.8344, -47.9131],
     'ccbb brasilia': [-15.7956, -47.8823],
@@ -105,171 +101,109 @@ const COORDS_FIXAS = {
     'espaco cultural renato russo': [-15.8278, -47.9131],
     'espaco cultural caesb': [-15.8447, -48.0256],
     'teatro dulcina': [-15.7972, -47.8878],
-    'casa thomas jefferson': [-15.8344, -47.9131],
-    'patio brasil': [-15.7967, -47.8867],
+    'patio brasil': [-15.7967, -47.8867]
 };
 
 function buscarCoordsFixas(local) {
     if (!local) return null;
-    const key = local.toLowerCase().trim();
-    // Busca exata
+    var key = local.toLowerCase().trim();
     if (COORDS_FIXAS[key]) return COORDS_FIXAS[key];
-    // Busca parcial
-    for (const [k, v] of Object.entries(COORDS_FIXAS)) {
-        if (key.includes(k) || k.includes(key)) return v;
+    var keys = Object.keys(COORDS_FIXAS);
+    for (var i = 0; i < keys.length; i++) {
+        var k = keys[i];
+        if (key.indexOf(k) !== -1 || k.indexOf(key) !== -1) return COORDS_FIXAS[k];
     }
     return null;
 }
 
-async function geocode(local) {
-    if (!local) return null;
-    const key = local.toLowerCase().trim();
-    if (geocodeCache[key]) return geocodeCache[key];
-
-    // Tenta coordenadas fixas primeiro
-    const fixas = buscarCoordsFixas(local);
-    if (fixas) {
-        geocodeCache[key] = fixas;
-        return fixas;
-    }
-
-    // Fallback: Nominatim
-    const query = local + ', Brasília, DF, Brasil';
-    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1`;
-    try {
-        await new Promise(r => setTimeout(r, 300)); // respeita rate limit
-        const r = await fetch(url, { headers: { 'Accept-Language': 'pt-BR' } });
-        const data = await r.json();
-        if (data.length > 0) {
-            const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-            geocodeCache[key] = coords;
-            return coords;
-        }
-    } catch(e) {}
-    return null;
-}
-// fim geocode
-    if (!local) return null;
-    if (geocodeCache[local]) return geocodeCache[local];
-
-    const query = local + ', Brasília, DF, Brasil';
-    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1`;
-
-    try {
-        const r = await fetch(url, { headers: { 'Accept-Language': 'pt-BR' } });
-        const data = await r.json();
-        if (data.length > 0) {
-            const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-            geocodeCache[local] = coords;
-            return coords;
-        }
-    } catch(e) {}
-    return null;
-}
-
-function formatDate(ddmmyyyy) {
-    // Converte "22-03-2026" para Date
-    const [dd, mm, yyyy] = ddmmyyyy.split('-');
-    return new Date(yyyy, mm - 1, dd);
+function geocode(local, callback) {
+    if (!local) { callback(null); return; }
+    var key = local.toLowerCase().trim();
+    if (geocodeCache[key]) { callback(geocodeCache[key]); return; }
+    var fixas = buscarCoordsFixas(local);
+    if (fixas) { geocodeCache[key] = fixas; callback(fixas); return; }
+    var query = local + ', Brasilia, DF, Brasil';
+    var url = 'https://nominatim.openstreetmap.org/search?q=' + encodeURIComponent(query) + '&format=json&limit=1';
+    setTimeout(function() {
+        fetch(url, { headers: { 'Accept-Language': 'pt-BR' } })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.length > 0) {
+                    var coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+                    geocodeCache[key] = coords;
+                    callback(coords);
+                } else { callback(null); }
+            })
+            .catch(function() { callback(null); });
+    }, 300);
 }
 
 function getEventDates(article) {
-    // Pega todas as tags que são datas (formato DD-MM-YYYY)
-    const dateTags = (article.tags || '').split(',')
-        .map(t => t.trim())
-        .filter(t => /^\d{2}-\d{2}-\d{4}$/.test(t));
-    return dateTags;
+    return (article.tags || '').split(',')
+        .map(function(t) { return t.trim(); })
+        .filter(function(t) { return /^\d{2}-\d{2}-\d{4}$/.test(t); });
 }
 
 function renderMarkers(filtered) {
-    // Remove markers antigos
-    markers.forEach(m => map.removeLayer(m));
+    markers.forEach(function(m) { map.removeLayer(m); });
     markers = [];
-
-    const lista = document.getElementById('mapa-lista');
-    lista.innerHTML = '';
-
+    document.getElementById('mapa-lista').innerHTML = '';
     document.getElementById('mapa-contador').textContent =
         filtered.length === allArticles.length
-            ? `${filtered.length} eventos`
-            : `${filtered.length} de ${allArticles.length} eventos`;
+            ? filtered.length + ' eventos'
+            : filtered.length + ' de ' + allArticles.length + ' eventos';
 
-    filtered.forEach(async (article) => {
-        const coords = await geocode(article.local);
-        if (!coords) return;
+    filtered.forEach(function(article) {
+        geocode(article.local, function(coords) {
+            if (!coords) return;
+            var popup = '<div class="mapa-popup">' +
+                '<span class="mapa-popup__cat">' + article.category + '</span>' +
+                '<strong class="mapa-popup__title"><a href="' + SITEURL + '/' + article.url + '">' + article.title + '</a></strong>' +
+                (article.local ? '<span class="mapa-popup__local">📍 ' + article.local + '</span>' : '') +
+                (article.data ? '<span class="mapa-popup__data">📅 ' + article.data + '</span>' : '') +
+                (article.entrada ? '<span class="mapa-popup__entrada">🎟 ' + article.entrada + '</span>' : '') +
+                '<a href="' + SITEURL + '/' + article.url + '" class="mapa-popup__link">Ver detalhes →</a></div>';
 
-        const popup = `
-            <div class="mapa-popup">
-                <span class="mapa-popup__cat">${article.category}</span>
-                <strong class="mapa-popup__title">
-                    <a href="${SITEURL}/${article.url}">${article.title}</a>
-                </strong>
-                ${article.local ? `<span class="mapa-popup__local">📍 ${article.local}</span>` : ''}
-                ${article.data ? `<span class="mapa-popup__data">📅 ${article.data}</span>` : ''}
-                ${article.entrada ? `<span class="mapa-popup__entrada">🎟 ${article.entrada}</span>` : ''}
-                <a href="${SITEURL}/${article.url}" class="mapa-popup__link">Ver detalhes →</a>
-            </div>
-        `;
+            var marker = L.marker(coords, { icon: icon }).addTo(map).bindPopup(popup, { maxWidth: 280 });
+            markers.push(marker);
 
-        const marker = L.marker(coords, { icon })
-            .addTo(map)
-            .bindPopup(popup, { maxWidth: 280 });
-        markers.push(marker);
-
-        // Lista abaixo do mapa
-        const item = document.createElement('div');
-        item.className = 'mapa-item';
-        item.innerHTML = `
-            <a href="${SITEURL}/${article.url}" class="mapa-item__title">${article.title}</a>
-            <span class="mapa-item__meta">${article.local || ''}${article.data ? ' · ' + article.data : ''}</span>
-        `;
-        item.addEventListener('click', () => {
-            map.setView(coords, 14);
-            marker.openPopup();
+            var lista = document.getElementById('mapa-lista');
+            var item = document.createElement('div');
+            item.className = 'mapa-item';
+            item.innerHTML = '<a href="' + SITEURL + '/' + article.url + '" class="mapa-item__title">' + article.title + '</a>' +
+                '<span class="mapa-item__meta">' + (article.local || '') + (article.data ? ' · ' + article.data : '') + '</span>';
+            item.addEventListener('click', function() { map.setView(coords, 14); marker.openPopup(); });
+            lista.appendChild(item);
         });
-        lista.appendChild(item);
     });
 }
 
 function filtrar() {
-    const dataFiltro = document.getElementById('filtro-data').value;
-    if (!dataFiltro) {
-        renderMarkers(allArticles);
-        return;
-    }
-
-    // dataFiltro está em YYYY-MM-DD
-    const [yyyy, mm, dd] = dataFiltro.split('-');
-    const tagBusca = `${dd}-${mm}-${yyyy}`;
-
-    const filtered = allArticles.filter(a => {
-        const dateTags = getEventDates(a);
-        return dateTags.includes(tagBusca);
-    });
-
+    var dataFiltro = document.getElementById('filtro-data').value;
+    if (!dataFiltro) { renderMarkers(allArticles); return; }
+    var parts = dataFiltro.split('-');
+    var tagBusca = parts[2] + '-' + parts[1] + '-' + parts[0];
+    var filtered = allArticles.filter(function(a) { return getEventDates(a).indexOf(tagBusca) !== -1; });
     renderMarkers(filtered);
 }
 
-// Inicializa
-fetch(`${SITEURL}/search.json`)
-    .then(r => r.json())
-    .then(data => {
-        allArticles = data.filter(a => a.local);
+fetch(SITEURL + '/search.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        allArticles = data.filter(function(a) { return a.local; });
         renderMarkers(allArticles);
     });
 
 document.getElementById('filtro-data').addEventListener('change', filtrar);
-
-document.getElementById('btn-hoje').addEventListener('click', () => {
-    const hoje = new Date();
-    const yyyy = hoje.getFullYear();
-    const mm = String(hoje.getMonth() + 1).padStart(2, '0');
-    const dd = String(hoje.getDate()).padStart(2, '0');
-    document.getElementById('filtro-data').value = `${yyyy}-${mm}-${dd}`;
+document.getElementById('btn-hoje').addEventListener('click', function() {
+    var hoje = new Date();
+    var yyyy = hoje.getFullYear();
+    var mm = String(hoje.getMonth() + 1).padStart(2, '0');
+    var dd = String(hoje.getDate()).padStart(2, '0');
+    document.getElementById('filtro-data').value = yyyy + '-' + mm + '-' + dd;
     filtrar();
 });
-
-document.getElementById('btn-limpar').addEventListener('click', () => {
+document.getElementById('btn-limpar').addEventListener('click', function() {
     document.getElementById('filtro-data').value = '';
     renderMarkers(allArticles);
 });
