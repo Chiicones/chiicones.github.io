@@ -190,7 +190,20 @@ function filtrar() {
 fetch(SITEURL + '/search.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
-        allArticles = data.filter(function(a) { return a.local; });
+        var hoje = new Date();
+        hoje.setHours(0,0,0,0);
+
+        allArticles = data.filter(function(a) {
+            if (!a.local) return false;
+            var dates = getEventDates(a);
+            if (dates.length === 0) return true; // sem tag de data: exibe sempre
+            // Mantém se tiver pelo menos uma data hoje ou futura
+            return dates.some(function(tag) {
+                var parts = tag.split('-');
+                var d = new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+                return d >= hoje;
+            });
+        });
         renderMarkers(allArticles);
     });
 
