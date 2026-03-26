@@ -256,7 +256,13 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 <script>
-var videos = [
+// ============ CONFIGURAÇÃO ============
+// CADASTRE-SE EM: https://rapidapi.com/rockethearth/api/tiktok-api23/
+// E COLOQUE SUA CHAVE AQUI:
+const RAPIDAPI_KEY = 'SUA_CHAVE_AQUI'; // <-- SUBSTITUA POR SUA CHAVE REAL
+
+// ============ DADOS FALLBACK (CASO A API FALHE) ============
+const fallbackVideos = [
   { id:1, location:"Esplanada dos Ministérios", lat:-15.7994, lng:-47.8645, category:"turismo", description:"Vista aérea impressionante da Esplanada ao nascer do sol 🌅", views:"284K", likes:"41K", hashtags:"#Brasília #Esplanada #DF", url:"#" },
   { id:2, location:"Pontão do Lago Sul", lat:-15.8370, lng:-47.8720, category:"lazer", description:"Final de semana perfeito no Pontão com food trucks e música ao vivo 🎶", views:"156K", likes:"22K", hashtags:"#LagoSul #Pontão #BSB", url:"#" },
   { id:3, location:"Feira da Torre", lat:-15.7893, lng:-47.8958, category:"food", description:"Os melhores churros de Brasília estão aqui, sem discussão 🍩", views:"98K", likes:"17K", hashtags:"#FeiradaTorre #Gastronomia #Brasília", url:"#" },
@@ -267,6 +273,135 @@ var videos = [
   { id:8, location:"Teatro Nacional", lat:-15.7972, lng:-47.8837, category:"cultura", description:"Peça incrível no Teatro Nacional — agenda cultural de BSB tá on 🎭", views:"45K", likes:"7K", hashtags:"#TeatroNacional #CulturaBSB #Brasília", url:"#" }
 ];
 
+// ============ FUNÇÕES DE PROCESSAMENTO ============
+function extractLatitude(location) {
+  const locations = {
+    'esplanada': -15.7994, 'pontão': -15.8370, 'torre': -15.7893,
+    'museu': -15.7980, 'parque': -15.8139, 'catedral': -15.7984,
+    'tagua': -15.8401, 'teatro': -15.7972, 'asa sul': -15.8220,
+    'asa norte': -15.7580
+  };
+  
+  const locationLower = location.toLowerCase();
+  for (const [key, lat] of Object.entries(locations)) {
+    if (locationLower.includes(key)) return lat;
+  }
+  return -15.7998;
+}
+
+function extractLongitude(location) {
+  const locations = {
+    'esplanada': -47.8645, 'pontão': -47.8720, 'torre': -47.8958,
+    'museu': -47.8754, 'parque': -47.9108, 'catedral': -47.8754,
+    'tagua': -48.0467, 'teatro': -47.8837, 'asa sul': -47.9260,
+    'asa norte': -47.9020
+  };
+  
+  const locationLower = location.toLowerCase();
+  for (const [key, lng] of Object.entries(locations)) {
+    if (locationLower.includes(key)) return lng;
+  }
+  return -47.8645;
+}
+
+function categorizeVideo(description, hashtags) {
+  const text = (description + ' ' + (hashtags || '')).toLowerCase();
+  
+  if (text.includes('comida') || text.includes('restaurante') || text.includes('food')) return 'food';
+  if (text.includes('cultura') || text.includes('museu') || text.includes('arte')) return 'cultura';
+  if (text.includes('parque') || text.includes('lazer') || text.includes('skate')) return 'lazer';
+  if (text.includes('turismo') || text.includes('passeio')) return 'turismo';
+  
+  return 'turismo';
+}
+
+function formatNumber(num) {
+  if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+  if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+  return num.toString();
+}
+
+// ============ API DE TERCEIROS (RAPIDAPI) ============
+async function fetchTikTokVideosBrasilia() {
+  // Verifica se tem chave configurada
+  if (!RAPIDAPI_KEY || RAPIDAPI_KEY === 'SUA_CHAVE_AQUI') {
+    console.warn('⚠️ API Key não configurada. Usando dados de fallback.');
+    return fallbackVideos;
+  }
+
+  try {
+    console.log('🎬 Buscando vídeos reais do TikTok...');
+    
+    // Opção 1: TikTok Video Search API
+    const response = await fetch('https://tiktok-api23.p.rapidapi.com/api/search', {
+      method: 'POST',
+      headers: {
+        'x-rapidapi-host': 'tiktok-api23.p.rapidapi.com',
+        'x-rapidapi-key': RAPIDAPI_KEY,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        keywords: 'Brasília DF Brasil',
+        count: 30,
+        cursor: 0,
+        sort_type: 0  // 0 = relevância, 1 = mais recentes
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    
+    if (!data.data || data.data.length === 0) {
+      console.warn('Nenhum vídeo encontrado na API');
+      return fallbackVideos;
+    }
+
+    console.log(`✅ Encontrados ${data.data.length} vídeos`);
+    
+    // Processa os dados da API
+    const videos = data.data.map((item, index) => {
+      // Extrair localização da descrição
+      let location = 'Brasília, DF';
+      const desc = item.desc || '';
+      
+      if (desc.includes('Esplanada')) location = 'Esplanada dos Ministérios';
+      else if (desc.includes('Pontão')) location = 'Pontão do Lago Sul';
+      else if (desc.includes('Torre')) location = 'Torre de TV';
+      else if (desc.includes('Parque')) location = 'Parque da Cidade';
+      else if (desc.includes('Catedral')) location = 'Catedral de Brasília';
+      else if (desc.includes('Mercado')) location = 'Mercado Sul - Taguatinga';
+      else if (desc.includes('Teatro')) location = 'Teatro Nacional';
+      
+      return {
+        id: item.id || index,
+        location: location,
+        lat: extractLatitude(location),
+        lng: extractLongitude(location),
+        category: categorizeVideo(item.desc, item.hashtags?.join(' ')),
+        description: item.desc || '🎬 Vídeo de Brasília no TikTok',
+        views: formatNumber(item.play_count || 0),
+        likes: formatNumber(item.digg_count || 0),
+        hashtags: item.hashtags ? '#' + item.hashtags.join(' #') : '#Brasília',
+        url: `https://www.tiktok.com/@${item.author?.unique_id || 'user'}/video/${item.id}`,
+        author: item.author?.unique_id,
+        music: item.music?.title,
+        thumbnail: item.video?.cover || ''
+      };
+    });
+
+    return videos.filter(v => v.id); // Remove vídeos inválidos
+    
+  } catch (error) {
+    console.error('❌ Erro ao buscar vídeos da API:', error);
+    console.log('📦 Usando dados de fallback...');
+    return fallbackVideos;
+  }
+}
+
+// ============ CONFIGURAÇÃO DO MAPA E INTERFACE ============
 var catConfig = {
   food:    { color:'#f97316', emoji:'🍽️' },
   cultura: { color:'#a78bfa', emoji:'🎭' },
@@ -284,6 +419,7 @@ var ttMarkers = {};
 var activeFilter = 'all';
 var searchTerm = '';
 var activeCard = null;
+var videos = []; // Será preenchido pela API
 
 function createIcon(cat) {
   var cfg = catConfig[cat];
@@ -321,6 +457,14 @@ function render() {
   var fv = filtered();
   document.getElementById('tt-total').textContent = fv.length;
   document.getElementById('tt-locs').textContent = fv.length;
+  
+  // Calcular total de views
+  var totalViews = 0;
+  fv.forEach(function(v) {
+    var viewsNum = parseFloat(v.views) * (v.views.includes('M') ? 1000000 : v.views.includes('K') ? 1000 : 1);
+    totalViews += viewsNum;
+  });
+  document.getElementById('tt-views').textContent = formatNumber(totalViews);
 
   fv.forEach(function(v) {
     var m = L.marker([v.lat, v.lng], { icon: createIcon(v.category) })
@@ -357,6 +501,7 @@ function activateCard(id) {
 
 ttMap.addLayer(clusterGroup);
 
+// ============ EVENT LISTENERS ============
 document.querySelectorAll('.tt-chip').forEach(function(chip) {
   chip.addEventListener('click', function() {
     document.querySelectorAll('.tt-chip').forEach(function(c) { c.classList.remove('active'); });
@@ -371,7 +516,39 @@ document.getElementById('tt-search').addEventListener('input', function(e) {
   render();
 });
 
-render();
+// ============ INICIALIZAÇÃO ============
+async function init() {
+  // Mostrar loading
+  const loadingDiv = document.createElement('div');
+  loadingDiv.id = 'tt-loading';
+  loadingDiv.style.cssText = `
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.9); color: white; padding: 20px 40px;
+    border-radius: 12px; z-index: 9999; text-align: center;
+    font-family: monospace; border: 1px solid #00f5a0;
+  `;
+  loadingDiv.innerHTML = '🎬 Carregando vídeos do TikTok...<br><small style="color:#888">Isso pode levar alguns segundos</small>';
+  document.body.appendChild(loadingDiv);
+  
+  // Buscar vídeos
+  videos = await fetchTikTokVideosBrasilia();
+  
+  // Remover loading
+  loadingDiv.remove();
+  
+  // Renderizar
+  render();
+  
+  // Mensagem de sucesso/fallback
+  if (videos === fallbackVideos) {
+    console.log('ℹ️ Usando dados de demonstração. Configure sua API Key no RapidAPI para dados reais.');
+  } else {
+    console.log('✅ Dados carregados com sucesso!');
+  }
+}
+
+// Iniciar
+init();
 </script>
 
     </main>
