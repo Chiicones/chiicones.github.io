@@ -1,11 +1,12 @@
 Title: Festa Exculacho — 1 Ano com Biel do Furduncinho e PDJ
 Date: 2026-03-07
 Category: Música
-Tags: funk, pagode, festa, lago sul
-Location: Clube ASCADE — Setor de Clubes Esportivos Sul, Brasília
-Price: A partir de R$ 30
-Event_date: 07/03/2026 · a partir das 21h
-Organizer: Festa Exculacho
+Tags: funk, pagode, festa, lago sul, Clube ASCADE, 07-03-2026
+Local: Clube ASCADE
+
+Entrada: A partir de R$ 30
+Data: 07/03/2026
+Horario: a partir das 21h
 
 A edição especial de 1 ano da Festa Exculacho acontece às margens do lago, no Clube ASCADE, com duas atrações de peso para uma noite de puro baile.
 

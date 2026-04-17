@@ -1,11 +1,11 @@
 Title: Papisa + Convenção das Bruxas — Dia Internacional das Mulheres
 Date: 2025-03-08
 Category: Música
-Tags: rock, mulheres, gratuito, Lollapalooza
-Location: Espaço Infinu — W3 Sul, Brasília
-Price: Gratuito para os 100 primeiros em cada show
-Event_date: 08/03/2025 · a partir das 18h
-Organizer: Espaço Infinu · Arena Convida 2026 · Rede Convida
+Tags: rock, mulheres, gratuito, Lollapalooza, Espaco Infinu, 08-03-2025
+Local: Espaco Infinu
+Entrada: Gratuito para os 100 primeiros em cada show
+Data: 08/03/2025
+Horario: a partir das 18h
 
 No Dia Internacional das Mulheres, o Infinu celebra com uma noite histórica e toda feminina.
 

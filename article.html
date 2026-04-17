@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} — {{ SITENAME }}{% endblock %}
+{% block content %}
+
+<div class="article-layout">
+    <aside class="event-sidebar">
+        <div class="event-sidebar__card">
+            <h2 class="sidebar-card__title">{{ article.title }}</h2>
+            <div class="event-info-grid event-info-grid--sidebar">
+                {% if article.local %}
+                <div class="event-info-row">
+                    <span class="event-info-label">Local</span>
+                    <span class="event-info-value">{{ article.local }}</span>
+                </div>
+                {% endif %}
+                {% if article.regiao %}
+                <div class="event-info-row">
+                    <span class="event-info-label">Região</span>
+                    <span class="event-info-value">{{ article.regiao }}</span>
+                </div>
+                {% endif %}
+                {% if article.data %}
+                <div class="event-info-row">
+                    <span class="event-info-label">Data</span>
+                    <a href="{{ SITEURL }}/tag/{{ article.data | lower | replace('/', '-') | replace(' ', '-') }}.html" class="tag tag--value">{{ article.data }}</a>
+                </div>
+                {% endif %}
+                {% if article.horario %}
+                <div class="event-info-row">
+                    <span class="event-info-label">Horário</span>
+                    <span class="event-info-value">{{ article.horario }}</span>
+                </div>
+                {% endif %}
+                {% if article.entrada %}
+                <div class="event-info-row">
+                    <span class="event-info-label">Entrada</span>
+                    <span class="event-info-value event-info-value--highlight">{{ article.entrada }}</span>
+                </div>
+                {% endif %}
+            </div>
+            <div class="sidebar-tags">
+                {% for tag in article.tags %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag tag--small">{{ tag }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </aside>
+
+    <article class="article-main">
+        <header class="article-header">
+            <a href="{{ SITEURL }}/{{ article.category.url }}" class="tag tag--category">{{ article.category }}</a>
+            <h1 class="article-title">{{ article.title }}</h1>
+            <time class="article-date" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+        </header>
+        <div class="article-content">
+            {{ article.content }}
+        </div>
+        <footer class="article-footer">
+            <a href="{{ SITEURL }}/" class="back-link">← Voltar aos eventos</a>
+        </footer>
+    </article>
+</div>
+
+{% endblock %}

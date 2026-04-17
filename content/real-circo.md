@@ -1,11 +1,11 @@
 Title: Real Circo — A Realeza Circense em Brasília
 Date: 2026-03-06
 Category: Circo
-Tags: circo, família, espetáculo, Arena BRB
-Location: Estacionamento Arena BRB Nilson Nelson — Brasília
-Price: A partir de R$ 35
-Event_date: A partir de 06/03/2026 · Seg–Sex 20h · Sáb–Dom 16h, 18h30 e 20h30
-Organizer: Real Circo
+Tags: circo, família, espetáculo, Arena BRB, 06-03-2026
+Local: Arena BRB
+Entrada: A partir de R$ 35
+Data: A partir de 06/03/2026
+Horario: Seg–Sex 20h · Sáb–Dom 16h, 18h30 e 20h30
 
 Internacionalmente reconhecido como a Realeza Circense, o Real Circo chega a Brasília com uma superprodução que une tradição, tecnologia de ponta, música ao vivo e números de adrenalina extrema.
 

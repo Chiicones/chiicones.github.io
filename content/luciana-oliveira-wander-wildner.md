@@ -1,11 +1,11 @@
 Title: Luciana Oliveira + Wander Wildner — Sábado no Infinu
 Date: 2025-03-07
 Category: Música
-Tags: afrosamba, rock, MPB, música ao vivo
-Location: Espaço Infinu — W3 Sul, Brasília
-Price: 18h gratuito para os 100 primeiros · 20h ingressos disponíveis
-Event_date: 07/03/2025 · a partir das 18h
-Organizer: Espaço Infinu
+Tags: afrosamba, rock, MPB, música ao vivo, Espaco Infinu, 07-03-2025
+Local: Espaco Infinu
+Entrada: 18h gratuito para os 100 primeiros · 20h ingressos disponíveis
+Data: 07/03/2025
+Horario: a partir das 18h
 
 Uma noite dupla e inesquecível no Infinu.
 

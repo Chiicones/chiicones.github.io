@@ -1,11 +1,12 @@
 Title: Festival Onda Coreana — Imersão em K-dramas no Taguatinga Shopping
-Date: 2026-03-06
+Date: 2026-03-08
 Category: Festival
-Tags: cultura coreana, kpop, kbeauty, kdrama, taguatinga
-Location: Taguatinga Shopping — Estacionamento H, Piso 2
-Price: A partir de R$ 25
-Event_date: 06 a 08/03/2026 · Sex e Sáb 12h–22h · Dom 12h–20h
-Organizer: Festival Onda Coreana
+Tags: cultura coreana, kpop, kbeauty, kdrama, taguatinga, Taguatinga Shopping, 08-03-2026, 06-03-2026, 07-03-2026
+Local: Taguatinga Shopping
+
+Entrada: A partir de R$ 25
+Data: 06 a 08/03/2026
+Horario: Sex e Sáb 12h–22h · Dom 12h–20h
 
 O primeiro festival do país totalmente dedicado aos K-dramas transforma o Taguatinga Shopping em um pedaço da Coreia do Sul. Uma experiência imersiva que conecta fãs por meio de música, gastronomia, moda e grandes encontros.
 

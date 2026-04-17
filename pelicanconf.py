@@ -1,43 +1,52 @@
+import sys
+sys.path.insert(0, 'plugins')
+PLUGINS = ['search_index']
+
 AUTHOR = 'Francisco Barbosa'
 SITENAME = 'Agenda DF'
-SITEURL = "https://chiicones.github.io/"
+SITEURL = ''
 
-PATH = "content"
-
-THEME = r'C:\Users\chico\projetos\classificados'
+PATH = 'content'
+THEME = r'C:\Users\chico\projetos\classificados2'
 
 TIMEZONE = 'America/Sao_Paulo'
-
 DEFAULT_LANG = 'pt'
+DEFAULT_DATE_FORMAT = '%d/%m/%Y'
 
-# Para GitHub Pages
-RELATIVE_URLS = True
-
-# Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
 
-SUMMARY_MAX_LENGTH = 50
-TYPOGRIFY = False
+DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = [
+    ('Busca', '/busca.html'),
+    ('Circo', '/categoria/circo.html'),
+    ('Comédia', '/categoria/comedia.html'),
+    ('Exposição', '/categoria/exposicao.html'),
+    ('Família', '/categoria/familia.html'),
+    ('Feira', '/categoria/feira.html'),
+    ('Festival', '/categoria/festival.html'),
+    ('Música', '/categoria/musica.html'),
+    ('Teatro', '/categoria/teatro.html'),
+    ('Blog', '/categoria/blog.html'),
+    ('Mapa', '/mapa.html'),
+    ('Sobre', '/pages/sobre.html'),
+]
 
-# Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
-)
+HERO_EYEBROW = 'Próximos Eventos'
+HERO_TITLE = 'Agenda DF'
+HERO_SUBTITLE = 'Gastronomia afetiva, música ao vivo e encontros que ficam.'
 
-# Social widget
-SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
-)
+EXTRA_ARTICLE_FIELDS = ['local', 'bairro', 'data', 'horario', 'entrada']
 
-DEFAULT_PAGINATION = 20
+DEFAULT_PAGINATION = 50
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+ARTICLE_URL = 'eventos/{slug}.html'
+ARTICLE_SAVE_AS = 'eventos/{slug}.html'
+CATEGORY_URL = 'categoria/{slug}.html'
+CATEGORY_SAVE_AS = 'categoria/{slug}.html'
+TAG_URL = 'tag/{slug}.html'
+TAG_SAVE_AS = 'tag/{slug}.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+
+STATIC_PATHS = ['images', 'extra']

@@ -1,0 +1,2 @@
+Title: Busca
+Template: search
