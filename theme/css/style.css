@@ -845,3 +845,105 @@ img { max-width: 100%; display: block; }
         position: static;
     }
 }
+
+/* =============================================
+   FICHA-CARD — cards da home no estilo infobox
+   ============================================= */
+
+#events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+    padding: 2rem 0;
+}
+
+.ficha-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-decoration: none;
+    background: #fff;
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.ficha-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+    transform: translateY(-2px);
+}
+
+.ficha-card__header {
+    background: var(--ink);
+    padding: 0.75rem 0.9rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.ficha-card__cat {
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-pale, #d4b896);
+}
+
+.ficha-card__title {
+    font-family: var(--ff-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.ficha-card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ficha-card__row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.55rem 0.9rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.ficha-card__row:last-child {
+    border-bottom: none;
+}
+
+.ficha-card__label {
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.ficha-card__value {
+    font-size: 0.88rem;
+    color: var(--ink);
+    font-family: var(--ff-display);
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.ficha-card__value--price {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.ficha-card__value--org {
+    font-weight: 500;
+    color: var(--ink);
+}
+
+@media (max-width: 480px) {
+    #events-container {
+        grid-template-columns: 1fr;
+    }
+}
