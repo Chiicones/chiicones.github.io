@@ -3,59 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa de Locais — Agenda DF</title>
+    <title>Mapa de Eventos — Agenda DF</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://chiicones.github.io/theme/css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
-.mapa-wrap {
+.mapa-wrap { max-width: 100%; padding: 0; }
+.mapa-toolbar {
     max-width: 960px;
     margin: 0 auto;
-    padding: 2rem 2rem 4rem;
+    padding: 1.5rem 2rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
-.mapa-wrap h1 {
+.mapa-toolbar h1 {
     font-family: var(--ff-display);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 0.5rem;
     color: var(--ink);
+    margin: 0;
 }
-.mapa-subtitle {
-    font-size: 0.85rem;
-    color: var(--ink-light);
-    margin-bottom: 1.5rem;
-}
-.mapa-iframe-wrap {
-    width: 100%;
-    aspect-ratio: 16/9;
+.mapa-filtros { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.mapa-filtro {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
     border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    margin-bottom: 2rem;
+    border-radius: 2px;
+    background: none;
+    color: var(--ink-light);
+    cursor: pointer;
+    transition: all 0.15s;
 }
-.mapa-iframe-wrap iframe {
+.mapa-filtro:hover, .mapa-filtro.ativo {
+    background: var(--ink);
+    color: var(--cream);
+    border-color: var(--ink);
+}
+#mapa-container {
     width: 100%;
-    height: 100%;
-    border: none;
+    height: 520px;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+.mapa-lista-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 3rem;
+}
+.mapa-lista-titulo {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 1rem;
 }
 .mapa-lista {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.75rem;
+    gap: 0.6rem;
 }
 .mapa-local {
-    padding: 0.65rem 0.9rem;
+    padding: 0.6rem 0.85rem;
     border: 1px solid var(--border-light);
     border-radius: var(--radius);
-    font-size: 0.85rem;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all 0.15s;
 }
-.mapa-local a {
-    color: var(--ink);
-    text-decoration: none;
+.mapa-local:hover { border-color: var(--gold); color: var(--gold); }
+.mapa-local a { color: inherit; text-decoration: none; font-weight: 500; }
+.leaflet-popup-content-wrapper {
+    border-radius: 2px;
+    font-family: var(--ff-body, sans-serif);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+.popup-title {
+    font-family: var(--ff-display, serif);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #2a2520;
+    margin-bottom: 0.35rem;
+    line-height: 1.3;
+}
+.popup-meta { font-size: 0.75rem; color: #6b6259; line-height: 1.6; }
+.popup-meta span { display: block; }
+.popup-price { color: #b8860b; font-weight: 500; }
+.popup-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
     font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #2a2520;
+    text-decoration: none;
+    border-bottom: 1px solid #2a2520;
 }
-.mapa-local a:hover { color: var(--gold); }
+.popup-link:hover { color: #b8860b; border-color: #b8860b; }
 </style>
 </head>
 <body>
@@ -78,291 +132,116 @@
 
     <main>
 <div class="mapa-wrap">
-    <h1>Mapa</h1>
-    <p class="mapa-subtitle">Locais de eventos em Brasília e Entorno</p>
-
-    <div class="mapa-iframe-wrap">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122880!2d-47.9292!3d-15.7801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1"
-            allowfullscreen loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <div class="mapa-toolbar">
+        <h1>Mapa de Eventos</h1>
+        <div class="mapa-filtros">
+            <button class="mapa-filtro ativo" data-filtro="futuros">Próximos</button>
+            <button class="mapa-filtro" data-filtro="todos">Todos</button>
+        </div>
     </div>
 
+    <div id="mapa-container"></div>
 
-    <div class="mapa-lista">
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/a-pilastra-galeria-escola.html">A Pilastra Galeria-Escola</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/aabb.html">AABB</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/ambar.html">Ambar</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/aplausos-clube-de-comedia.html">Aplausos Clube de Comedia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/arena-brb.html">Arena BRB</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/associacao-rural-cultural-alexandre-de-gusmao.html">Associação Rural Cultural Alexandre de Gusmão</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/auditorio-master.html">Auditório Master</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/autodromo-brb.html">Autodromo BRB</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/bar-banks.html">Bar Banks</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/birosca-do-conic.html">Birosca do Conic</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/black-sheep-breja-studio.html">Black Sheep Breja Studio</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/boulevard-shopping.html">Boulevard Shopping</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/brasilia-shopping.html">Brasilia Shopping</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/brazlandia.html">Brazlandia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/brazolia.html">Brazolia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/caixa-cultural-brasilia.html">Caixa Cultural Brasilia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/casa-da-cultura-do-guara.html">Casa da Cultura do Guará</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/ccbb-brasilia.html">CCBB Brasilia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/ceilândia-sul.html">Ceilândia Sul</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/centro-cultural-tcu.html">Centro Cultural TCU</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/centro-de-convencoes-ulysses-guimaraes.html">Centro de Convencoes Ulysses Guimaraes</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/cine-brasilia.html">Cine Brasilia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/cineteatro-veronica-moreno.html">Cineteatro Veronica Moreno</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/clube-ascade.html">Clube Ascade</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/clube-ascade.html">Clube ASCADE</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/clube-ases.html">Clube Ases</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/clube-do-choro.html">Clube do Choro</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/clube-naval.html">Clube Naval</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/congresso-nacional.html">Congresso Nacional</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/consultar-no-site-oficial.html">Consultar no site oficial</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/cota-mil.html">Cota Mil</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/ctj-hall.html">CTJ Hall</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/damasio-estetica-e-lavagem-de-veiculos.html">Damásio Estética e Lavagem de Veículos</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/em-frente-ao-sesc-da-504-sul.html">Em frente ao Sesc da 504 Sul</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/emporio-zingaro.html">Emporio Zingaro</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/escola-de-musica-de-brasilia.html">Escola de Música de Brasilia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/espaco-cultural-caesb.html">Espaco Cultural CAESB</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/espaco-cultural-renato-russo.html">Espaco Cultural Renato Russo</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/espaco-infinu.html">Espaco Infinu</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/espelunca.html">Espelunca</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/estadio-nacional-de-brasilia-mane-garrincha.html">Estádio Nacional de Brasília Mané Garrincha</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/feira-permanente-do-gama.html">Feira Permanente do Gama</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/galeria-risofloras.html">Galeria Risofloras</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/infinu-comunidade-criativa.html">Infinu Comunidade Criativa</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/instituto-cervantes-de-brasilia.html">Instituto Cervantes de Brasilia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/itamaraty.html">Itamaraty</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/jardim-zoologico.html">Jardim Zoologico</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/lago-paranoa.html">Lago Paranoa</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/lah.html">LAH</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/mane-garrincha.html">Mane Garrincha</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/manhattan-shopping.html">Manhattan Shopping</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/mercado-sul.html">Mercado Sul</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/museu-nacional-da-republica.html">Museu Nacional da República</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/o-rei-do-camarao-beira-lago.html">O Rei do Camarão Beira Lago</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/parkshopping-brasilia.html">ParkShopping Brasília</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/parque-da-cidade.html">Parque da Cidade</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/parque-da-cidade-sarah-kubitschek.html">Parque da Cidade Sarah Kubitschek</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/parque-de-exposicões-de-planaltina.html">Parque de Exposições de Planaltina</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/patio-brasil-shopping.html">Patio Brasil Shopping</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/planetario-de-brasilia.html">Planetario de Brasilia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/porks-ceilandia.html">Porks Ceilandia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/praca-dos-estados.html">Praca dos Estados</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/praca-da-juventude.html">Praça da Juventude</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/praca-do-cruzeiro.html">Praça do Cruzeiro</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/real-circo.html">Real Circo</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/recanto-das-emas.html">Recanto das Emas</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/referencia-galeria.html">Referencia Galeria</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/riacho-fundo-i.html">Riacho Fundo I</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/sesc-504-sul.html">Sesc 504 Sul</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/sesc-ceilandia.html">Sesc Ceilandia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/sesc-ceilandia.html">SESC Ceilandia</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/sesc-gama.html">Sesc Gama</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/sesc-setor-comercial-sul.html">Sesc Setor Comercial Sul</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/sesi-lab.html">SESI Lab</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/taguatinga-shopping.html">Taguatinga Shopping</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-caesb.html">Teatro Caesb</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-da-caixa-cultural.html">Teatro da CAIXA Cultural</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-da-caixa-cultural-brasilia.html">Teatro da CAIXA Cultural Brasília</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-do-sesi.html">Teatro do SESI</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-dulcina.html">Teatro Dulcina</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-engrenagem.html">Teatro Engrenagem</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-i-do-ccbb-brasilia.html">Teatro I do CCBB Brasília</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-nacional-de-brasilia.html">Teatro Nacional de Brasília</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-paulo-gracindo.html">Teatro Paulo Gracindo</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/teatro-unip.html">Teatro UNIP</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/ulysses-centro-de-convencoes.html">Ulysses Centro de Convencoes</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/ulysses-centro-de-convencões.html">Ulysses Centro de Convenções</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/ulysses-centro-de-convercões.html">Ulysses Centro de Converções</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/worlld-brasilia.html">Worlld Brasília</a>
-        </div>
-        <div class="mapa-local">
-            <a href="https://chiicones.github.io/tag/zoologico-de-brasilia.html">Zoologico de Brasilia</a>
-        </div>
+    <div class="mapa-lista-wrap">
+        <p class="mapa-lista-titulo">Locais no mapa</p>
+        <div class="mapa-lista" id="mapa-lista"></div>
     </div>
 </div>
+
+<script>
+const SITEURL = "https://chiicones.github.io";
+let mapa, markers = [], todosEventos = [], filtroAtual = 'futuros';
+
+const icone = L.divIcon({
+    className: '',
+    html: `<svg width="22" height="30" viewBox="0 0 22 30" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="11" cy="28" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+        <path d="M11 0C5.477 0 1 4.477 1 10c0 7 10 19 10 19S21 17 21 10C21 4.477 16.523 0 11 0z"
+              fill="#2a2520" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="11" cy="10" r="4" fill="#c9a84c"/>
+    </svg>`,
+    iconSize: [22, 30], iconAnchor: [11, 30], popupAnchor: [0, -32]
+});
+
+function iniciarMapa() {
+    mapa = L.map('mapa-container', { center: [-15.7801, -47.9292], zoom: 11 });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 18
+    }).addTo(mapa);
+}
+
+function limparMarkers() {
+    markers.forEach(m => mapa.removeLayer(m));
+    markers = [];
+}
+
+function hoje() {
+    return new Date().toISOString().slice(0, 10);
+}
+
+function slugify(str) {
+    return str.toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function plotarEventos(eventos) {
+    limparMarkers();
+    const locaisNoMapa = new Set();
+
+    eventos.forEach(ev => {
+        if (!ev.latlng) return;
+        const [lat, lng] = ev.latlng;
+        const popup = `
+            <div class="popup-title">${ev.title}</div>
+            <div class="popup-meta">
+                <span>📍 ${ev.local}</span>
+                ${ev.data ? `<span>🕐 ${ev.data}${ev.horario ? ' · ' + ev.horario : ''}</span>` : ''}
+                ${ev.entrada ? `<span class="popup-price">${ev.entrada}</span>` : ''}
+            </div>
+            <a href="${SITEURL}/${ev.url}" class="popup-link">Ver detalhes →</a>`;
+        const m = L.marker([lat, lng], { icon: icone })
+            .bindPopup(popup, { maxWidth: 240 }).addTo(mapa);
+        markers.push(m);
+        locaisNoMapa.add(ev.local);
+    });
+
+    const lista = document.getElementById('mapa-lista');
+    lista.innerHTML = [...locaisNoMapa].sort().map(local => `
+        <div class="mapa-local">
+            <a href="${SITEURL}/tag/${slugify(local)}.html">${local}</a>
+        </div>`).join('');
+
+    if (markers.length > 0) {
+        mapa.fitBounds(L.featureGroup(markers).getBounds().pad(0.15));
+    }
+}
+
+function aplicarFiltro(filtro) {
+    filtroAtual = filtro;
+    document.querySelectorAll('.mapa-filtro').forEach(b =>
+        b.classList.toggle('ativo', b.dataset.filtro === filtro));
+    const h = hoje();
+    plotarEventos(filtro === 'futuros'
+        ? todosEventos.filter(ev => ev.date_iso >= h)
+        : todosEventos);
+}
+
+async function carregarEventos() {
+    try {
+        const res = await fetch(SITEURL + '/search.json');
+        todosEventos = await res.json();
+        aplicarFiltro(filtroAtual);
+    } catch(e) { console.error('Erro ao carregar search.json:', e); }
+}
+
+document.querySelectorAll('.mapa-filtro').forEach(btn =>
+    btn.addEventListener('click', () => aplicarFiltro(btn.dataset.filtro)));
+
+iniciarMapa();
+carregarEventos();
+</script>
     </main>
 
     <footer class="site-footer">
