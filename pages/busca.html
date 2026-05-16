@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca — Agenda DF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://chiicones.github.io/theme/css/style.css">
+<style>
+.search-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+.search-wrap h1 {
+    font-family: var(--ff-display);
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+}
+.search-field {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+.search-field input {
+    flex: 1;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--border);
+    background: var(--cream);
+    font-family: var(--ff-body);
+    font-size: 1rem;
+    color: var(--ink);
+    outline: none;
+    border-radius: var(--radius);
+}
+.search-field input:focus {
+    border-color: var(--gold);
+}
+#search-results { list-style: none; padding: 0; margin: 0; }
+.result-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+.result-item a {
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+.result-item a:hover { color: var(--gold); border-color: var(--gold-pale); }
+.result-meta {
+    font-size: 0.78rem;
+    color: var(--ink-light);
+    margin-top: 0.25rem;
+}
+#search-status {
+    font-size: 0.85rem;
+    color: var(--ink-light);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+</style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="https://chiicones.github.io/" class="site-logo">
+                <span class="logo-mark">✦</span>
+                <span class="site-name">Agenda DF</span>
+            </a>
+            <nav class="main-nav">
+                    <a href="/">Eventos</a>
+                    <a href="/agenda.html">Agenda</a>
+                    <a href="/mapa.html">Mapa</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/pages/sobre.html">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+<div class="search-wrap">
+    <h1>Busca</h1>
+    <div class="search-field">
+        <input type="text" id="search-input" placeholder="Digite um evento, local, categoria…" autofocus>
+    </div>
+    <p id="search-status"></p>
+    <ul id="search-results"></ul>
+</div>
+
+<script>
+let searchIndex = null;
+
+async function loadIndex() {
+    try {
+        const res = await fetch('https://chiicones.github.io/search.json');
+        searchIndex = await res.json();
+    } catch(e) {
+        document.getElementById('search-status').textContent = 'Índice de busca não disponível.';
+    }
+}
+
+function doSearch(query) {
+    const status = document.getElementById('search-status');
+    const results = document.getElementById('search-results');
+    results.innerHTML = '';
+
+    if (!query || query.length < 2) { status.textContent = ''; return; }
+    if (!searchIndex) { status.textContent = 'Carregando índice…'; return; }
+
+    const q = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const matches = searchIndex.filter(item => {
+        const hay = (item.title + ' ' + item.category + ' ' + (item.local || '') + ' ' + (item.tags || ''))
+            .toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        return hay.includes(q);
+    });
+
+    status.textContent = matches.length
+        ? matches.length + ' resultado(s) encontrado(s)'
+        : 'Nenhum resultado para "' + query + '"';
+
+    matches.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'result-item';
+        li.innerHTML = `
+            <a href="https://chiicones.github.io/${item.url}">${item.title}</a>
+            <div class="result-meta">
+                ${item.category}${item.local ? ' · ' + item.local : ''}${item.data ? ' · ' + item.data : ''}
+            </div>`;
+        results.appendChild(li);
+    });
+}
+
+loadIndex();
+document.getElementById('search-input').addEventListener('input', e => doSearch(e.target.value));
+</script>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-logo">✦</span>
+            <p>Agenda DF &mdash; Francisco</p>
+        </div>
+    </footer>
+
+    <script src="https://chiicones.github.io/theme/js/main.js"></script>
+</body>
+</html>
