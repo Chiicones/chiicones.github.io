@@ -17,7 +17,10 @@
                 <span class="logo-mark">✦</span>
                 <span class="site-name">Agenda DF</span>
             </a>
-            <nav class="main-nav">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
                     <a href="/">Eventos</a>
                     <a href="/agenda.html">Agenda</a>
                     <a href="/mapa.html">Mapa</a>
@@ -68,5 +71,22 @@
     </footer>
 
     <script src="https://chiicones.github.io/theme/js/main.js"></script>
+    <script>
+    const toggle = document.getElementById('nav-toggle');
+    const nav    = document.getElementById('main-nav');
+    toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav--open');
+        toggle.classList.toggle('nav-toggle--open', open);
+        toggle.setAttribute('aria-expanded', open);
+    });
+    // Fecha ao clicar em um link
+    nav.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => {
+            nav.classList.remove('nav--open');
+            toggle.classList.remove('nav-toggle--open');
+            toggle.setAttribute('aria-expanded', false);
+        })
+    );
+    </script>
 </body>
 </html>
