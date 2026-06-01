@@ -1079,3 +1079,141 @@ img { max-width: 100%; display: block; }
     .mapa-lista { grid-template-columns: 1fr; }
     .ficha-card__title { font-size: 0.92rem; }
 }
+
+/* =============================================
+   MELHORIAS DE MARGEM — Blog e artigos
+   ============================================= */
+
+/* Blog — listagem */
+.blog-wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem 5rem;
+}
+
+.blog-post {
+    padding: 2.5rem 0;
+}
+
+.blog-post__intro {
+    font-size: 0.97rem;
+    line-height: 1.8;
+    color: var(--ink-soft);
+    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Blog — post completo */
+.blog-article-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem 5rem;
+}
+
+.blog-article__body {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--ink-soft);
+    margin-top: 0.5rem;
+}
+
+.blog-article__body p {
+    margin-bottom: 1.4rem;
+}
+
+.blog-article__body h2 {
+    font-family: var(--ff-display);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 2.5rem 0 1rem;
+    color: var(--ink);
+}
+
+.blog-article__body h3 {
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2rem 0 0.75rem;
+    color: var(--ink);
+}
+
+.blog-article__body blockquote {
+    border-left: 3px solid var(--gold);
+    margin: 2rem 0;
+    padding: 0.75rem 1.5rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.blog-article__body ul,
+.blog-article__body ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.blog-article__body li {
+    margin-bottom: 0.4rem;
+    line-height: 1.7;
+}
+
+/* Busca — margem */
+.search-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem 5rem;
+}
+
+/* Sobre e páginas estáticas */
+.article-content {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--ink-soft);
+}
+
+.article-content p { margin-bottom: 1.4rem; }
+
+.article-content ul,
+.article-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.article-content blockquote {
+    border-left: 3px solid var(--gold);
+    margin: 2rem 0;
+    padding: 0.75rem 1.5rem;
+    font-style: italic;
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+}
+
+/* Mobile — margens ajustadas */
+@media (max-width: 680px) {
+    .blog-wrap {
+        padding: 2rem 1.25rem 3.5rem;
+    }
+    .blog-article-wrap {
+        padding: 2rem 1.25rem 3.5rem;
+    }
+    .blog-article__body {
+        font-size: 0.97rem;
+    }
+    .search-wrap {
+        padding: 2rem 1.25rem 3rem;
+    }
+    .article-layout {
+        padding: 1.5rem 1.25rem 3rem;
+    }
+    .blog-article__title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    .blog-article__body blockquote {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+}
