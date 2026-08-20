@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Agenda — {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+<div class="taxonomy-header">
+    <p class="taxonomy-label">Todos os eventos</p>
+    <h1 class="taxonomy-title">Agenda</h1>
+</div>
+
+<section class="agenda-section">
+    <div class="container">
+
+        {% set ns = namespace(mes_atual='') %}
+
+        {% for article in dates | sort(attribute='date', reverse=True) %}
+
+            {% set mes = article.date.strftime('%B %Y') | title %}
+
+            {% if mes != ns.mes_atual %}
+                {% if not loop.first %}</ul>{% endif %}
+                <div class="agenda-month">
+                    <h2 class="agenda-month__title">{{ mes }}</h2>
+                </div>
+                <ul class="agenda-list">
+                {% set ns.mes_atual = mes %}
+            {% endif %}
+
+            <li class="agenda-item {% if article.date < now %}agenda-item--passado{% endif %}">
+                <span class="agenda-item__date">{{ article.date.strftime('%d/%m') }}</span>
+                <span class="agenda-item__sep">·</span>
+                <a href="{{ SITEURL }}/{{ article.url }}" class="agenda-item__title">{{ article.title }}</a>
+                {% if article.local %}
+                <span class="agenda-item__sep">·</span>
+                <span class="agenda-item__local">{{ article.local }}</span>
+                {% endif %}
+                {% if article.horario %}
+                <span class="agenda-item__horario">{{ article.horario }}</span>
+                {% endif %}
+                <a href="{{ SITEURL }}/{{ article.category.url }}" class="tag tag--small agenda-item__cat">{{ article.category }}</a>
+            </li>
+
+        {% endfor %}
+        </ul>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+AGENDA DF — ESTRUTURA DO PROJETO
+==================================
+
+meu-site/
+├── pelicanconf.py          ← configuração principal
+├── publishconf.py          ← usar antes de publicar no servidor
+├── pelican-theme/          ← tema do site
+│   ├── templates/          ← HTML dos templates
+│   └── static/             ← CSS e JS
+├── content/                ← seus eventos (.md)
+│   ├── _modelo.md          ← copie para criar evento novo
+│   ├── brasilia/
+│   │   ├── aabb/
+│   │   ├── birosca-do-conic/
+│   │   ├── caixa-cultural/
+│   │   ├── clube-do-choro/
+│   │   ├── espaco-cultural-renato-russo/
+│   │   ├── sesc-504-sul/
+│   │   ├── teatro-nacional/
+│   │   ├── ulysses-centro-de-convencoes/
+│   │   └── outros/         ← eventos sem pasta definida (mova depois)
+│   ├── entorno/
+│   │   ├── brazlandia/
+│   │   ├── ceilandia/
+│   │   ├── gama/
+│   │   ├── planaltina/
+│   │   └── outros/
+│   └── pages/              ← páginas fixas (Sobre, Contato)
+├── scripts/
+│   ├── validar_eventos.py  ← valida os .md antes de publicar
+│   └── corrigir_eventos.py ← corrige campos duplicados/vazios
+└── output/                 ← gerado pelo Pelican (não versionar)
+
+
+FLUXO DE TRABALHO
+------------------
+1. Crie eventos copiando content/_modelo.md para a pasta do local
+2. Preencha os campos e salve com o nome: AAAAMMDD-slug.md
+3. Valide:   python scripts/validar_eventos.py --pasta content
+4. Corrija:  python scripts/corrigir_eventos.py --pasta content (se necessário)
+5. Visualize localmente: pelican content && pelican --listen
+6. Publique: pelican content -s publishconf.py
+             (depois suba a pasta output/ para o servidor)
+
+
+NOME DOS ARQUIVOS
+------------------
+Formato: AAAAMMDD-slug-do-evento.md
+Exemplo: 20260423-diogo-nogueira-turne-infinito-samba.md
+
+A data no nome facilita ordenar no explorador mas NÃO aparece na URL.
+A URL usa só o slug derivado do Title: no cabeçalho do arquivo.
+
+
+EVENTOS PASSADOS
+------------------
+Não precisa mover arquivos. Adicione no cabeçalho:
+  Status: hidden   → some da home e agenda, URL continua ativa
+  Status: draft    → some completamente do site
+
+
+SCRIPTS
+------------------
+Validar todos os .md de uma pasta:
+  python scripts/validar_eventos.py
+  python scripts/validar_eventos.py --pasta content/brasilia/outros
+
+Corrigir campos duplicados/vazios:
+  python scripts/corrigir_eventos.py --pasta content/brasilia/outros
+  python scripts/corrigir_eventos.py --pasta content/brasilia/outros --inplace

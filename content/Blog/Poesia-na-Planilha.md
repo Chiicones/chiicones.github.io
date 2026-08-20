@@ -1,0 +1,67 @@
+Title: Movimento Amplifica: A Retomada da Identidade e Sustentabilidade da Cultura no DF
+Date: 2026-05-12
+Category: Blog
+Template: blog_article
+Tags: brasília, cultura
+Slug: blog/poesia-na-planilha
+
+Brasília é uma cidade de paradoxos brutais. Para o burocrata que só circula entre os anexos dos Ministérios, a capital pode parecer "administrativa" ou, no jargão preguiçoso de quem não a conhece, "morta". Mas para quem vive a graxa — o suor técnico, o cabo enrolado no escuro do palco e a correria dos bastidores —, Brasília pulsa com uma urgência latente. O lançamento do projeto Amplifica, no espaço Infinu (W3 Sul) foi um grito de guerra contra a estagnação.
+
+Como alguém que respira a economia criativa local, vi ali a transição da "Brasília do carimbo" para a "Brasília do corre". O recado de Múcio Botelho (Lupa) foi categórico: "Porra de quem fala que Brasília é uma cidade morta". A cidade está viva, mas a engrenagem que a sustenta está rangendo.
+
+<!-- mais -->
+
+1. Introdução: O Cenário Cultural e a Crítica ao Modelo de Gestão
+
+O Distrito Federal enfrenta uma crise de alocação e propósito em sua política cultural. Embora Brasília possua um orçamento robusto de R$ 74 bilhões, o setor criativo sobrevive em um estado de escassez estrutural. O modelo vigente está saturado por uma lógica de eventos efêmeros que privilegia a "Indústria do Palco" em detrimento da valorização do capital humano.
+
+A "Máfia da Estrutura" vs. Eficiência do Gasto Historicamente, cerca de 80% dos recursos destinados à cultura são drenados para o "hardware" — montagem de palcos, tablados e estruturas temporárias que são desmontadas no dia seguinte. Este vício em "palco grande" transformou a Secretaria de Cultura em um balcão de negócios para empresas de infraestrutura, muitas vezes ligadas a interesses políticos, enquanto artistas e técnicos recebem cachês irrisórios. É uma engrenagem desenhada para o enriquecimento de fornecedores de metalurgia, não para o fomento de uma cadeia produtiva perene.
+
+O Despertar da Consciência Estratégica O lançamento do Amplifica marca o fim da era da fragmentação. O movimento surge como uma coalizão para consolidar uma estética própria candanga e, fundamentalmente, para estabelecer uma negociação em bloco frente ao Estado. Não se trata apenas de fazer arte, mas de dominar a economia criativa para que o setor deixe de ser refém de curtidas em redes sociais ou de emendas parlamentares instáveis.
+
+2. As Vozes da Resistência e Estruturação: Análise dos Discursos
+
+A convergência de lideranças no Amplifica reflete um diagnóstico técnico preciso das falhas do sistema de fomento. O movimento não pede favores; ele propõe uma nova governança.
+
+* Kaká (Infinu) – Dignidade e Estrutura Permanente: Com uma crítica contundente ao "vício em palco grande", Kaká defende que a dignidade do artista autoral começa com palcos técnicos permanentes. A experiência da W3 Sul prova que a indústria criativa local se fortalece em espaços que priorizam a acústica e a técnica sobre a estrutura metálica monumental e vazia.
+* Carol Perez – Logística Social e Justa Remuneração: Perez introduz uma das maiores inovações estratégicas do movimento: a utilização dos domingos e do Passe Livre para democratizar o acesso. Ao ocupar o centro com transporte gratuito, o movimento rompe o isolamento da periferia. Além disso, ela exige a valorização de quem está "na graxa" (técnicos e fotógrafos), denunciando a precarização que trata profissionais especializados como mão de obra simbólica.
+* Bruno Barra (Porão do Rock) – Sustentabilidade e Independência: Barra traz a visão de mercado necessária para transitar da "Política de Governo" para a "Política de Estado". Ele aponta que a dependência de emendas parlamentares é um risco sistêmico, pois o recurso evapora conforme o mandato do político. Sua meta é transformar a cultura em um negócio resiliente, utilizando incentivos fiscais de forma estratégica e profissional.
+* Eli Moura – O Hack da Burocracia: Moura define o "juridiquês" como uma tecnologia de exclusão de origem patriarcal e aristocrática, desenhada para impedir o acesso ao recurso. Sua proposta é a "poesia da planilha": apropriar-se dos ritos administrativos para transformá-los em ferramentas de democratização. Ver lirismo na legislação é, para o Amplifica, uma forma de garantir o direito ao fomento.
+* Múcio Botelho – O Elo Institucional: Como catalisador, Múcio exemplifica a necessidade de trânsito orgânico entre a arte e a política. Sua relação com figuras como Rodrigo Rollemberg — exemplificada pela anedota estratégica de ter levado o ex-governador para uma "roda" (mosh pit) em um show da Lupa — demonstra que o diálogo institucional deve ser pautado pela presença real do Estado na cena, e não apenas por assinaturas de decretos.
+
+3. O Modelo Operacional do Amplifica: Da Qualificação à Inserção
+
+O Amplifica atua onde o Estado se ausenta, focando no desenvolvimento técnico e humano. Diferente das estruturas públicas que cobram taxas ou criam barreiras, as casas parceiras (Infinu, Birosca e espaços no Setor Bancário Sul) estão abrindo suas portas a custo zero para o movimento.
+
+Os Três Eixos de Atuação
+
+1. Qualificação Profissional: Oficinas práticas de palco, luz, som, discotecagem e gestão de A&B (Alimentos e Bebidas), preparando a base da pirâmide criativa.
+2. Inserção no Mercado: Ocupação estratégica do centro (W3, Conic, SBS). A estratégia de realizar eventos aos domingos, aproveitando o Passe Livre, é o pilar para garantir que o artista da Ceilândia ou de Planaltina encontre o seu público no Plano Piloto.
+3. Formação de Audiência: Consultoria com experts nacionais para transformar o talento local em uma base de fãs sustentável e monetizável.
+
+Entregas Tangíveis
+
+* Sistema de Câmeras Permanente: Mais do que simples gravações, o projeto oferece um rig de captura audiovisual profissional. O objetivo é que cada artista saia do palco com um EPK (Electronic Press Kit) pronto para ser apresentado em festivais nacionais e internacionais.
+* Ensaios e Consultorias: Acesso gratuito a palcos reais e mentoria com produtores que gerenciam turnês de grande porte.
+
+4. A Dimensão Política e o Futuro da Economia Criativa no DF
+
+A atual gestão cultural do DF permitiu o desmonte de mecanismos vitais. A Lei de Incentivo à Cultura (LIC), que já contou com 20 empresas participantes, definhou para apenas 2 empresas ativas. Esse esvaziamento é intencional, pois a LIC exige critérios técnicos, enquanto o modelo de emendas parlamentares permite o favorecimento de "amigos do poder".
+
+Outro retrocesso crítico é a suspensão do projeto "Conexões". Sem esse mecanismo de circulação, a cena de Brasília torna-se insular, impedindo que o talento local ganhe escala nacional. O Amplifica surge para denunciar essa paralisia e exigir que a cultura seja tratada como o setor de maior retorno sobre investimento (ROI) do DF, especialmente na faixa etária de 15 a 29 anos.
+
+O Valor da Governança em Rede A organização proposta pelo movimento é o único caminho para romper o ciclo de dependência do "balcão de negócios". Ao unir casas de show, artistas e técnicos, o setor deixa de ser um pedinte para se tornar um bloco econômico influente.
+
+
+5. Conclusão e Chamado à Ação
+
+Brasília tem o talento e tem o orçamento. O que falta é a coragem política para parar de construir palcos provisórios e começar a construir carreiras permanentes. O Amplifica é o catalisador dessa transição, transformando o "juridiquês" em tecnologia social e a planilha em nota musical.
+
+Protagonismo é a Chave O fortalecimento desta rede é urgente. O convite é para que o artista domine as ferramentas de gestão e burocracia para que nunca mais sua arte seja tratada como subproduto de uma estrutura metálica.
+
+* Ação Imediata: Cadastre-se através do QR Code/link oficial para acessar o calendário de oficinas, ensaios e seleções de palco.
+* Networking Real: Utilize os canais do movimento para conectar-se com a rede de especialistas e parceiros.
+
+Brasília é maior do que sua gestão atual. A cultura não é um gasto; é o ativo econômico mais potente do Distrito Federal. É hora de amplificar o que é nosso.
+
+Cultura é investimento. O legado começa agora.

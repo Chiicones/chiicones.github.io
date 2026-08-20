@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EUNIC Jazz Express na Semana da Europa 2026 — Agenda DF</title>
-    <meta name="description" content="Eventos e experiências em Brasília">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://chiicones.github.io/theme/css/style.css">
 </head>
 <body>
@@ -17,47 +14,62 @@
     <header class="site-header">
         <div class="header-inner">
             <a href="https://chiicones.github.io/" class="site-logo">
-                <span class="site-logo__name">Agenda DF</span>
+                <span class="logo-mark">✦</span>
+                <span class="site-name">Agenda DF</span>
             </a>
-            <form class="header-search" action="https://chiicones.github.io/busca.html" method="get">
-                <input type="text" name="q" class="header-search__input" placeholder="Buscar eventos...">
-                <button type="submit" class="header-search__btn">→</button>
-            </form>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                    <a href="/">Eventos</a>
+                    <a href="/agenda.html">Agenda</a>
+                    <a href="/mapa.html">Mapa</a>
+                    <a href="/pages/busca.html">Busca</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/pages/sobre.html">Sobre</a>
+            </nav>
         </div>
     </header>
 
-    <main class="site-main">
+    <main>
 
 <div class="article-layout">
+
     <aside class="event-sidebar">
-        <div class="event-sidebar__card">
-            <h2 class="sidebar-card__title">EUNIC Jazz Express na Semana da Europa 2026</h2>
-            <div class="event-info-grid event-info-grid--sidebar">
-                <div class="event-info-row">
-                    <span class="event-info-label">Local</span>
-                    <a href="https://chiicones.github.io/tag/escola-de-música-de-brasilia.html" class="tag tag--value">Escola de Música de Brasilia</a>
+        <div class="infobox">
+            <div class="infobox__header">Informações do Evento</div>
+            <div class="infobox__body">
+
+                <div class="infobox__row">
+                    <span class="infobox__label">Local</span>
+                    <span class="infobox__value">
+                        <span class="infobox__icon">⊙</span>
+                        <a href="https://chiicones.github.io/tag/escola-de-música-de-brasilia.html" class="infobox__link">Escola de Música de Brasilia</a>
+                    </span>
                 </div>
-                <div class="event-info-row">
-                    <span class="event-info-label">Data</span>
-                    <a href="https://chiicones.github.io/tag/28-04-2026.html" class="tag tag--value">28/04/2026</a>
+
+                <div class="infobox__row">
+                    <span class="infobox__label">Data do Evento</span>
+                    <span class="infobox__value">
+                        <span class="infobox__icon">🕐</span>
+                        28/04/2026 · 20h30                    </span>
                 </div>
-                <div class="event-info-row">
-                    <span class="event-info-label">Horário</span>
-                    <span class="event-info-value">20h30</span>
+
+                <div class="infobox__row">
+                    <span class="infobox__label">Entrada</span>
+                    <span class="infobox__value infobox__value--price">R$ 30,00</span>
                 </div>
-                <div class="event-info-row">
-                    <span class="event-info-label">Entrada</span>
-                    <span class="event-info-value event-info-value--highlight">R$ 30,00 (meia/solidário)</span>
-                </div>
+
             </div>
-            <div class="sidebar-tags">
-                <a href="https://chiicones.github.io/tag/jazz.html" class="tag tag--small">jazz</a>
-                <a href="https://chiicones.github.io/tag/musica.html" class="tag tag--small">música</a>
-                <a href="https://chiicones.github.io/tag/semana-da-europa.html" class="tag tag--small">semana da europa</a>
-                <a href="https://chiicones.github.io/tag/eunic.html" class="tag tag--small">eunic</a>
-                <a href="https://chiicones.github.io/tag/escola-de-musica-de-brasilia.html" class="tag tag--small">escola de música de brasília</a>
-                <a href="https://chiicones.github.io/tag/28-04-2026.html" class="tag tag--small">28-04-2026</a>
-            </div>
+        </div>
+
+        <div class="sidebar-tags" style="margin-top: 1rem;">
+            <a href="https://chiicones.github.io/tag/jazz.html" class="tag tag--small">jazz</a>
+            <a href="https://chiicones.github.io/tag/musica.html" class="tag tag--small">música</a>
+            <a href="https://chiicones.github.io/tag/semana-da-europa.html" class="tag tag--small">semana da europa</a>
+            <a href="https://chiicones.github.io/tag/eunic.html" class="tag tag--small">eunic</a>
+            <a href="https://chiicones.github.io/tag/escola-de-musica-de-brasilia.html" class="tag tag--small">escola de música de brasília</a>
+            <a href="https://chiicones.github.io/tag/28-04-2026.html" class="tag tag--small">28-04-2026</a>
         </div>
     </aside>
 
@@ -65,44 +77,51 @@
         <header class="article-header">
             <a href="https://chiicones.github.io/categoria/musica.html" class="tag tag--category">Música</a>
             <h1 class="article-title">EUNIC Jazz Express na Semana da Europa 2026</h1>
-            <time class="article-date" datetime="2026-03-23T00:00:00-03:00">23/03/2026</time>
+            <time class="article-date" datetime="2026-03-23T00:00:00-03:00">
+                23/03/2026
+            </time>
         </header>
+
         <div class="article-content">
-            <p>Abrindo a programação da Semana da Europa, o EUNIC Jazz Express celebra o Dia Internacional do Jazz. O projeto reúne artistas do Brasil e de diferentes países europeus em uma formação inédita: Mateus Saldanha (Portugal), Neža Okorn (Eslovênia), Pepi Kramer (Áustria), Rutger Mathys (Bélgica) e outros.</p>
+            <p><strong>Entrada:</strong> Meia/solidário
+Abrindo a programação da Semana da Europa, o EUNIC Jazz Express celebra o Dia Internacional do Jazz. O projeto reúne artistas do Brasil e de diferentes países europeus em uma formação inédita: Mateus Saldanha (Portugal), Neža Okorn (Eslovênia), Pepi Kramer (Áustria), Rutger Mathys (Bélgica) e outros.</p>
 <p>Ingresso no site <a href="https://www.bilheteriadigital.com/eunic-jazz-express-28-de-abril">Bilheteria Digital</a></p>
+<p>Site/Ingressos: https://www.bilheteriadigital.com/eunic-jazz-express-28-de-abril</p>
         </div>
+
         <footer class="article-footer">
             <a href="https://chiicones.github.io/" class="back-link">← Voltar aos eventos</a>
         </footer>
     </article>
+
 </div>
 
     </main>
 
     <footer class="site-footer">
         <div class="footer-inner">
-            <div class="footer-col footer-col--categories">
-                <p class="footer-col__title">Categorias</p>
-                    <a href="/categoria/circo.html" class="footer-link">Circo</a>
-                    <a href="/categoria/comedia.html" class="footer-link">Comédia</a>
-                    <a href="/categoria/exposicao.html" class="footer-link">Exposição</a>
-                    <a href="/categoria/familia.html" class="footer-link">Família</a>
-                    <a href="/categoria/feira.html" class="footer-link">Feira</a>
-                    <a href="/categoria/festival.html" class="footer-link">Festival</a>
-                    <a href="/categoria/musica.html" class="footer-link">Música</a>
-                    <a href="/categoria/teatro.html" class="footer-link">Teatro</a>
-            </div>
-            <div class="footer-col footer-col--extra">
-                <p class="footer-col__title">Mais</p>
-                    <a href="/busca.html" class="footer-link">Busca</a>
-                    <a href="/categoria/blog.html" class="footer-link">Blog</a>
-                    <a href="/mapa.html" class="footer-link">Mapa</a>
-                    <a href="/pages/sobre.html" class="footer-link">Sobre</a>
-                <p class="footer-copy">&copy; 2026 Agenda DF</p>
-            </div>
+            <span class="footer-logo">✦</span>
+            <p>Agenda DF &mdash; Francisco</p>
         </div>
     </footer>
 
     <script src="https://chiicones.github.io/theme/js/main.js"></script>
+    <script>
+    const toggle = document.getElementById('nav-toggle');
+    const nav    = document.getElementById('main-nav');
+    toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav--open');
+        toggle.classList.toggle('nav-toggle--open', open);
+        toggle.setAttribute('aria-expanded', open);
+    });
+    // Fecha ao clicar em um link
+    nav.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => {
+            nav.classList.remove('nav--open');
+            toggle.classList.remove('nav-toggle--open');
+            toggle.setAttribute('aria-expanded', false);
+        })
+    );
+    </script>
 </body>
 </html>
